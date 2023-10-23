@@ -1,0 +1,3710 @@
+# Translation of Plugins - Yoast SEO - Stable (latest release) in Hebrew
+# This file is distributed under the same license as the Plugins - Yoast SEO - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-05-12 09:37:59+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.0-alpha.10\n"
+"Language: he_IL\n"
+"Project-Id-Version: Plugins - Yoast SEO - Stable (latest release)\n"
+
+#: admin/views/licenses.php:41
+msgid "Optimize your business for multiple locations"
+msgstr "בצע אופטימיזציה של העסק במיקומים מרובים"
+
+#: admin/views/licenses.php:40
+msgid "Easily add maps, address finders, and opening hours to your content"
+msgstr "הוסף בקלות מפות, מאתרי כתובות ושעות פתיחה לתוכן שלך"
+
+#: admin/views/licenses.php:39
+msgid "Automatically get technical SEO best practices for local businesses"
+msgstr "קבל באופן אוטומטי שיטות עבודה טכניות מומלצות לקידום אתרים לעסקים מקומיים"
+
+#: admin/views/licenses.php:38
+msgid "Attract more local customers to your website and physical store"
+msgstr "משך יותר לקוחות מקומיים לאתר ולחנות הפיזית שלך"
+
+#: admin/views/licenses.php:34
+msgid "Maximize your visibility for local searches"
+msgstr "הגדל את החשיפה לחיפושים מקומיים"
+
+#: src/presenters/admin/indexing-notification-presenter.php:93
+msgid "It looks like you've enabled media pages. We recommend that you help us to re-analyze your site by running the SEO data optimization. "
+msgstr "נראה שהפעלת דפי מדיה. אנו ממליצים שתעזור לנו לנתח מחדש את האתר על ידי הפעלת אופטימיזציית נתוני SEO. "
+
+#: admin/formatter/class-metabox-formatter.php:190 inc/class-wpseo-rank.php:156
+#: inc/class-wpseo-rank.php:240 js/dist/block-editor.js:1
+#: js/dist/editor-modules.js:113 js/dist/externals-components.js:163
+#: js/dist/frontend-inspector-resources.js:1 js/dist/post-edit.js:1
+#: js/dist/term-edit.js:1
+msgid "Potentially non-inclusive"
+msgstr "באופן פוטנציאלי לא כולל"
+
+#. translators: CTA to finish the first time configuration. %s: Either
+#. first-time SEO configuration or SEO configuration.
+#: admin/class-admin.php:237
+msgid "Finish your %s"
+msgstr "השלם את ה-%s שלך"
+
+#. translators: %1$s and %2$s expand to a span wrap to avoid linebreaks. %3$s
+#. expands to "Yoast SEO Premium".
+#: src/presenters/admin/sidebar-presenter.php:58 js/dist/elementor.js:99
+#: js/dist/introductions.js:15 js/dist/new-settings.js:15
+#: js/dist/post-edit.js:15 js/dist/support.js:35
+msgid "%1$sGet%2$s %3$s"
+msgstr "%1$sקבל%2$s %3$s"
+
+#: inc/class-wpseo-admin-bar-menu.php:573
+msgid "WordPress.org support forums"
+msgstr "פורומי תמיכה של WordPress.org"
+
+#: inc/class-wpseo-admin-bar-menu.php:568
+msgid "Yoast Premium support"
+msgstr "תמיכת Yoast Premium"
+
+#: inc/class-wpseo-admin-bar-menu.php:563
+msgid "Yoast.com help section"
+msgstr "מדור העזרה של Yoast.com"
+
+#: inc/class-wpseo-admin-bar-menu.php:548
+msgid "Help"
+msgstr "עזרה"
+
+#: inc/class-wpseo-admin-bar-menu.php:519
+#: inc/class-wpseo-admin-bar-menu.php:578
+msgid "Learn more SEO"
+msgstr "למד עוד על SEO"
+
+#: inc/class-wpseo-admin-bar-menu.php:474
+msgid "SEO Tools"
+msgstr "כלי SEO"
+
+#: inc/class-wpseo-admin-bar-menu.php:236
+msgid "Focus keyphrase: "
+msgstr "ביטוי מפתח למיקוד: "
+
+#: inc/class-wpseo-admin-bar-menu.php:230
+msgid "not set"
+msgstr "לא הוגדר"
+
+#. translators: 1: expands to Outrank your competitors even further, 2: expands
+#. to Yoast SEO
+#: admin/views/licenses.php:285
+msgid "%1$s with %2$s extensions"
+msgstr "%1$s באמצעות הרחבות %2$s"
+
+#: admin/views/licenses.php:190
+msgid "Prevents 404s"
+msgstr "מונע עמודי 404"
+
+#: admin/views/licenses.php:179
+msgid "The Yoast SEO workouts guide you through important routine SEO tasks"
+msgstr "אימוני Yoast SEO מנחים אותך במשימות קידום אתרים שגרתיות"
+
+#: admin/views/licenses.php:178
+msgid "Save time on doing SEO"
+msgstr "חסוך זמן בביצוע SEO"
+
+#: admin/views/licenses.php:175
+msgid "Optimize a single post for synonyms and related keyphrases and get extra checks with the Premium SEO analysis"
+msgstr "בצע אופטימיזציה של פוסט בודד עבור מילים נרדפות וביטויי מפתח קשורים וקבל בדיקות נוספות עם ניתוח Premium SEO"
+
+#: admin/views/licenses.php:174
+msgid "Reach bigger audiences"
+msgstr "תגיע לקהלים גדולים יותר"
+
+#: admin/views/licenses.php:112
+msgid "Drive more traffic with your videos"
+msgstr "הגדל תנועה עם הסרטונים שלך"
+
+#: admin/views/licenses.php:111
+msgid "Reach new customers that live near your business"
+msgstr "תגיע ללקוחות חדשים שגרים בסביבת העסק שלך"
+
+#: admin/views/licenses.php:110
+msgid "Get all 5 Yoast plugins for WordPress with a big discount"
+msgstr "קבל את כל 5 התוספים של Yoast לוורדפרס עם הנחה גדולה"
+
+#: admin/views/licenses.php:106
+msgid "Cover all your SEO bases"
+msgstr "כסה את כל בסיסי ה-SEO שלך"
+
+#. translators: used in phrases such as "More information about all the Yoast
+#. plugins"
+#. translators: used in phrases such as "Buy all the Yoast plugins"
+#: admin/views/licenses.php:105 admin/views/licenses.php:118
+msgid "all the Yoast plugins"
+msgstr "כל התוספים של Yoast"
+
+#: admin/views/licenses.php:87
+msgid "Add global identifiers for variable products"
+msgstr "הוסף מזהים גלובליים עבור מוצרים משתנים"
+
+#: admin/views/licenses.php:86
+msgid "Increase clicks of Google search with rich results"
+msgstr "הגדל את הקליקים של חיפושי גוגל עם תוצאות עשירות"
+
+#: admin/views/licenses.php:85
+msgid "Write product pages that rank with the enhanced SEO analysis"
+msgstr "כתוב דפי מוצר המדורגים עם ניתוח SEO משופר"
+
+#: admin/views/licenses.php:80 admin/views/licenses.php:114
+msgid "Drive more traffic to your online store"
+msgstr "הפנה יותר תנועה לחנות המקוונת שלך"
+
+#: admin/views/licenses.php:68
+msgid "Add all necessary schema.org markup"
+msgstr "הוסף את כל הסימונים הדרושים של schema.org"
+
+#. translators: %1$d is the number of records that were removed. %2$s is the
+#. site url.
+#: src/commands/cleanup-command.php:183
+msgid "Cleaned up %1$d record from %2$s."
+msgid_plural "Cleaned up %1$d records from %2$s."
+msgstr[0] "ניקה רשומה %1$d מ-%2$s."
+msgstr[1] "ניקה %1$d רשומות מ-%2$s."
+
+#. translators: %1$s is the site url of the site that is cleaned up. %2$s is
+#. the name of the cleanup task that is currently running.
+#: src/commands/cleanup-command.php:159
+msgid "Cleaning up %1$s [%2$s]"
+msgstr "מנקה את %1$s [%2$s]"
+
+#. translators: %1$s is the site url of the site that is skipped. %2$s is Yoast
+#. SEO.
+#: src/commands/cleanup-command.php:146
+msgid "Skipping %1$s. %2$s is not active on this site."
+msgstr "מדלג על %1$s. %2$s אינו פעיל באתר זה."
+
+#. translators: %1$d is the number of records that are removed.
+#: src/commands/cleanup-command.php:97
+msgid "Cleaned up %1$d record."
+msgid_plural "Cleaned up %1$d records."
+msgstr[0] "ניקה רשומה %1$d."
+msgstr[1] "ניקה %1$d רשומות."
+
+#: src/commands/cleanup-command.php:84
+msgid "The value for 'batch-size' must be a positive integer higher than equal to 1."
+msgstr "הערך עבור 'גודל אצווה' חייב להיות מספר שלם חיובי הגבוה משווה ל-1."
+
+#: src/commands/cleanup-command.php:81
+msgid "The value for 'interval' must be a positive integer."
+msgstr "הערך עבור 'מרווח' חייב להיות מספר שלם חיובי."
+
+#: admin/views/class-yoast-feature-toggles.php:210 js/dist/new-settings.js:297
+msgid "Learn more"
+msgstr "למד עוד"
+
+#: src/integrations/admin/crawl-settings-integration.php:194
+#: js/dist/new-settings.js:168
+msgid "Remove unused resources"
+msgstr "הסרת משאבים שלא בשימוש"
+
+#: src/integrations/admin/crawl-settings-integration.php:156
+msgid "Prevent search engines from crawling /wp-json/"
+msgstr "מנע ממנועי חיפוש לסרוק /wp-json/"
+
+#: src/integrations/admin/crawl-settings-integration.php:150
+msgid "Prevent search engines from crawling site search URLs"
+msgstr "מנע ממנועי חיפוש לסרוק כתובות של תוצאות חיפוש באתר"
+
+#: admin/views/user-profile.php:72
+msgid "Removes the inclusive language analysis section from the metabox and disables all inclusive language-related suggestions."
+msgstr "מסיר את האזור של ניתוח השפה כולל מה-metabox ומשבית את כל ההצעות הקשורות לשפה."
+
+#: admin/views/user-profile.php:69
+msgid "Disable inclusive language analysis"
+msgstr "כיבוי ניתוח שפה כולל"
+
+#: admin/views/class-yoast-feature-toggles.php:94
+msgid "The inclusive language analysis offers suggestions to write more inclusive copy."
+msgstr "ניתוח השפה הכולל מציע הצעות לכתוב עותק כולל יותר."
+
+#: admin/views/class-yoast-feature-toggles.php:91 js/dist/new-settings.js:35
+#: js/dist/new-settings.js:297
+msgid "Inclusive language analysis"
+msgstr "ניתוח שפה כולל"
+
+#: admin/class-yoast-form.php:914
+msgid "Unlock with Premium!"
+msgstr "פתח נעילה עם פרימיום!"
+
+#. translators: %s expands to WordProof.
+#: vendor_prefixed/wordproof/wordpress-sdk/app/Translations/DefaultTranslations.php:53
+msgid "Contact %s support."
+msgstr "צרו קשר עם התמיכה של %s"
+
+#. translators: 1: Yoast SEO Premium
+#: src/integrations/admin/deactivated-premium-integration.php:99
+msgid "Activate %1$s!"
+msgstr "הפעלת %1$s!"
+
+#: src/integrations/admin/crawl-settings-integration.php:217
+msgid "Permalink cleanup settings"
+msgstr "ניקוי הגדרות מבנה קישורים"
+
+#: src/integrations/admin/crawl-settings-integration.php:203
+msgid "Search cleanup settings"
+msgstr "ניקוי הגדרות חיפוש"
+
+#: src/integrations/admin/crawl-settings-integration.php:149
+#: js/dist/new-settings.js:35 js/dist/new-settings.js:168
+msgid "Filter searches with common spam patterns"
+msgstr "סנן חיפושים עם דפוסי ספאם נפוצים"
+
+#: src/integrations/admin/crawl-settings-integration.php:148
+#: js/dist/new-settings.js:35 js/dist/new-settings.js:168
+msgid "Filter searches with emojis and other special characters"
+msgstr "סנן חיפושים באמצעות אימוג'ים ותווים מיוחדים אחרים"
+
+#: src/integrations/admin/crawl-settings-integration.php:147
+#: js/dist/new-settings.js:35 js/dist/new-settings.js:168
+msgid "Filter search terms"
+msgstr "סנן מונחי חיפוש"
+
+#: src/integrations/admin/crawl-settings-integration.php:143
+msgid "Unregistered URL parameters"
+msgstr "פרמטרים של כתובת אתר לא רשומים"
+
+#: src/integrations/admin/crawl-settings-integration.php:142
+msgid "Campaign tracking URL parameters"
+msgstr "פרמטרים של כתובת אתר למעקב של קמפיין פרסום"
+
+#: src/config/wordproof-translations.php:88
+msgid "Contact WordProof support"
+msgstr "פנה לתמיכה של WordProof"
+
+#: admin/views/class-yoast-feature-toggles.php:199
+msgid "Find out how IndexNow can help your site."
+msgstr "גלה כיצד IndexNow יכול לעזור לאתר שלך."
+
+#: admin/views/class-yoast-feature-toggles.php:198 js/dist/new-settings.js:299
+msgid "Automatically ping search engines like Bing and Yandex whenever you publish, update or delete a post."
+msgstr "מיקוד אוטומטית למנועי חיפוש כמו Bing ו-Yandex בכל פעם שאתה מפרסם, מעדכן או מוחק פוסט."
+
+#: admin/views/class-yoast-feature-toggles.php:195 js/dist/new-settings.js:35
+#: js/dist/new-settings.js:299
+msgid "IndexNow"
+msgstr "IndexNow"
+
+#: src/helpers/first-time-configuration-notice-helper.php:68
+msgid "SEO configuration"
+msgstr "תצורת SEO"
+
+#: src/integrations/admin/crawl-settings-integration.php:193
+msgid "Feed crawl settings"
+msgstr "הגדרות סריקת פידים"
+
+#: src/integrations/admin/crawl-settings-integration.php:191
+msgid "Basic crawl settings"
+msgstr "הגדרות סריקת בסיסיות"
+
+#: src/integrations/admin/crawl-settings-integration.php:138
+msgid "Powered by HTTP header"
+msgstr "מופעל באמצעות כותרת HTTP"
+
+#: src/integrations/admin/crawl-settings-integration.php:137
+#: js/dist/new-settings.js:35 js/dist/new-settings.js:168
+msgid "Pingback HTTP header"
+msgstr "פינבק כותרות HTTP"
+
+#: src/integrations/admin/crawl-settings-integration.php:155
+msgid "Emoji scripts"
+msgstr "סקריפטים של אמוג'י"
+
+#: src/integrations/admin/crawl-settings-integration.php:136
+msgid "Generator tag"
+msgstr "תגית Generator"
+
+#: src/integrations/admin/crawl-settings-integration.php:135
+msgid "oEmbed links"
+msgstr "קישורי oEmbed"
+
+#: src/integrations/admin/crawl-settings-integration.php:134
+msgid "RSD / WLW links"
+msgstr "קישורי RSD / WLW"
+
+#: src/integrations/admin/crawl-settings-integration.php:133
+msgid "REST API links"
+msgstr "קישורי REST API"
+
+#: src/integrations/admin/crawl-settings-integration.php:132
+msgid "Shortlinks"
+msgstr "קישורים מקוצרים"
+
+#: src/integrations/admin/crawl-settings-integration.php:128
+msgid "Atom/RDF feeds"
+msgstr "פידים של Atom/RDF"
+
+#: src/integrations/admin/crawl-settings-integration.php:127
+msgid "Search results feeds"
+msgstr "פידים של תוצאות חיפוש"
+
+#: src/integrations/admin/crawl-settings-integration.php:126
+msgid "Custom taxonomy feeds"
+msgstr "פידים של טקסונומיות"
+
+#: src/integrations/admin/crawl-settings-integration.php:125
+msgid "Tag feeds"
+msgstr "פידים של תגיות"
+
+#: src/integrations/admin/crawl-settings-integration.php:124
+msgid "Category feeds"
+msgstr "פידים של קטגוריות"
+
+#: src/integrations/admin/crawl-settings-integration.php:123
+msgid "Post type feeds"
+msgstr "פידים של סוגי תוכן"
+
+#: src/integrations/admin/crawl-settings-integration.php:122
+msgid "Post authors feeds"
+msgstr "פידים של מחברים"
+
+#: src/integrations/admin/crawl-settings-integration.php:120
+msgid "Global comment feeds"
+msgstr "פידים גלובליים של תגובות"
+
+#: src/integrations/admin/crawl-settings-integration.php:119
+msgid "Global feed"
+msgstr "פידים גלובליים"
+
+#: src/integrations/admin/crawl-settings-integration.php:121
+msgid "Post comments feeds"
+msgstr "פידים של תגובות פוסט"
+
+#: admin/views/redirects.php:188
+msgid "No items found."
+msgstr "לא נמצאו פריטים."
+
+#: admin/views/redirects.php:137
+msgid "All redirect types"
+msgstr "כל סוגי ההפניות"
+
+#: admin/views/redirects.php:122
+msgid "Add Redirect"
+msgstr "הוסף הפניה"
+
+#: admin/views/redirects.php:100 admin/views/redirects.php:165
+#: admin/views/redirects.php:212
+msgid "Old URL"
+msgstr "כתובת אתר ישנה"
+
+#: admin/views/redirects.php:59 admin/views/redirects.php:155
+#: admin/views/redirects.php:203
+msgid "Type"
+msgstr "סוג"
+
+#: admin/views/redirects.php:50
+msgid "Plain redirects"
+msgstr "הפניות פשוטות"
+
+#: admin/views/redirects.php:37
+msgid "Regex Redirects"
+msgstr "הפניות Regex"
+
+#: admin/pages/network.php:25 admin/views/tabs/network/crawl-settings.php:19
+msgid "Crawl settings"
+msgstr "הגדרות סריקה"
+
+#: src/services/health-check/page-comments-check.php:47
+msgid "Page comments"
+msgstr "הערות הדף"
+
+#: src/services/health-check/links-table-check.php:47
+msgid "Links table"
+msgstr "טבלת קישורים"
+
+#: src/integrations/admin/import-integration.php:215
+msgid "If you have never saved any AIOSEO 'Search Appearance' settings, please do that first and run the import again."
+msgstr ""
+"אם לא שמרת שום הגדרת 'תצוגת חיפוש' של  AIOSEO\n"
+"אנא עשה זאת תחילה ואז הרץ את הייבוא שנית."
+
+#: src/integrations/admin/import-integration.php:212
+msgid "The AIOSEO import was cancelled because some AIOSEO data is missing. Please try and take the following steps to fix this:"
+msgstr "ייבוא ה- AIOSEO בוטל עקב נתונים חסרים. אנא בצע את הצעדים הבאים כדי לתקן זאת:"
+
+#: src/exceptions/importing/aioseo-validation-exception.php:17
+msgid "The validation of the AIOSEO data structure has failed."
+msgstr "אימות מבנה הנתונים של ה AIOSEO נכשל."
+
+#: src/integrations/third-party/wordproof-integration-toggle.php:135
+msgid "The WordProof Timestamp plugin needs to be disabled before you can activate this integration."
+msgstr "יש להשבית את התוסף WordProof Timestamp לפני שניתן יהיה להפעיל את ההרחבה הזו."
+
+#. translators: %s expands to Wincher
+#. translators: %s expands to WordProof
+#: src/integrations/third-party/wincher.php:121
+#: src/integrations/third-party/wordproof-integration-toggle.php:129
+#: src/integrations/third-party/wordproof-integration-toggle.php:151
+msgid "Currently, the %s integration is not available for multisites."
+msgstr "נכון לעכשיו, הרחבת %s אינה זמינה עבור רשתות אתרים."
+
+#. translators: %s expands to WordProof
+#: src/integrations/third-party/wordproof-integration-toggle.php:81
+msgid "%1$s can be used to timestamp your privacy page."
+msgstr "ניתן להשתמש ב-%1$s כדי להחתים את דף הפרטיות שלך."
+
+#: src/config/wordproof-translations.php:79
+#: vendor_prefixed/wordproof/wordpress-sdk/app/Translations/DefaultTranslations.php:47
+#: vendor_prefixed/wordproof/wordpress-sdk/build/wordproof-block-editor.js:1
+#: vendor_prefixed/wordproof/wordpress-sdk/build/wordproof-classic-editor.js:1
+msgid "Open settings"
+msgstr "פתח הגדרות"
+
+#: src/config/wordproof-translations.php:70
+#: vendor_prefixed/wordproof/wordpress-sdk/build/wordproof-block-editor.js:1
+#: vendor_prefixed/wordproof/wordpress-sdk/build/wordproof-classic-editor.js:1
+msgid "Open authentication"
+msgstr "פתח אימות"
+
+#: src/integrations/admin/import-integration.php:234
+msgid "Cleanup failed with the following error:"
+msgstr "הניקוי נכשל עם הודעת השגיאה הבאה:"
+
+#: src/integrations/admin/import-integration.php:118
+msgid "Note: These settings will overwrite the default settings of Yoast SEO."
+msgstr "הערה: הגדרות אלו יחליפו את הגדרות ברירת המחדל של Yoast SEO."
+
+#: src/integrations/admin/import-integration.php:114
+#: src/integrations/admin/import-integration.php:124
+msgid "Note: This metadata will only be imported if there is no existing Yoast SEO metadata yet."
+msgstr "הערה: נתוני המטא האלה ייובאו רק אם אין עדיין נתוני מטא קיימים ב- Yoast SEO."
+
+#: src/integrations/admin/import-integration.php:113
+#: src/integrations/admin/import-integration.php:123
+msgid "Post metadata (SEO titles, descriptions, etc.)"
+msgstr "מטא נתונים של פוסטים (כותרות SEO, תיאורים וכו')"
+
+#. translators: %s: expands to the name of the plugin that is selected to be
+#. imported
+#: src/integrations/admin/import-integration.php:109
+msgid "The import from %s includes:"
+msgstr "הייבוא מ-%s כולל:"
+
+#: src/integrations/admin/import-integration.php:107
+msgid "Once you're certain that your site is working properly with the imported data from another SEO plugin, you can clean up all the original data from that plugin."
+msgstr "ברגע שאתה בטוח שהאתר פועל כראוי עם הנתונים המיובאים מתוסף SEO אחר, ניתן לנקות את כל הנתונים המקוריים מאותו התוסף."
+
+#: src/integrations/admin/import-integration.php:106
+msgid "Please select an SEO plugin below to see what data can be imported."
+msgstr "אנא בחר תוסף SEO להלן כדי לראות אילו נתונים ניתן לייבא."
+
+#: src/integrations/admin/import-integration.php:105
+msgid "Clean up"
+msgstr "לנקות"
+
+#: src/integrations/admin/import-integration.php:97
+msgid "After you've imported data from another SEO plugin, please make sure to clean up all the original data from that plugin. (step 5)"
+msgstr "לאחר ייבוא נתונים מתוסף SEO אחר, נא להקפיד לנקות את כל הנתונים המקוריים מאותו תוסף. (שלב 5)"
+
+#: src/integrations/admin/import-integration.php:96
+msgid "Note: "
+msgstr "הערה:"
+
+#: src/integrations/admin/import-integration.php:95
+msgid "The cleanup can take a long time depending on your site's size."
+msgstr "הניקוי עשוי להימשך זמן רב בהתאם לגודל האתר שלך."
+
+#: src/services/health-check/default-tagline-check.php:47
+msgid "Default tagline"
+msgstr "שורת תיוג ברירת מחדל"
+
+#: src/integrations/admin/import-integration.php:236
+msgid "Import failed with the following error:"
+msgstr "הייבוא נכשל עם השגיאה הבאה:"
+
+#: src/integrations/admin/import-integration.php:99
+msgid "No data found from other SEO plugins."
+msgstr "לא נמצאו נתונים מתוספי SEO אחרים."
+
+#: src/integrations/admin/import-integration.php:98
+msgid "Select SEO plugin"
+msgstr "בחר תוסף SEO"
+
+#: src/integrations/admin/import-integration.php:94
+msgid "The import can take a long time depending on your site's size."
+msgstr "היבוא יכול לקחת זמן ארוך תלוי בגודל האתר שלך"
+
+#: src/integrations/admin/installation-success-integration.php:104
+msgid "Installation Successful"
+msgstr "התקנה הושלמה בהצלחה"
+
+#: src/config/schema-types.php:131
+msgid "Blog Post"
+msgstr "פוסט בבלוג"
+
+#. translators: %s: 'Wincher'
+#: src/integrations/third-party/wincher.php:72
+msgid "The %s integration offers the option to track specific keyphrases and gain insights in their positions."
+msgstr "הרחבת %s מציעה אפשרות מעקב אחרי ביטויי מפתח ספציפיים והשגת תובנות לגבי המיקום שלהם."
+
+#. translators: %s: expands to 'Yoast SEO Premium'.
+#. translators: 1: Yoast WooCommerce SEO
+#: src/integrations/admin/workouts-integration.php:311
+#: js/dist/integrations-page.js:25
+msgid "Activate %s"
+msgstr "הפעל את %s"
+
+#. translators: %s: expands to 'Yoast SEO Premium'.
+#: src/integrations/admin/workouts-integration.php:305
+msgid "Update %s"
+msgstr "עדכן את %s"
+
+#. translators: %s: expands to 'Yoast SEO Premium'.
+#: src/integrations/admin/workouts-integration.php:298
+msgid "Renew %s"
+msgstr "חדש את %s"
+
+#: src/integrations/admin/workouts-integration.php:239
+msgid "Get help activating your subscription"
+msgstr "קבל עזרה בהפעלת המנוי שלך"
+
+#. translators: 1: expands to 'Yoast SEO Premium', 2: Link start tag to the
+#. page to update Premium, 3: Link closing tag.
+#: src/integrations/admin/workouts-integration.php:233
+msgid "It looks like you’re running an outdated and unactivated version of %1$s, please activate your subscription in %2$sMyYoast%3$s and update to the latest version (at least 17.7) to gain access to our updated workouts section."
+msgstr "נראה שאתה מפעיל גרסה מיושנת שאיננה מופעלת של %1$s, אנא הפעל את המנוי שלך ב-%2$sMyYoast%3$s ועדכן לגרסה העדכנית ביותר (לפחות 17.7) כדי לקבל גישה למדור האימונים המעודכן שלנו ."
+
+#. translators: %s: expands to 'Yoast SEO Premium'.
+#: src/integrations/admin/workouts-integration.php:229
+msgid "Activate your subscription of %s"
+msgstr "הפעל את מנוי הפרו עבור-  %s"
+
+#. translators: 1: expands to 'Yoast SEO Premium', 2: Link start tag to the
+#. page to update Premium, 3: Link closing tag.
+#: src/integrations/admin/workouts-integration.php:220
+msgid "It looks like you're running an outdated version of %1$s, please %2$supdate to the latest version (at least 17.7)%3$s to gain access to our updated workouts section."
+msgstr "נראה שאתה מפעיל גרסה מיושנת של %1$s, אנא %2$s עדכן לגרסה העדכנית ביותר (לפחות 17.7) %3$s כדי לקבל גישה למדור האימונים המעודכן שלנו."
+
+#. translators: %s: expands to 'Yoast SEO Premium'.
+#: src/integrations/admin/workouts-integration.php:217
+msgid "Update to the latest version of %s"
+msgstr "עדכן לגרסה העדכנית ביותר של %s"
+
+#: src/integrations/admin/workouts-integration.php:209
+msgid "Renew your subscription"
+msgstr "חדש את המנוי שלך"
+
+#. translators: %s: expands to 'Yoast SEO Premium'.
+#: src/integrations/admin/workouts-integration.php:202
+msgid "Accessing the latest workouts requires an updated version of %s (at least 17.7), but it looks like your subscription has expired. Please renew your subscription to update and gain access to all the latest features."
+msgstr "גישה לאימונים האחרונים דורשת גרסה מעודכנת של %s (לפחות 17.7), אבל נראה שהמינוי שלך פג וכבר לא בתוקף. אנא חדש את המנוי שלך על מנת לעדכן את התוסף ולקבל גישה לכל התכונות העדכניות ביותר."
+
+#. translators: %s: expands to 'Yoast SEO Premium'.
+#: src/integrations/admin/workouts-integration.php:199
+msgid "Renew your subscription of %s"
+msgstr "עדכן את המנוי של %s"
+
+#. translators: 1: Link start tag to the first-time configuration, 2: Yoast
+#. SEO, 3: Link closing tag.
+#: src/integrations/admin/first-time-configuration-notice-integration.php:110
+msgid "Get started quickly with the %1$s%2$s First-time configuration%3$s and configure Yoast SEO with the optimal SEO settings for your site!"
+msgstr "התחלת עבודה מהירה באמצעות הגדרת %1$s%2$s אימון התצורה%3$s והגדר את Yoast SEO להגדרות ה-SEO האופטימליות עבור האתר שלך!"
+
+#: inc/class-wpseo-replace-vars.php:1498
+msgid "Current or first category title"
+msgstr "כותרת קטגוריה נוכחית או ראשונה"
+
+#: inc/class-wpseo-replace-vars.php:1498
+msgid "Category Title"
+msgstr "כותרת הקטגוריה"
+
+#: inc/class-wpseo-replace-vars.php:1497
+msgid "Replaced with the post content"
+msgstr "החלף עם התוכן של הפוסט"
+
+#: inc/class-wpseo-replace-vars.php:1497
+msgid "Post Content"
+msgstr "תוכן הפוסט"
+
+#: inc/class-wpseo-replace-vars.php:1496
+msgid "Replaced with the permalink"
+msgstr "החלף עם היפר קישור"
+
+#: inc/class-wpseo-replace-vars.php:1495
+msgid "Replaced with the last name of the author"
+msgstr "החלף עם שם המשפחה של הסופר"
+
+#: inc/class-wpseo-replace-vars.php:1495
+msgid "Author last name"
+msgstr "שם משפחה של הסופר"
+
+#: inc/class-wpseo-replace-vars.php:1494
+msgid "Replaced with the first name of the author"
+msgstr "החלף שם פרטי של הסופר"
+
+#: inc/class-wpseo-replace-vars.php:1494
+msgid "Author first name"
+msgstr "שם פרטי של הסופר"
+
+#: inc/class-wpseo-replace-vars.php:1493
+msgid "Replaced with the day the post was published"
+msgstr "החלף יום פרסום הפוסט"
+
+#: inc/class-wpseo-replace-vars.php:1493
+msgid "Post day"
+msgstr "תאריך הפוסט"
+
+#: inc/class-wpseo-replace-vars.php:1492
+msgid "Replaced with the month the post was published"
+msgstr "החלף חודש פירסום הפוסט"
+
+#: inc/class-wpseo-replace-vars.php:1492
+msgid "Post month"
+msgstr "חודש הפוסט"
+
+#: inc/class-wpseo-replace-vars.php:1491
+msgid "Replaced with the year the post was published"
+msgstr "החלף שנת פירסום הפוסט"
+
+#: inc/class-wpseo-replace-vars.php:1491
+msgid "Post year"
+msgstr "שנת הפוסט"
+
+#: inc/class-wpseo-replace-vars.php:1490
+msgid "Current day"
+msgstr "יום נוכחי"
+
+#: inc/class-wpseo-replace-vars.php:1489
+msgid "Current month"
+msgstr "חודש נוכחי"
+
+#: inc/class-wpseo-replace-vars.php:1487
+msgid "Current date"
+msgstr "תאריך נוכחי"
+
+#: src/integrations/admin/workouts-integration.php:93
+msgid "Workouts"
+msgstr "תרגולים"
+
+#. translators: %s: Algolia.
+#: admin/views/class-yoast-integration-toggles.php:83
+msgid "Find out more about our %s integration."
+msgstr "מידע נוסף על הרחבת %s שלנו."
+
+#: admin/views/class-yoast-feature-toggles.php:125 js/dist/new-settings.js:35
+#: js/dist/new-settings.js:297
+msgid "Link suggestions"
+msgstr "הצעות לקישורים"
+
+#: admin/views/class-yoast-feature-toggles.php:116 js/dist/block-editor.js:512
+#: js/dist/block-editor.js:544 js/dist/classic-editor.js:502
+#: js/dist/elementor.js:539 js/dist/new-settings.js:35
+#: js/dist/new-settings.js:297
+msgid "Insights"
+msgstr "תובנות"
+
+#: admin/views/redirects.php:22
+#: src/deprecated/src/integrations/admin/social-templates-integration.php:280
+#: js/dist/elementor.js:93 js/dist/integrations-page.js:7
+#: js/dist/integrations-page.js:13 js/dist/integrations-page.js:41
+#: js/dist/introductions.js:9 js/dist/new-settings.js:9 js/dist/post-edit.js:9
+#: js/dist/support.js:29
+msgid "Unlock with Premium"
+msgstr "פתח נעילה עם פרימיום"
+
+#: src/deprecated/src/integrations/admin/social-templates-integration.php:255
+#: js/dist/new-settings.js:31 js/dist/new-settings.js:35
+#: js/dist/new-settings.js:39 js/dist/new-settings.js:66
+#: js/dist/new-settings.js:75 js/dist/new-settings.js:105
+#: js/dist/new-settings.js:127 js/dist/new-settings.js:188
+#: js/dist/new-settings.js:204 js/dist/new-settings.js:211
+msgid "Social description"
+msgstr "תיאור חברתי"
+
+#: src/deprecated/src/integrations/admin/social-templates-integration.php:254
+#: js/dist/new-settings.js:31 js/dist/new-settings.js:35
+#: js/dist/new-settings.js:39 js/dist/new-settings.js:66
+#: js/dist/new-settings.js:75 js/dist/new-settings.js:105
+#: js/dist/new-settings.js:127 js/dist/new-settings.js:188
+#: js/dist/new-settings.js:204 js/dist/new-settings.js:211
+msgid "Social title"
+msgstr "כותרת לקישורים חברתיים"
+
+#: src/presenters/admin/badge-presenter.php:80
+#: src/presenters/admin/badge-presenter.php:87
+#: js/dist/externals/componentsNew.js:138 js/dist/integrations-page.js:5
+#: js/dist/integrations-page.js:11 js/dist/integrations-page.js:39
+#: js/dist/new-settings.js:313
+msgid "New"
+msgstr "חדש"
+
+#: src/exceptions/indexable/post-not-found-exception.php:16
+msgid "The post could not be found."
+msgstr "לא ניתן למצוא את הפוסט."
+
+#. translators: %s is the reason given by WordPress.
+#: src/exceptions/indexable/invalid-term-exception.php:21
+msgid "The term is considered invalid. The following reason was given by WordPress: %s"
+msgstr "המונח נחשב כפסול. סיבה של וורדפרס לכך היא: %s"
+
+#: src/exceptions/indexable/term-not-found-exception.php:16
+msgid "The term could not be found."
+msgstr "לא ניתן למצוא את המונח."
+
+#: admin/class-yoast-form.php:1049 js/dist/first-time-configuration.js:15
+msgid "This feature has been disabled since subsites never send tracking data."
+msgstr "תכונה זו הושבתה מכיוון שאתרי משנה לעולם לא שולחים נתוני מעקב."
+
+#. translators: %1$s expands to an opening anchor tag, %2$s expands to an
+#. closing anchor tag.
+#: src/integrations/third-party/wpml-wpseo-notification.php:110
+msgid "We notice that you have installed WPML. To make sure your canonical URLs are set correctly, %1$sinstall and activate the Yoast SEO Multilingual add-on%2$s as well!"
+msgstr "שמנו לב שהתקנת WPML. כדי לוודא שכתובות האתרים הקנוניות מוגדרות כהלכה, %1$sיש להתקין ולהפעיל גם את ההרחבה Yoast SEO Multilingual%2$s!"
+
+#: src/presenters/admin/indexing-notification-presenter.php:81
+msgid "Because of a change in your category base setting, some of your SEO data needs to be reprocessed."
+msgstr "בגלל שינוי במבנה הקישורים של הקטגוריות, צריך לעבד מחדש חלק מנתוני ה-SEO."
+
+#: admin/views/class-yoast-feature-toggles.php:190
+msgid "Find out how a rich snippet can improve visibility and click-through-rate."
+msgstr "גלו כיצד קטע טקסט עשיר יכול לשפר את הנראות ושיעור ההקלקות."
+
+#: admin/views/class-yoast-feature-toggles.php:189 js/dist/new-settings.js:297
+msgid "This adds an author byline and reading time estimate to the article’s snippet when shared on Slack."
+msgstr "זה מוסיף את שם המחבר ואומדן זמן קריאה כאשר המאמר משותף בסלאק."
+
+#: admin/views/class-yoast-feature-toggles.php:187
+msgid "Enhanced Slack sharing"
+msgstr "שיתוף סלאק משופר"
+
+#. translators: 1: Expands to Yoast SEO
+#: src/presenters/admin/indexing-notification-presenter.php:129
+msgid "Wait for a week or so, until %1$s automatically processes most of your content in the background."
+msgstr "המתן כשבוע עד ש-%1$s יעבד אוטומטית את רוב התוכן ברקע."
+
+#. translators: %s expands to the reading time number, in minutes
+#: src/presenters/slack/enhanced-data-presenter.php:55
+msgid "%s minute"
+msgid_plural "%s minutes"
+msgstr[0] "דקה %s"
+msgstr[1] "%s דקות"
+
+#. translators: %s expands to the reading time number, in minutes
+#: src/presenters/slack/enhanced-data-presenter.php:55
+msgid "Est. reading time"
+msgstr "זמן קריאה מוערך"
+
+#: src/presenters/slack/enhanced-data-presenter.php:50
+msgid "Written by"
+msgstr "נכתב על יד"
+
+#: inc/class-wpseo-admin-bar-menu.php:440
+msgid "Google Rich Results Test"
+msgstr "בדיקת תוצאות עשירות בגוגל"
+
+#: src/presenters/admin/indexing-notification-presenter.php:84
+msgid "Because of a change in your tag base setting, some of your SEO data needs to be reprocessed."
+msgstr "בגלל שינוי שנעשה במבנה קישורי התגיות, יש לעבד מחדש חלק מנתוני ה- SEO שלך. "
+
+#. translators: %s: 'Semrush'
+#: admin/views/class-yoast-integration-toggles.php:71
+msgid "The %s integration offers suggestions and insights for keywords related to the entered focus keyphrase."
+msgstr "הרחבת %s מציעה הצעות ותובנות עבור מילות מפתח הקשורות לביטוי המיקוד שהוזן."
+
+#. translators: %1$s expands to Yoast SEO
+#: admin/views/tabs/network/integrations.php:27
+msgid "This tab allows you to selectively disable %1$s integrations with third-party products for all sites in the network. By default all integrations are enabled, which allows site admins to choose for themselves if they want to toggle an integration on or off for their site. When you disable an integration here, site admins will not be able to use that integration at all."
+msgstr "כרטיסייה זו מאפשרת להשבית באופן סלקטיבי הרחבות של %1$s עם צדדים שלישיים עבור כל האתרים ברשת. כברירת מחדל כל ההרחבות מופעלות, מה שמאפשר למנהלי האתרים לבחור בעצמם אם הם רוצים להפעיל או לכבות הרחבה מסויימת לאתר שלהם. כאשר הרחבה מסויימת מושבתת כאן, מנהלי האתרים כלל לא יוכלו להשתמש בהרחבה זו."
+
+#: admin/class-admin.php:260
+msgid "Activate your subscription"
+msgstr "הפעל את המנוי שלך"
+
+#: src/presenters/admin/indexing-error-presenter.php:64
+msgid "Oops, something has gone wrong and we couldn't complete the optimization of your SEO data. Please click the button again to re-start the process. "
+msgstr "אופס, משהו השתבש ולא יכולנו להשלים את האופטימיזציה של הנתונים שלך. לחץ על הכפתור כדי להתחיל את התהליך מחדש."
+
+#: src/integrations/watchers/indexable-homeurl-watcher.php:97
+msgid "All permalinks were successfully reset"
+msgstr "כל מבני הקישורים אופסו בהצלחה"
+
+#: src/presenters/admin/indexing-notification-presenter.php:96
+msgid "You can speed up your site and get insight into your internal linking structure by letting us perform a few optimizations to the way SEO data is stored. "
+msgstr "ניתן להאיץ את האתר ולקבל תובנות על מבנה הקישור הפנימי על ידי מתן אישור לביצוע מספר אופטימיזציות לאופן שמירת נתוני ה-SEO."
+
+#: src/presenters/admin/indexing-notification-presenter.php:59
+#: js/dist/first-time-configuration.js:6 js/dist/indexation.js:8
+msgid "Start SEO data optimization"
+msgstr "התחל אופטימיזציית נתונים"
+
+#: src/presenters/admin/indexing-list-item-presenter.php:42
+msgid "Learn more about the benefits of optimized SEO data."
+msgstr "למד עוד על הייתרונות באופטימזציית הנתונים."
+
+#: src/presenters/admin/indexing-list-item-presenter.php:40
+msgid "You can speed up your site and get insight into your internal linking structure by letting us perform a few optimizations to the way SEO data is stored. If you have a lot of content it might take a while, but trust us, it's worth it."
+msgstr "ניתן להאיץ את האתר ולקבל תובנות על מבנה הקישור הפנימי על ידי מתן אישור לביצוע מספר אופטימיזציות לאופן שמירת נתוני ה-SEO. אם יש באתר הרבה תוכן הדבר עלול לקחת זמן, אך סמך עלינו, זה שווה את זה."
+
+#: src/presenters/admin/indexing-list-item-presenter.php:37
+msgid "Optimize SEO Data"
+msgstr "אופטימיזציה לנתוני SEO"
+
+#: src/presenters/admin/indexing-error-presenter.php:71
+#: src/presenters/admin/indexing-failed-notification-presenter.php:71
+msgid "If the problem persists, please contact support."
+msgstr "אם הבעיה נמשכת,  ליצור קשר עם התמיכה."
+
+#. Translators: %1$s expands to an opening anchor tag for a link leading to the
+#. Yoast SEO tools page, %2$s expands to a closing anchor tag.
+#: src/presenters/admin/indexing-failed-notification-presenter.php:59
+msgid "Something has gone wrong and we couldn't complete the optimization of your SEO data. Please %1$sre-start the process%2$s."
+msgstr "משהו השתבש ולא הצלחנו להשלים את האופטימיזציה לנתוני SEO. נא %1$s להתחיל שוב את התהליך %2$s."
+
+#. translators: %s expands to a mailto support link.
+#: inc/class-addon-manager.php:868
+msgid "If you still need support and have an active subscription for this product, please email %s."
+msgstr "אם אתה עדיין זקוק לתמיכה ויש לך מנוי פעיל למוצר זה, אפשר לשלוח אימייל אל %s."
+
+#. translators: 1: expands to <a> that refers to the help page, 2: </a> closing
+#. tag.
+#: inc/class-addon-manager.php:865
+msgid "You can probably find an answer to your question in our %1$shelp center%2$s."
+msgstr "כנראה שתמצא תשובה לשאלתך ב%1$sמרכז העזרה%2$s."
+
+#: inc/class-addon-manager.php:862
+msgid "Need support?"
+msgstr "צריך תמיכה?"
+
+#. translators: %1$s: expands to an opening anchor tag, %2$s: expands to a
+#. closing anchor tag
+#: admin/views/class-yoast-feature-toggles.php:241
+msgid "Disabling Yoast SEO's XML sitemaps will not disable WordPress' core sitemaps. In some cases, this %1$s may result in SEO errors on your site%2$s. These may be reported in Google Search Console and other tools."
+msgstr "כיבוי מפות האתר ​​של Yoast SEO לא תשבית את מפות האתר של וורדפרס. במקרים מסוימים, %1$s עלול לגרום לשגיאות SEO באתר %2$s. ניתן לדווח עליהם ב- Google Search Console ובכלים אחרים."
+
+#. translators: 1: Yoast SEO, 2: translated version of "Off"
+#: admin/views/class-yoast-feature-toggles.php:158
+msgid "The advanced section of the %1$s meta box allows a user to remove posts from the search results or change the canonical. The settings in the schema tab allows a user to change schema meta data for a post. These are things you might not want any author to do. That's why, by default, only editors and administrators can do this. Setting to \"%2$s\" allows all users to change these settings."
+msgstr "בהגדרות המתקדמות בתיבת המטא %1$s יכול למשתמש להסיר פוסטים מתוצאות החיפוש או לשנות את הכתובת הקנונית. ההגדרות בלשונית הסכימה מאפשרות למשתמש לשנות מטא נתונים של סכימות עבור פוסט. סביר להניח שלא תרצו שאף מחבר יוכל לשנות את ההגדרות, ולכן, כברירת מחדל, רק עורכים ומנהלי יכולים לעשות זאת. על מנת לאפשר לכל המשתמשים לשנות את הגדרות מטא הנתונים יש להגדיר \"%2$s\" "
+
+#: admin/views/class-yoast-feature-toggles.php:154
+msgid "Security: no advanced or schema settings for authors"
+msgstr "אבטחה: אין הגדרות מתקדמות או סכימה עבור מחברים"
+
+#: src/config/schema-types.php:159
+msgid "Report"
+msgstr "דוח"
+
+#: src/config/schema-types.php:155
+msgid "Tech Article"
+msgstr "מאמר טכנולוגי"
+
+#: src/config/schema-types.php:151
+msgid "Scholarly Article"
+msgstr "מאמר אקדמי"
+
+#: src/config/schema-types.php:147
+msgid "Satirical Article"
+msgstr "מאמר סאטירי"
+
+#: src/config/schema-types.php:143
+msgid "Advertiser Content Article"
+msgstr "מאמר עם תוכן שיווקי"
+
+#: src/config/schema-types.php:139
+msgid "News Article"
+msgstr "מאמר חדשותי"
+
+#: src/config/schema-types.php:135
+msgid "Social Media Posting"
+msgstr "פרסום ברשתות חברתיות"
+
+#: src/config/schema-types.php:127
+msgid "Article"
+msgstr "מאמר"
+
+#: src/config/schema-types.php:104
+msgid "Search Results Page"
+msgstr "עמוד תוצאות חיפוש"
+
+#: src/config/schema-types.php:100
+msgid "Real Estate Listing"
+msgstr "רישומי נדל\"ן"
+
+#: src/config/schema-types.php:96
+msgid "Checkout Page"
+msgstr "עמוד תשלום"
+
+#: src/config/schema-types.php:92
+msgid "Collection Page"
+msgstr "עמוד אוסף"
+
+#: src/config/schema-types.php:88
+msgid "Medical Web Page"
+msgstr "עמוד רפואי"
+
+#: src/config/schema-types.php:84
+msgid "Contact Page"
+msgstr "עמוד יצירת קשר"
+
+#: src/config/schema-types.php:80
+msgid "Profile Page"
+msgstr "עמוד פרופיל"
+
+#: src/config/schema-types.php:76
+msgid "QA Page"
+msgstr "עמוד שאלות תשובות"
+
+#: src/config/schema-types.php:72
+msgid "FAQ Page"
+msgstr "עמוד שאלות נפוצות"
+
+#: src/config/schema-types.php:68
+msgid "About Page"
+msgstr "עמוד אודות"
+
+#: src/config/schema-types.php:64
+msgid "Item Page"
+msgstr "עמוד פריט"
+
+#: src/config/schema-types.php:60
+msgid "Web Page"
+msgstr "עמוד אינטרנט"
+
+#. translators: 1: Yoast SEO
+#: admin/views/class-yoast-feature-toggles.php:170
+msgid "Allow us to track some data about your site to improve our plugin."
+msgstr "אפשר לנו לעקוב אחר נתונים באתר שלך כדי לשפר את התוסף שלנו."
+
+#: admin/views/class-yoast-feature-toggles.php:165
+#: admin/views/class-yoast-feature-toggles.php:166 js/dist/new-settings.js:35
+#: js/dist/new-settings.js:291
+msgid "Usage tracking"
+msgstr "מעקב שימוש"
+
+#: src/presenters/admin/indexing-notification-presenter.php:75
+msgid "Because of a change in your permalink structure, some of your SEO data needs to be reprocessed."
+msgstr "בגלל שינוי במבנה הקישורים באתר, צריך לעבד מחדש חלק מנתוני ה-SEO."
+
+#: src/presenters/admin/indexing-notification-presenter.php:78
+msgid "Because of a change in your home URL setting, some of your SEO data needs to be reprocessed."
+msgstr "בגלל שינוי במבנה הקישורים של העמוד הראשי, צריך לעבד מחדש חלק מנתוני ה-SEO."
+
+#. translators: %1$s expands to Yoast.
+#: src/integrations/blocks/block-categories.php:45
+msgid "%1$s Internal Linking Blocks"
+msgstr "בלוק קישור פנימיים של %1$s"
+
+#. translators: 1: Link to the Yoast help center, 2: Link closing tag.
+#: src/services/health-check/links-table-reports.php:100
+msgid "%1$sFind out how to solve this problem on our help center%2$s."
+msgstr "%1$sגלה כיצד לפתור בעיה זו במרכז העזרה שלנו%2$s."
+
+#: src/services/health-check/links-table-reports.php:58
+msgid "The text link counter feature is not working as expected"
+msgstr "מונה הקישורים אינו פועל כמצופה"
+
+#. translators: 1: Link to the Yoast SEO blog, 2: Link closing tag.
+#: src/services/health-check/links-table-reports.php:73
+msgid "The text link counter helps you improve your site structure. %1$sFind out how the text link counter can enhance your SEO%2$s."
+msgstr "מונה קישור עוזר לשפר את מבנה האתר. %1$s גלו כיצד מונה הקישורים יכול לשפר את ה-SEO%2$s."
+
+#: src/services/health-check/links-table-reports.php:45
+msgid "The text link counter is working as expected"
+msgstr "מונה הקישור פועל כמצופה"
+
+#. translators: %1$s: Link to article about text links, %2$s: Anchor closing
+#. tag, %3$s: Emphasis open tag, %4$s: Emphasis close tag
+#: admin/class-yoast-columns.php:48
+msgid "The links columns show the number of articles on this site linking %3$sto%4$s this article and the number of URLs linked %3$sfrom%4$s this article. Learn more about %1$show to use these features to improve your internal linking%2$s, which greatly enhances your SEO."
+msgstr "עמודות הקישורים מציגות את מספר המאמרים באתר זה המקשרים %3$sאל%4$s המאמר הזה ומספר הקישורים המקושרים %3$sמתוך%4$s המאמר הזה. למידע נוסף על %1$sהצגת שימוש בתכונות אלה לשיפור הקישורים הפנימיים%2$s, מה שמשפר מאוד את ה-SEO."
+
+#. translators: %1$s: Link to article about content analysis, %2$s: Anchor
+#. closing
+#: admin/class-yoast-columns.php:39
+msgid "We've written an article about %1$show to use the SEO score and Readability score%2$s."
+msgstr "כתבנו מאמר על %1$s איך להשתמש בציון SEO וציון קריאות %2$s."
+
+#. translators: %1$s: Yoast SEO
+#: admin/class-yoast-columns.php:32
+msgid "%1$s adds several columns to this page."
+msgstr "%1$s מוסיף מספר עמודות לעמוד הזה."
+
+#: src/presenters/admin/search-engines-discouraged-presenter.php:41
+msgid "I don't want this site to show in the search results."
+msgstr "אני לא רוצה שהאתר יופיע בתוצאות חיפוש."
+
+#. translators: 1: Link start tag to the WordPress Reading Settings page, 2:
+#. Link closing tag.
+#: src/presenters/admin/search-engines-discouraged-presenter.php:36
+msgid "If you want search engines to show this site in their results, you must %1$sgo to your Reading Settings%2$s and uncheck the box for Search Engine Visibility."
+msgstr "אם ברצונך לאפשר למנועי חיפוש להציג אתר זה בתוצאותיהם, יש %1$sלעבור להגדרות הקריאה%2$s ולבטל את הסימון בתיבה הנראות במנוע חיפוש."
+
+#: src/presenters/admin/migration-error-presenter.php:59
+msgid "Show debug information"
+msgstr "הצג מידע לניפוי תקלות"
+
+#. translators: %s: Yoast SEO.
+#: src/presenters/admin/migration-error-presenter.php:53
+msgid "Your site will continue to work normally, but won't take full advantage of %s."
+msgstr "האתר ימשיך לעבוד כרגיל, אך לא ינצל את מלוא היתרונות של %s."
+
+#. translators: %s: Yoast SEO.
+#: src/presenters/admin/migration-error-presenter.php:42
+msgid "%s had problems creating the database tables needed to speed up your site."
+msgstr "%s נתקל בבעיות ביצירת טבלאות במסד הנתונים הדרושות על מנת להאיץ את האתר."
+
+#: src/presenters/admin/indexing-notification-presenter.php:117
+msgid "We estimate this will take less than a minute."
+msgstr "אנו מעריכים שזה יארך פחות מדקה."
+
+#: src/presenters/admin/indexing-notification-presenter.php:121
+msgid "We estimate this will take a couple of minutes."
+msgstr "אנו מעריכים שזה יארך מספר דקות."
+
+#. translators: 1: Link to article about indexation command, 2: Anchor closing
+#. tag, 3: Link to WP CLI.
+#: src/presenters/admin/indexing-notification-presenter.php:136
+msgid "%1$sRun the indexation process on your server%2$s using %3$sWP CLI%2$s."
+msgstr "%1$s הפעל את תהליך האינדוקס בשרת %2$s באמצעות %3$sWP CLI%2$s"
+
+#: src/presenters/admin/indexing-notification-presenter.php:124
+msgid "We estimate this could take a long time, due to the size of your site. As an alternative to waiting, you could:"
+msgstr "אנו מעריכים שבגלל גודל האתר, הדבר עשוי לארוך זמן רב. כחלופה להמתנה, ניתן:"
+
+#. translators: %1$s: link to help article about solving table issue. %2$s: is
+#. anchor closing.
+#: src/presenters/admin/migration-error-presenter.php:47
+msgid "Please read %1$sthis help article%2$s to find out how to resolve this problem."
+msgstr "מומלץ לקרוא %1$s מאמר העזרה זה %2$s כדי לברר כיצד לפתור בעיה זו."
+
+#: inc/class-wpseo-replace-vars.php:1485
+msgid "Replaced with the term ancestors hierarchy"
+msgstr "הוחלף במונח ההיררכיה של ההורה"
+
+#: inc/class-wpseo-replace-vars.php:1485
+msgid "Term hierarchy"
+msgstr "היררכיית מונחים"
+
+#. translators: 1: Yoast SEO
+#: admin/views/class-yoast-feature-toggles.php:181
+msgid "This %1$s REST API endpoint gives you all the metadata you need for a specific URL. This will make it very easy for headless WordPress sites to use %1$s for all their SEO meta output."
+msgstr "נקודת קצה של REST API עבור %1$s מציגות את כל נתוני המטא שצריך לכתובת ספציפית. הדבר יקל מאוד על אתרי וורדפרס להשתמש ב-%1$s עבור כל נתוני המטא SEO שלהם."
+
+#: admin/views/class-yoast-feature-toggles.php:177
+msgid "REST API: Head endpoint"
+msgstr "REST API: נקודת קצה ראשית"
+
+#. translators: 1: link open tag; 2: link close tag.
+#: src/services/health-check/default-tagline-reports.php:63
+msgid "%1$sYou can change the tagline in the customizer%2$s."
+msgstr "%1$sניתן לשנות את תיאור האתר במסך ההתאמה האישית%2$s."
+
+#: src/services/health-check/default-tagline-reports.php:45
+msgid "You still have the default WordPress tagline. Even an empty one is probably better."
+msgstr "האתר עדיין משתמש בתיאור אתר ברירת המחדל של וורדפרס. אפילו תיאור ריק כנראה יהיה עדיף."
+
+#: src/services/health-check/default-tagline-reports.php:43
+msgid "You should change the default WordPress tagline"
+msgstr "יש לשנות את תיאור האתר המוגדר כברירת המחדל על ידי וורדפרס"
+
+#: src/services/health-check/default-tagline-reports.php:32
+msgid "You are using a custom tagline or an empty one."
+msgstr "יש להשתמש בתיאור אתר מותאם או להשאירו ריק."
+
+#: src/services/health-check/default-tagline-reports.php:30
+msgid "You changed the default WordPress tagline"
+msgstr "שינית את תיאור ברירת המחדל של וורדפרס"
+
+#: src/services/health-check/page-comments-reports.php:32
+msgid "Comments on your posts are displayed on a single page. This is just like we'd suggest it. You're doing well!"
+msgstr "תגובות לפוסטים מוצגות בעמוד בודד. זה בדיוק כמו שאנחנו מציעים. אתה עושה עבודה טובה!"
+
+#. translators: %s expands to '/%postname%/'
+#: src/services/health-check/postname-permalink-reports.php:58
+msgid "It's highly recommended to have your postname in the URL of your posts and pages. Consider setting your permalink structure to %s."
+msgstr "מומלץ מאוד להכניס את כותרת הפוסט בכתובת ה-URL של הפוסט. יש לשקול להגדיר את מבנה הקישורים של האתר ל-%s."
+
+#: src/services/health-check/postname-permalink-reports.php:43
+msgid "You do not have your postname in the URL of your posts and pages"
+msgstr "שם הפוסט אינו מופיע בכתובת של הפוסטים והעמודים"
+
+#: src/services/health-check/postname-permalink-reports.php:32
+msgid "You do have your postname in the URL of your posts and pages."
+msgstr "שם הפוסט מופיע בכתובת של הפוסטים והעמודים"
+
+#: src/services/health-check/postname-permalink-reports.php:30
+msgid "Your permalink structure includes the post name"
+msgstr "מבנה הקישורים מכיל את שם הפוסט"
+
+#: src/services/health-check/page-comments-reports.php:45
+msgid "Comments on your posts break into multiple pages. As this is not needed in 999 out of 1000 cases, we recommend you disable it. To fix this, uncheck \"Break comments into pages...\" on the Discussion Settings page."
+msgstr "תגובות לפוסטים מחולקות למספר עמודים. מכיוון שהדבר לא נדרש ב-999 מתוך 1000 מקרים, אנו ממליצים להשבית אפשרות זו. כדי לתקן זאת, יש להסיר את הסימון של \"חלק תגובות לעמודים...\" בהגדרות הדיון."
+
+#: src/services/health-check/page-comments-reports.php:43
+msgid "Comments break into multiple pages"
+msgstr "הערות נחתכות למספר דפים"
+
+#: src/services/health-check/page-comments-reports.php:30
+msgid "Comments are displayed on a single page"
+msgstr "תגובות מוצגות בדף יחיד"
+
+#: src/helpers/post-helper.php:113
+msgid "No title"
+msgstr "ללא כותרת"
+
+#. translators: 1: Start of a paragraph beginning with the Yoast icon, 2:
+#. Expands to 'Yoast SEO', 3: Paragraph closing tag.
+#: src/services/health-check/report-builder.php:201
+msgid "%1$sThis was reported by the %2$s plugin%3$s"
+msgstr "%1$s דווח יל ידי התוסף %2$s %3$s"
+
+#. translators: 1: Opening tag of the link to the discussion settings page, 2:
+#. Link closing tag.
+#: src/services/health-check/page-comments-reports.php:58
+msgid "%1$sGo to the Discussion Settings page%2$s"
+msgstr "%1$sעבור אל הגדרות דיון%2$s"
+
+#: admin/metabox/class-metabox.php:190
+msgid "If you want to apply advanced <code>meta</code> robots settings for this page, please define them in the following field."
+msgstr "אם ברצונך להחיל הגדרות <code>meta</code> רובוטים מתקדמות עבור עמוד זה, יש להגדיר אותן בשדה הבא."
+
+#. translators: 1: Link start tag to the Firefox website, 2: Link start tag to
+#. the Chrome website, 3: Link start tag to the Edge website, 4: Link closing
+#. tag.
+#: admin/metabox/class-metabox.php:153 admin/taxonomy/class-taxonomy.php:108
+msgid "The browser you are currently using is unfortunately rather dated. Since we strive to give you the best experience possible, we no longer support this browser. Instead, please use %1$sFirefox%4$s, %2$sChrome%4$s or %3$sMicrosoft Edge%4$s."
+msgstr "למרבה הצער, הדפדפן בו אתה משתמש כרגע ישן למדי. מכיוון שאנו שואפים להעניק לך את החוויה הטובה ביותר האפשרית, איננו תומכים יותר בדפדפן זה. במקום זאת, אנא השתמש ב-%1$sפיירפוקס%2$s, %4$sכרום%4$s או %3$sמיקרוסופט אדג'%4$s."
+
+#. translators: %1$s expands to Yoast SEO academy
+#. translators: %1$s expands to "Yoast SEO academy".
+#: src/presenters/admin/sidebar-presenter.php:129 js/dist/elementor.js:89
+#: js/dist/introductions.js:5 js/dist/new-settings.js:5 js/dist/post-edit.js:5
+#: js/dist/support.js:25
+msgid "Check out %1$s"
+msgstr "תבדקו את %1$s"
+
+#: src/presenters/admin/sidebar-presenter.php:122 js/dist/elementor.js:87
+#: js/dist/introductions.js:3 js/dist/new-settings.js:3 js/dist/post-edit.js:3
+#: js/dist/support.js:23
+msgid "We have both free and premium online courses to learn everything you need to know about SEO."
+msgstr "יש לנו קורסים מקוונים בחינם ובתשלום ללימוד כל מה שצריך לדעת על קידום אתרים."
+
+#. translators: %1$s expands to Yoast SEO academy, which is a clickable link.
+#. translators: %1$s expands to "Yoast SEO" academy, which is a clickable link.
+#: src/presenters/admin/sidebar-presenter.php:120 js/dist/elementor.js:87
+#: js/dist/introductions.js:3 js/dist/new-settings.js:3 js/dist/post-edit.js:3
+#: js/dist/support.js:23
+msgid "Want to learn SEO from Team Yoast? Check out our %1$s!"
+msgstr "רוצה ללמוד SEO מצוות יוסט? בדוק את %1$s שלנו!"
+
+#: src/presenters/admin/sidebar-presenter.php:112 js/dist/elementor.js:87
+#: js/dist/introductions.js:3 js/dist/new-settings.js:3 js/dist/post-edit.js:3
+#: js/dist/support.js:23
+msgid "Learn SEO"
+msgstr "לימודי SEO"
+
+#. translators: %s expands to Yoast SEO
+#: admin/views/tabs/tool/wpseo-import.php:39
+msgid "%s settings to import:"
+msgstr "הגדרות %s לייבוא:"
+
+#. translators: 1: expands to Yoast SEO, 2: expands to Import settings.
+#: admin/views/tabs/tool/wpseo-import.php:23
+msgid "Import settings from another %1$s installation by pasting them here and clicking \"%2$s\"."
+msgstr "ייבוא הגדרות מהתקנה אחרת של %1$s על ידי הדבקתן כאן ולחיצה על \"%2$s\"."
+
+#. translators: %1$s expands to Yoast SEO
+#: admin/class-export.php:68
+msgid "Your %1$s settings:"
+msgstr "הגדרות %1$s:"
+
+#: admin/metabox/class-metabox.php:433 js/dist/block-editor.js:567
+#: js/dist/elementor.js:543 js/dist/new-settings.js:31
+#: js/dist/new-settings.js:35 js/dist/new-settings.js:39
+#: js/dist/new-settings.js:66 js/dist/new-settings.js:229
+#: js/dist/structured-data-blocks.js:15
+msgid "Schema"
+msgstr "סכימה"
+
+#: admin/admin-settings-changed-listener.php:81
+msgid "Settings saved."
+msgstr "ההגדרות נשמרו."
+
+#. translators: %s: additional message with the submitted invalid value
+#: admin/class-yoast-input-validation.php:167
+msgid "Please check the format of the YouTube URL you entered. %s"
+msgstr "יש לבדוק את הפורמט של כתובת היוטיוב שהזנת. %s"
+
+#. translators: %s: additional message with the submitted invalid value
+#: admin/class-yoast-input-validation.php:157
+msgid "Please check the format of the Wikipedia URL you entered. %s"
+msgstr "יש לבדוק את הפורמט של כתובת הויקיפדיה שהזנת. %s"
+
+#. translators: %s: additional message with the submitted invalid value
+#: admin/class-yoast-input-validation.php:142
+msgid "Please check the format of the Pinterest URL you entered. %s"
+msgstr "יש לבדוק את הפורמט של כתובת הפינטרסט שהזנת. %s"
+
+#. translators: %s: additional message with the submitted invalid value
+#: admin/class-yoast-input-validation.php:137
+msgid "Please check the format of the MySpace URL you entered. %s"
+msgstr "יש לבדוק את הפורמט של כתובת המייספייס שהזנת. %s"
+
+#. translators: %s: additional message with the submitted invalid value
+#: admin/class-yoast-input-validation.php:127
+msgid "Please check the format of the LinkedIn URL you entered. %s"
+msgstr "יש לבדוק את הפורמט של כתובת הלינקדאין שהזנת. %s"
+
+#. translators: %s: additional message with the submitted invalid value
+#: admin/class-yoast-input-validation.php:122
+msgid "Please check the format of the Instagram URL you entered. %s"
+msgstr "יש לבדוק את הפורמט של כתובת האינסטגרם שהזנת. %s"
+
+#. translators: %s: additional message with the submitted invalid value
+#: admin/class-yoast-input-validation.php:112
+msgid "Please check the format of the Facebook Page URL you entered. %s"
+msgstr "יש לבדוק את הפורמט של כתובת עמוד הפייסבוק שהזנת. %s"
+
+#. translators: %s: form value as submitted.
+#: admin/class-yoast-input-validation.php:319
+msgid "The submitted value was: %s"
+msgstr "הערך שנשלח היה: %s"
+
+#. translators: %s: additional message with the submitted invalid value
+#: admin/class-yoast-input-validation.php:162
+msgid "Yandex confirmation codes can only contain letters from A to F, numbers, hyphens, and underscores. %s"
+msgstr "קודי האימות של יאנדקס יכולים להכיל אותיות מ-A עד F, מספרים, מקפים וקווים תחתונים. %s"
+
+#. translators: %s: additional message with the submitted invalid value
+#: admin/class-yoast-input-validation.php:152
+msgid "Twitter usernames can only contain letters, numbers, and underscores. %s"
+msgstr "שמות משתמש בטוויטר יכולים להכיל רק אותיות, מספרים וקווים תחתונים. %s"
+
+#. translators: %s: additional message with the submitted invalid value
+#: admin/class-yoast-input-validation.php:147
+msgid "Pinterest confirmation codes can only contain letters from A to F, numbers, hyphens, and underscores. %s"
+msgstr "קודי האימות של פינטרסט יכולים להכיל אותיות מ-A עד F, מספרים, מקפים וקווים תחתונים. %s"
+
+#. translators: %s: additional message with the submitted invalid value
+#: admin/class-yoast-input-validation.php:132
+msgid "Bing confirmation codes can only contain letters from A to F, numbers, hyphens, and underscores. %s"
+msgstr "קודי האימות של בינג יכולים להכיל אותיות מ-A עד F, מספרים, מקפים וקווים תחתונים. %s"
+
+#. translators: %s: additional message with the submitted invalid value
+#: admin/class-yoast-input-validation.php:117
+msgid "Google verification codes can only contain letters, numbers, hyphens, and underscores. %s"
+msgstr "קודי האימות של גוגל יכולים להכיל רק אותיות, מספרים, מקפים וקווים תחתונים. %s"
+
+#. translators: %s: additional message with the submitted invalid value
+#: admin/class-yoast-input-validation.php:107
+msgid "Baidu verification codes can only contain letters, numbers, hyphens, and underscores. %s"
+msgstr "קודי האימות של באידו יכולים להכיל רק אותיות, מספרים, מקפים וקווים תחתונים. %s"
+
+#. translators: Hidden accessibility text.
+#: admin/views/partial-notifications-template.php:47
+msgid "Show this item."
+msgstr "הצג פריט זה."
+
+#. translators: Hidden accessibility text.
+#: admin/views/partial-notifications-template.php:39
+msgid "Hide this item."
+msgstr "הסתר פריט זה."
+
+#. translators: %d expands the amount of hidden problems.
+#: admin/views/partial-notifications-errors.php:25
+msgid "You have %d hidden problem:"
+msgid_plural "You have %d hidden problems:"
+msgstr[0] "קיימת בעיה מוסתרת %d:"
+msgstr[1] "קיימות %d בעיות מוסתרות:"
+
+#. translators: %d expands the amount of hidden notifications.
+#: admin/views/partial-notifications-warnings.php:25
+msgid "You have %d hidden notification:"
+msgid_plural "You have %d hidden notifications:"
+msgstr[0] "קיימת התראה מוסתרת %d:"
+msgstr[1] "קיימות %d התראות מוסתרות:"
+
+#. translators: %1$s: amount of errors, %2$s: the admin page title
+#: admin/class-yoast-input-validation.php:65
+msgid "The form contains %1$s error. %2$s"
+msgid_plural "The form contains %1$s errors. %2$s"
+msgstr[0] "הטופס מכיל שגיאה %1$s. %2$s"
+msgstr[1] "הטופס מכיל %1$s שגיאות. %2$s"
+
+#. translators: %s expands to the extension title
+#: admin/views/licenses.php:228 admin/views/licenses.php:342
+msgid "Activate %s for your site on MyYoast"
+msgstr "הפעל %s עבור האתר ב-MyYoast"
+
+#: admin/class-customizer.php:109 js/dist/new-settings.js:35
+#: js/dist/new-settings.js:128
+msgid "Show blog page in breadcrumbs"
+msgstr "הצג עמוד בלוג בפירורי לחם"
+
+#. translators: %1$s expands to the opening anchor tag, %2$s to the closing
+#. anchor tag, %3$s to the SEO score.
+#: admin/formatter/class-metabox-formatter.php:113
+#: admin/formatter/class-metabox-formatter.php:120
+#: admin/formatter/class-metabox-formatter.php:127
+#: admin/formatter/class-metabox-formatter.php:134
+msgid "%1$sSEO%2$s: %3$s"
+msgstr "%1$sSEO%2$s: %3$s"
+
+#. translators: %1$s expands to the opening anchor tag, %2$s to the closing
+#. anchor tag, %3$s to the readability score.
+#: admin/formatter/class-metabox-formatter.php:143
+#: admin/formatter/class-metabox-formatter.php:150
+#: admin/formatter/class-metabox-formatter.php:157
+#: admin/formatter/class-metabox-formatter.php:164
+msgid "%1$sReadability%2$s: %3$s"
+msgstr "%1$sקריאות%2$s: %3$s"
+
+#. translators: %s expands to the score
+#: admin/statistics/class-statistics-service.php:216
+#: admin/statistics/class-statistics-service.php:221
+#: admin/statistics/class-statistics-service.php:226
+msgid "Posts with the SEO score: %s"
+msgstr "פוסטים עם ציון SEO: %s"
+
+#. translators: %s: expends to Yoast SEO
+#: admin/class-admin.php:344
+msgid "%s video tutorial"
+msgstr "דרכת וידאו של %s"
+
+#: inc/class-wpseo-rank.php:191
+msgid "Post Noindexed"
+msgstr "הפוסט Noindexed"
+
+#: inc/class-wpseo-rank.php:171
+msgid "No Focus Keyphrase"
+msgstr "ללא ביטויי מפתח"
+
+#. translators: %s expands to the SEO score
+#: inc/class-wpseo-rank.php:170 inc/class-wpseo-rank.php:175
+#: inc/class-wpseo-rank.php:180 inc/class-wpseo-rank.php:185
+#: inc/class-wpseo-rank.php:190
+msgid "SEO: %s"
+msgstr "SEO: %s"
+
+#. Translators: %1$s: expands to opening anchor tag, %2$s expands to closing
+#. anchor tag.
+#: admin/google_search_console/views/gsc-display.php:39
+msgid "To view your current crawl errors, %1$splease visit Google Search Console%2$s."
+msgstr "כדי להציג את שגיאות הסריקה הנוכחיות, %1$sיש לבקר בקונסולת החיפוש של גוגל%2$s."
+
+#. Translators: %1$s: expands to opening anchor tag, %2$s expands to closing
+#. anchor tag.
+#: admin/google_search_console/views/gsc-display.php:32
+msgid "Google has discontinued its Crawl Errors API. Therefore, any possible crawl errors you might have cannot be displayed here anymore. %1$sRead our statement on this for further information%2$s."
+msgstr "גוגל הפסיקה לתמוך ב-API של שגיאות סריקה שלה. לכן, לא ניתן להציג יותר שגיאות סריקה אפשריות. %1$sלמידע נוסף ניתן לקרוא את ההצהרה שלנו בנושא זה%2$s."
+
+#: src/integrations/admin/first-time-configuration-integration.php:476
+#: src/integrations/admin/first-time-configuration-integration.php:489
+#: js/dist/new-settings.js:301
+msgid "Organization"
+msgstr "ארגון"
+
+#. translators: %1$s is a link start tag to the Search Appearance settings,
+#. %2$s is the link closing tag.
+#: admin/class-schema-person-upgrade-notification.php:60
+msgid "You have previously set your site to represent a person. We’ve improved our functionality around Schema and the Knowledge Graph, so you should go in and %1$scomplete those settings%2$s."
+msgstr "בעבר האתר הוגדר לייצוג אדם. שיפרנו את פונקציונליות ה-Schema וגרף הידע, לכן יש %1$sלהשלים הגדרות נוספות%2$s."
+
+#: admin/class-admin.php:309
+msgid "(if one exists)"
+msgstr "(אם קיים)"
+
+#: admin/class-admin.php:309
+msgid "Wikipedia page about you"
+msgstr "עמוד ויקיפדיה אודותייך"
+
+#: admin/class-admin.php:308
+msgid "YouTube profile URL"
+msgstr "כתובת פרופיל יוטיוב"
+
+#: admin/class-admin.php:306
+msgid "Tumblr profile URL"
+msgstr "כתובת פרופיל טמבלר"
+
+#: admin/class-admin.php:305
+msgid "SoundCloud profile URL"
+msgstr "כתובת פרופיל סאונד-קלאוד"
+
+#: admin/class-admin.php:303
+msgid "MySpace profile URL"
+msgstr "כתובת פרופיל מיי-ספייס"
+
+#: src/generators/schema/article.php:137
+msgid "Uncategorized"
+msgstr "ללא קטגוריה"
+
+#: admin/class-admin.php:304
+msgid "Pinterest profile URL"
+msgstr "כתובת פרופיל פינטרסט"
+
+#: admin/class-admin.php:302
+msgid "LinkedIn profile URL"
+msgstr "כתובת פרופיל לינקדאין"
+
+#: admin/class-admin.php:301
+msgid "Instagram profile URL"
+msgstr "כתובת פרופיל אינסטגרם"
+
+#: inc/class-my-yoast-api-request.php:141
+msgid "No JSON object was returned."
+msgstr "לא הוחזר אובייקט JSON."
+
+#. translators: Hidden accessibility text.
+#: src/integrations/admin/link-count-columns-integration.php:147
+msgid "Received internal links"
+msgstr "קישורים פנימיים שהתקבלו"
+
+#. translators: Hidden accessibility text.
+#: src/integrations/admin/link-count-columns-integration.php:139
+msgid "Outgoing internal links"
+msgstr "קישורים פנימיים יוצאים"
+
+#: admin/class-meta-columns.php:119 js/dist/block-editor.js:398
+#: js/dist/classic-editor.js:394 js/dist/editor-modules.js:78
+#: js/dist/elementor.js:400 js/dist/wincher-dashboard-widget.js:88
+msgid "Keyphrase"
+msgstr "ביטוי מפתח"
+
+#. translators: 1: Yoast SEO.
+#: src/services/health-check/links-table-reports.php:87
+msgid "For this feature to work, %1$s needs to create a table in your database. We were unable to create this table automatically."
+msgstr "כדי שתכונה זו תעבוד, %1$s צריך ליצור טבלה במסד הנתונים. לא הצלחנו ליצור טבלה זו באופן אוטומטי."
+
+#. translators: %1$s expands to the requested url
+#: admin/exceptions/class-file-size-exception.php:40
+msgid "Cannot get the size of %1$s because of unknown reasons."
+msgstr "לא ניתן לקבל את הגודל של %1$s מסיבות לא ידועות."
+
+#. translators: %1$s expands to the requested url
+#: admin/exceptions/class-file-size-exception.php:23
+msgid "Cannot get the size of %1$s because it is hosted externally."
+msgstr "לא ניתן לקבל את הגודל של %1$s מכיוון שהוא מתארח בשרת חיצוני."
+
+#. translators: %s expands to the current page number
+#: src/generators/breadcrumbs-generator.php:410
+msgid "Page %s"
+msgstr "עמוד %s"
+
+#. translators: %1$s expands to the method name. %2$s expands to the class name
+#: src/exceptions/missing-method.php:24
+msgid "Method %1$s() does not exist in class %2$s"
+msgstr "המתודה %1$s() אינה קיימת בקלאס %2$s"
+
+#. translators: %s expands to Yoast SEO Premium
+#: admin/watchers/class-slug-change-watcher.php:225
+msgid "With %s, you can easily create such redirects."
+msgstr "באמצעות %s ניתן ליצור בקלות הפניות כאלה."
+
+#: admin/views/tabs/tool/wpseo-import.php:15
+msgid "Import of settings is only supported on servers that run PHP 5.3 or higher."
+msgstr "ייבוא ​​הגדרות נתמך רק בשרתים שמפעילים PHP 5.3 ומעלה."
+
+#. translators: %1$s expands to Yoast SEO
+#: admin/views/tabs/tool/wpseo-export.php:26
+msgid "Export your %1$s settings here, to copy them on another site."
+msgstr "ייצוא הגדרות %1$s כדי להעתיק אותם באתר אחר."
+
+#: admin/import/class-import-settings.php:85
+msgid "No settings found."
+msgstr "לא נמצאו הגדרות."
+
+#. translators: %1$s expands to Yoast SEO, %2$s expands to Yoast.com
+#: admin/class-export.php:89
+msgid "These are settings for the %1$s plugin by %2$s"
+msgstr "אלו הן ההגדרות עבור התוסף %1$s מאת %2$s"
+
+#. translators: %1$s expands to Import settings
+#: admin/class-export.php:57
+msgid "Copy all these settings to another site's %1$s tab and click \"%1$s\" there."
+msgstr "העתיקו את כל ההגדרות האלה לכרטיסיית %1$s באתר אחר וליחצו שם על \"%1$s\"."
+
+#: admin/class-export.php:50
+msgid "You do not have the required rights to export settings."
+msgstr "אין לך את ההרשאות הנדרשות כדי לייצא נתונים"
+
+#. translators: %s expands to Yoast SEO Premium
+#. translators: %s expands to "Yoast SEO" Premium
+#: admin/class-premium-upsell-admin-block.php:96 js/dist/new-settings.js:315
+msgid "Upgrade to %s"
+msgstr "שדרג אל %s"
+
+#: admin/class-admin-init.php:336
+msgid "Learn about why permalinks are important for SEO."
+msgstr "למד מדוע קישורים חשובים לקידום אתרים."
+
+#. translators: %1$s and %2$s expand to <em> items to emphasize the word in the
+#. middle.
+#: admin/class-admin-init.php:330
+msgid "Changing your permalinks settings can seriously impact your search engine visibility. It should almost %1$s never %2$s be done on a live website."
+msgstr "שינוי מבנה קישורים יכול להשפיע משמעותית על נראות האתר במנועי חיפוש. מומלץ %1$s לעולם %2$s לא לבצע את זה על אתר חי."
+
+#: admin/class-admin-init.php:327
+msgid "WARNING:"
+msgstr "אזהרה:"
+
+#: admin/views/tabs/network/features.php:95
+#: admin/views/tabs/network/integrations.php:82
+#: src/integrations/admin/crawl-settings-integration.php:256
+msgid "Disable"
+msgstr "כיבוי"
+
+#: admin/views/tabs/network/features.php:94
+#: admin/views/tabs/network/integrations.php:81
+#: src/integrations/admin/crawl-settings-integration.php:254
+msgid "Allow Control"
+msgstr "אפשר שליטה"
+
+#. translators: %s expands to Yoast SEO
+#: admin/views/tabs/network/crawl-settings.php:24
+#: admin/views/tabs/network/features.php:27
+msgid "This tab allows you to selectively disable %s features for all sites in the network. By default all features are enabled, which allows site admins to choose for themselves if they want to toggle a feature on or off for their site. When you disable a feature here, site admins will not be able to use that feature at all."
+msgstr "כרטיסייה זו מאפשרת להשבית באופן סלקטיבי תכונות של %s עבור כל האתרים ברשת. כברירת מחדל כל התכונות מופעלות, מה שמאפשר למנהלי האתרים לבחור בעצמם אם הם רוצים להפעיל או לכבות תכונה מסויימת לאתר שלהם. כאשר תכונה מסויימת מושבתת כאן, מנהלי האתרים כלל לא יוכלו להשתמש בתכונה זו."
+
+#. translators: %s: argument name
+#: admin/views/class-yoast-feature-toggle.php:161
+msgid "%s is a required feature toggle argument."
+msgstr "%s הוא ארגומנט מחייב לתכונה."
+
+#: admin/formatter/class-metabox-formatter.php:72
+msgid "Remove keyphrase"
+msgstr "הסר ביטוי מפתח"
+
+#: admin/formatter/class-metabox-formatter.php:71
+msgid "Keyphrase:"
+msgstr "ביטוי מפתח:"
+
+#: admin/class-yoast-form.php:1045 js/dist/first-time-configuration.js:15
+msgid "This feature has been disabled by the network admin."
+msgstr "תכונה זו הושבתה על ידי מנהל הרשת."
+
+#: admin/class-yoast-form.php:749 admin/metabox/class-metabox.php:655
+#: admin/taxonomy/class-taxonomy-fields-presenter.php:133
+msgid "Clear Image"
+msgstr "נקה תמונה"
+
+#: admin/class-premium-upsell-admin-block.php:60 js/dist/new-settings.js:315
+msgid "Multiple keyphrases"
+msgstr "ביטוי מפתח מרובים"
+
+#. translators: Hidden accessibility text.
+#: admin/class-meta-columns.php:182
+msgid "Focus keyphrase not set."
+msgstr "לא הוגדרו ביטוי מפתח למיקוד."
+
+#. translators: %s expands to Yoast SEO Premium
+#. translators: %s expands to "Yoast SEO" Premium
+#: admin/class-premium-popup.php:81
+#: admin/class-premium-upsell-admin-block.php:71
+#: admin/watchers/class-slug-change-watcher.php:229
+#: src/presenters/admin/sidebar-presenter.php:84 js/dist/new-settings.js:317
+msgid "Get %s"
+msgstr "קבל %s"
+
+#: inc/class-wpseo-admin-bar-menu.php:888
+msgid "There is a new notification."
+msgid_plural "There are new notifications."
+msgstr[0] "ישנה הודעה חדשה"
+msgstr[1] "ישנן הודעות חדשות"
+
+#: inc/options/class-wpseo-option-titles.php:976
+msgid "Colon"
+msgstr "נקודתיים"
+
+#. translators: %1$s expands to Yoast SEO, %2$s: 'SEO' plugin name of possibly
+#. conflicting plugin with regard to the creation of duplicate SEO meta.
+#: admin/class-plugin-conflict.php:88
+msgid "Both %1$s and %2$s manage the SEO of your site. Running two SEO plugins at the same time is detrimental."
+msgstr "גם %1$s וגם %2$s מנהלים את ה-SEO של האתר. הפעלת שני תוספי SEO במקביל יכול להזיק לאתר."
+
+#. translators: %d expands to the number of minute/minutes.
+#: src/integrations/blocks/structured-data-blocks.php:205
+#: js/dist/structured-data-blocks.js:5 js/dist/structured-data-blocks.js:11
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "דקה %d"
+msgstr[1] "%d דקות"
+
+#. translators: %d expands to the number of hour/hours.
+#: src/integrations/blocks/structured-data-blocks.php:198
+#: js/dist/structured-data-blocks.js:5 js/dist/structured-data-blocks.js:11
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "שעה %d"
+msgstr[1] "%d שעות"
+
+#. translators: %d expands to the number of day/days.
+#: src/integrations/blocks/structured-data-blocks.php:191
+#: js/dist/block-editor.js:107 js/dist/classic-editor.js:103
+#: js/dist/editor-modules.js:5 js/dist/elementor.js:109
+#: js/dist/structured-data-blocks.js:5 js/dist/structured-data-blocks.js:11
+#: js/dist/wincher-dashboard-widget.js:1
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "יום %d"
+msgstr[1] "%d ימים"
+
+#. translators: %1$s expands to Yoast.
+#: src/integrations/blocks/block-categories.php:37
+msgid "%1$s Structured Data Blocks"
+msgstr "בלוק מבנה נתונים של %1$s"
+
+#: src/integrations/blocks/structured-data-blocks.php:256
+#: js/dist/structured-data-blocks.js:5 js/dist/structured-data-blocks.js:15
+msgid "Time needed:"
+msgstr "זמן נדרש:"
+
+#: inc/class-wpseo-admin-bar-menu.php:435
+msgid "Check links to this URL"
+msgstr "בדיקת קישורים בכתובת זו"
+
+#: inc/class-wpseo-admin-bar-menu.php:511 js/dist/structured-data-blocks.js:15
+msgid "How to"
+msgstr "איך"
+
+#: admin/pages/network.php:31
+msgid "Restore Site"
+msgstr "שיחזור אתר"
+
+#: admin/menu/class-network-admin-menu.php:34
+msgid "Network Settings"
+msgstr "הגדרות רשת"
+
+#: admin/class-yoast-network-admin.php:276
+msgid "You are not allowed to perform this action."
+msgstr "אינך מורשה לבצע פעולה זו."
+
+#. translators: %s: error message
+#: admin/class-yoast-network-admin.php:208
+msgid "Error: %s"
+msgstr "שגיאה: %s"
+
+#. translators: %s: success message
+#: admin/class-yoast-network-admin.php:206
+msgid "Success: %s"
+msgstr "הצלחה: %s"
+
+#. translators: %s expands to the ID of a site within a multisite network.
+#: admin/class-yoast-network-admin.php:168
+msgid "Site with ID %d not found."
+msgstr "אתר עם מזהה %d לא נמצא."
+
+#: admin/class-yoast-network-admin.php:159
+msgid "No site has been selected to restore."
+msgstr "לא נבחר אתר לשחזור."
+
+#: admin/class-yoast-network-admin.php:120
+msgid "You are not allowed to modify unregistered network settings."
+msgstr "אינך מורשה לשנות הגדרות רשת לא רשומות."
+
+#: admin/class-yoast-network-admin.php:81
+msgid "deleted"
+msgstr "נמחק"
+
+#: inc/class-wpseo-replace-vars.php:1474
+msgid "The site's tagline"
+msgstr "תיאור האתר"
+
+#. translators: %1$s expands to the missing field name.
+#: admin/menu/class-replacevar-editor.php:150
+msgid "Not all required fields are given. Missing field %1$s"
+msgstr "לא סופקו כל השדות הנדרשים. חסר שדה %1$s"
+
+#: inc/class-wpseo-replace-vars.php:1488 js/dist/externals-redux.js:1
+msgid "Current year"
+msgstr "שנה נוכחית"
+
+#: inc/class-wpseo-replace-vars.php:1474 js/dist/externals-redux.js:1
+#: js/dist/new-settings.js:35 js/dist/new-settings.js:285
+msgid "Tagline"
+msgstr "תיאור האתר"
+
+#: inc/class-wpseo-replace-vars.php:1517 js/dist/externals-redux.js:1
+msgid "Page"
+msgstr "עמוד"
+
+#: inc/class-wpseo-replace-vars.php:1525
+msgid "description (custom taxonomy)"
+msgstr "תיאור (טקסונומיה מותאמת)"
+
+#: inc/class-wpseo-replace-vars.php:1524
+msgid "(custom taxonomy)"
+msgstr "(טקסונומיה מותאמת)"
+
+#: inc/class-wpseo-replace-vars.php:1523
+msgid "(custom field)"
+msgstr "(שדה מותאם)"
+
+#: inc/class-wpseo-replace-vars.php:1522
+msgid "Term404"
+msgstr "מונח 404"
+
+#: inc/class-wpseo-replace-vars.php:1520
+msgid "Caption"
+msgstr "כיתוב תמונה"
+
+#: inc/class-wpseo-replace-vars.php:1519
+msgid "Pagenumber"
+msgstr "מספר עמוד"
+
+#: inc/class-wpseo-replace-vars.php:1518
+msgid "Pagetotal"
+msgstr "סה\"כ דף"
+
+#: inc/class-wpseo-replace-vars.php:1516
+msgid "User description"
+msgstr "תיאור משתמש"
+
+#: inc/class-wpseo-replace-vars.php:1514 js/dist/externals-redux.js:1
+msgid "ID"
+msgstr "מזהה"
+
+#: inc/class-wpseo-replace-vars.php:1513
+msgid "Modified"
+msgstr "שונה"
+
+#: inc/class-wpseo-replace-vars.php:1512
+msgid "Post type (plural)"
+msgstr "סוג פוסט (רבים)"
+
+#: inc/class-wpseo-replace-vars.php:1511
+msgid "Post type (singular)"
+msgstr "סוג פוסט (יחיד)"
+
+#: inc/class-wpseo-replace-vars.php:1486 js/dist/externals-redux.js:1
+#: js/dist/new-settings.js:35
+msgid "Separator"
+msgstr "מפריד"
+
+#: inc/class-wpseo-replace-vars.php:1484 js/dist/externals-redux.js:1
+msgid "Search phrase"
+msgstr "ביטוי חיפוש"
+
+#: inc/class-wpseo-replace-vars.php:1483
+msgid "Term title"
+msgstr "כותרת מונח"
+
+#: inc/class-wpseo-replace-vars.php:1482 js/dist/externals-redux.js:1
+msgid "Term description"
+msgstr "תיאור מונח"
+
+#: inc/class-wpseo-replace-vars.php:1481 js/dist/externals-redux.js:1
+msgid "Tag description"
+msgstr "תיאור תגית"
+
+#: inc/class-wpseo-replace-vars.php:1480 js/dist/externals-redux.js:1
+msgid "Category description"
+msgstr "תיאור קטגוריה"
+
+#: inc/class-wpseo-replace-vars.php:1479 js/dist/externals-redux.js:1
+msgid "Primary category"
+msgstr "קטגוריה ראשית"
+
+#: inc/class-wpseo-replace-vars.php:1478 js/dist/externals-redux.js:1
+msgid "Category"
+msgstr "קטגוריה"
+
+#: inc/class-wpseo-replace-vars.php:1477
+msgid "Tag"
+msgstr "תגית"
+
+#: inc/class-wpseo-replace-vars.php:1476 js/dist/externals-redux.js:1
+msgid "Excerpt only"
+msgstr "תיאור בלבד"
+
+#: inc/class-wpseo-replace-vars.php:1475 js/dist/externals-redux.js:1
+msgid "Excerpt"
+msgstr "תיאור"
+
+#: inc/class-wpseo-replace-vars.php:1473 js/dist/externals-redux.js:1
+msgid "Site title"
+msgstr "שם האתר"
+
+#: inc/class-wpseo-replace-vars.php:1472
+msgid "Archive title"
+msgstr "כותרת ארכיון"
+
+#: inc/class-wpseo-replace-vars.php:1471 js/dist/externals-redux.js:1
+msgid "Parent title"
+msgstr "כותרת האב"
+
+#: inc/class-wpseo-replace-vars.php:1469 js/dist/externals-redux.js:1
+msgid "Date"
+msgstr "תאריך"
+
+#: inc/class-wpseo-admin-bar-menu.php:609
+msgid "Get Yoast SEO Premium"
+msgstr "קבל יואסט SEO Premium"
+
+#: admin/watchers/class-slug-change-watcher.php:223
+msgid "You should create a redirect to ensure your visitors do not get a 404 error when they click on the no longer working URL."
+msgstr "יש ליצור כתובת אתר להפניה מחדש כדי להבטיח שהמבקרים באתר לא יקבלו שגיאת 404 כאשר הם לוחצים על כתובת אתר שאינה פועלת עוד."
+
+#: admin/watchers/class-slug-change-watcher.php:218
+msgid "Make sure you don't miss out on traffic!"
+msgstr "ודא שאתה לא מחמיץ את התנועה!"
+
+#. translators: %1$s expands to the translated name of the post type.
+#. translators: %1$s expands to the translated name of the term.
+#: admin/watchers/class-slug-change-watcher.php:88
+#: admin/watchers/class-slug-change-watcher.php:110
+msgid "You just deleted a %1$s."
+msgstr "כרגע מחקת את %1$s."
+
+#. translators: %1$s expands to the translated name of the post type.
+#: admin/watchers/class-slug-change-watcher.php:67
+msgid "You just trashed a %1$s."
+msgstr "כרגע העברת לאשפה את %1$s."
+
+#. translators: %s is replaced with Yoast SEO.
+#: admin/import/plugins/class-abstract-plugin-importer.php:257
+msgid "The %s importer functionality uses temporary database tables. It seems your WordPress install does not have the capability to do this, please consult your hosting provider."
+msgstr "פונקציית היבוא של  %s משתמשת בטבלאות זמניות במסדי נתונים. נראה שהתקנת הוורדפרס באתר זה אינה יכולה לעמוד בעומס לביצוע המשימה, יש להתייעץ עם חברת האכסון."
+
+#. translators: %s is replaced with the plugin's name.
+#: admin/import/plugins/class-abstract-plugin-importer.php:132
+msgid "Cleanup of %s data failed."
+msgstr "ניקוי מידע עבור %s נכשל"
+
+#: admin/class-bulk-editor-list-table.php:1004
+msgid "Content Type"
+msgstr "סוג תוכן"
+
+#. translators: Hidden accessibility text.
+#: admin/class-bulk-editor-list-table.php:412
+msgid "Filter by content type"
+msgstr "סינון לפי סוג תוכן"
+
+#: admin/class-bulk-editor-list-table.php:394
+msgid "Show All Content Types"
+msgstr "הצג את כל סוגי התכנים"
+
+#: inc/class-wpseo-replace-vars.php:1472
+msgid "Replaced with the normal title for an archive generated by WordPress"
+msgstr "הוחלף בכותרת הרגילה של ארכיון שנוצר על ידי וורדפרס"
+
+#: admin/views/tabs/tool/import-seo.php:137
+msgid "Clean"
+msgstr "נקה"
+
+#: admin/views/tabs/tool/import-seo.php:128
+msgid "Once you're certain your site is OK, you can clean up. This will remove all the original data."
+msgstr "כשאתם בטוחים שהאתר בסדר, ניתן לנקות. פעולה זו תסיר את כל המידע המקורי."
+
+#: admin/views/tabs/tool/import-seo.php:126
+msgid "Step 5: Clean up"
+msgstr "שלב 5: ניקוי"
+
+#: admin/views/tabs/tool/import-seo.php:107
+msgid "Please check your posts and pages and see if the metadata was successfully imported."
+msgstr "יש לבדוק הפוסטים והעמודים כדי לוודא שהמטה דטה יובא בהצלחה."
+
+#: admin/views/tabs/tool/import-seo.php:105
+msgid "Step 3: Check your data"
+msgstr "שלב 3: בדוק את המידע"
+
+#. translators: 1: expands to Yoast SEO
+#: admin/views/tabs/tool/import-seo.php:67
+msgid "This will import the post metadata like SEO titles and descriptions into your %1$s metadata. It will only do this when there is no existing %1$s metadata yet. The original data will remain in place."
+msgstr "פעולה זו תייבא את נתונים המטא של הפוסט כמו כותרות SEO ותיאורי SEO אל תוך נתוני המטא של %1$s. היא תעשה זאת רק כשאין עדיין מטא נתונים קיימים של %1$s. הנתונים המקוריים יישארו במקומם."
+
+#: admin/views/tabs/tool/import-seo.php:62
+msgid "Step 2: Import"
+msgstr "שלב 2: יבוא"
+
+#: admin/views/tabs/tool/import-seo.php:57
+msgid "Please make a backup of your database before starting this process."
+msgstr "אנא הכן גיבוי לבסיס הנתונים לפני תחילת התהליך."
+
+#: admin/views/tabs/tool/import-seo.php:55
+msgid "Step 1: Create a backup"
+msgstr "שלב 1: צור גיבוי"
+
+#: admin/views/tabs/tool/import-seo.php:51
+msgid "We've detected data from one or more SEO plugins on your site. Please follow the following steps to import that data:"
+msgstr "התגלה מידע מאחד או יותר תוספי SEO באתר. בכדי לייבא את המידע, אנא בצעו את השלבים הבאים:"
+
+#: admin/views/tabs/tool/import-seo.php:39
+msgid "Plugin: "
+msgstr "תוסף:"
+
+#. translators: %s expands to Yoast SEO
+#: admin/views/tabs/tool/import-seo.php:22
+msgid "%s did not detect any plugin data from plugins it can import from."
+msgstr "%s לא זיהה מידע על תוספים מהם ניתן לייבא מידע."
+
+#: admin/statistics/class-statistics-service.php:229
+msgid "Posts that should not show up in search results"
+msgstr "פוסטים שאמורים להופיע בתוצאות החיפוש"
+
+#. translators: %s is replaced with the name of the plugin we've found data
+#. from.
+#: admin/import/class-import-status.php:128
+msgid "%s data found."
+msgstr "%s מידע נמצא."
+
+#. translators: %s is replaced with the name of the plugin we're removing data
+#. from.
+#: admin/import/class-import-status.php:124
+msgid "%s data successfully removed."
+msgstr "%s מידע נמחק בהצלחה."
+
+#. translators: %s is replaced with the name of the plugin we're importing data
+#. from.
+#: admin/import/class-import-status.php:121
+msgid "%s data successfully imported."
+msgstr "%s מידע יובא בהצחה."
+
+#. translators: %s is replaced with the name of the plugin we're trying to find
+#. data from.
+#: admin/import/class-import-status.php:61
+msgid "%s data not found."
+msgstr "%s מידע לא נמצא."
+
+#: admin/class-premium-upsell-admin-block.php:62 js/dist/new-settings.js:315
+msgid "24/7 email support"
+msgstr "תמיכת אימייל 24/7"
+
+#: admin/views/user-profile.php:15
+msgid "this author's archives"
+msgstr "ארכיונים של המחבר הזה"
+
+#. translators: %s expands to "this author's archives".
+#: admin/views/user-profile.php:14
+msgid "Do not allow search engines to show %s in search results."
+msgstr "אל תאפשר למנועי חיפוש להציג %s בתוצאות חיפוש."
+
+#: admin/class-yoast-form.php:941 admin/class-yoast-form.php:981
+#: admin/metabox/class-metabox.php:210 js/dist/externals/componentsNew.js:781
+msgid "On"
+msgstr "מופעל"
+
+#. translators: Hidden accessibility text; %s expands to a feature's name.
+#. translators: Hidden accessibility text; %s expands to an integration's name.
+#: admin/views/tabs/network/features.php:62
+#: admin/views/tabs/network/integrations.php:50
+msgid "Help on: %s"
+msgstr "עזרה ב: %s"
+
+#: admin/class-yoast-form.php:942 admin/class-yoast-form.php:982
+#: admin/metabox/class-metabox.php:209
+#: admin/views/class-yoast-feature-toggles.php:160
+#: js/dist/externals/componentsNew.js:781
+msgid "Off"
+msgstr "מכובה"
+
+#: admin/views/class-yoast-feature-toggles.php:140
+msgid "Read why XML Sitemaps are important for your site."
+msgstr "קרא מדוע מפות XML חשובות עבור האתר."
+
+#. translators: %s: Yoast SEO
+#: admin/views/class-yoast-feature-toggles.php:139
+msgid "Enable the XML sitemaps that %s generates."
+msgstr "הפעל יצירת מפות XML ש-%s יוצר."
+
+#: admin/views/class-yoast-feature-toggles.php:70
+msgid "See the XML sitemap."
+msgstr "צפיה במפת XML של האתר."
+
+#. translators: %1$s expands to Yoast SEO
+#: admin/views/tabs/dashboard/dashboard.php:19
+msgid "See who contributed to %1$s."
+msgstr "ראה מי תרם ל-%1$s."
+
+#: src/deprecated/admin/views/class-view-utils.php:66
+msgid "Help on this search results setting"
+msgstr "עזרה בהגדרת תוצאות החיפוש"
+
+#. translators: 1: expands to an indexable object's name, like a post type or
+#. taxonomy; 2: expands to <code>noindex</code>; 3: link open tag; 4: link
+#. close tag.
+#: src/deprecated/admin/views/class-view-utils.php:60
+msgid "Not showing the archive for %1$s in the search results technically means those will have a %2$s robots meta and will be excluded from XML sitemaps. %3$sMore info on the search results settings%4$s."
+msgstr "לא להציג עמודי ארכיון עבור %1$s בתוצאות החיפוש, מבחינה טכנית הם יכילו את תגית meta של %2$s והם לא יכללו במפת האתר. %3$sמידע נוסף על הגדרות תוצאות החיפוש%4$s."
+
+#. translators: 1: expands to an indexable object's name, like a post type or
+#. taxonomy; 2: expands to <code>noindex</code>; 3: link open tag; 4: link
+#. close tag.
+#: src/deprecated/admin/views/class-view-utils.php:56
+msgid "Not showing %1$s in the search results technically means those will have a %2$s robots meta and will be excluded from XML sitemaps. %3$sMore info on the search results settings%4$s."
+msgstr "לא להציג %1$s בתוצאות החיפוש, מבחינה טכנית הם יכילו את תגית meta של %2$s והם לא יכללו במפת האתר. %3$sמידע נוסף על הגדרות תוצאות החיפוש%4$s."
+
+#. translators: %1$s expands to the post type name.
+#: admin/metabox/class-metabox.php:185
+msgid "Should search engines follow links on this %1$s?"
+msgstr "האם מנועי חיפוש צריכים לעקוב אחרי הקישורים ב%1$s?"
+
+#. translators: %1$s expands to Yes or No,  %2$s expands to the post type name.
+#: admin/metabox/class-metabox.php:180
+msgid "Default for %2$s, currently: %1$s"
+msgstr "ברירת מחדל עבור %2$s, נוכחי: %1$s"
+
+#. translators: %s expands to the post type name.
+#. Translators: %s translates to the Post Label in singular form
+#: admin/metabox/class-metabox.php:175 js/dist/block-editor.js:460
+#: js/dist/classic-editor.js:456 js/dist/elementor.js:462
+msgid "Allow search engines to show this %s in search results?"
+msgstr "האם לאפשר למנועי חיפוש להציג %s בתוצאות החיפוש?"
+
+#. translators: %s expands to an indexable object's name, like a post type or
+#. taxonomy
+#: admin/class-yoast-form.php:952
+msgid "Show %s in search results?"
+msgstr "הצג %s במנועי חיפוש"
+
+#. translators: %1$s expands to Yoast SEO.
+#: admin/class-plugin-conflict.php:80
+msgid "Toggle %1$s's XML Sitemap"
+msgstr "פתח מפות XML של %1$s"
+
+#. translators: %s expands to WordProof
+#: src/integrations/third-party/wordproof-integration-toggle.php:85
+msgid "Read more about how %s works."
+msgstr "קרא עוד על איך %s עובד"
+
+#. translators: %s: 'Semrush'
+#. translators: %s: Algolia.
+#. translators: %s: 'Wincher'
+#. translators: %s expands to WordProof
+#: admin/views/class-yoast-integration-toggles.php:67
+#: admin/views/class-yoast-integration-toggles.php:78
+#: src/integrations/third-party/wincher.php:68
+#: src/integrations/third-party/wordproof-integration-toggle.php:77
+msgid "%s integration"
+msgstr "הרחבת %s"
+
+#: admin/views/class-yoast-feature-toggles.php:111
+msgid "Find out how the text link counter can enhance your SEO."
+msgstr "גלו כיצד מונה הקישור בתכנים יכול לשפר את SEO."
+
+#: admin/views/class-yoast-feature-toggles.php:110
+msgid "The text link counter helps you improve your site structure."
+msgstr "מונה קישור בתוכן מסייע לשפר את מבנה האתר."
+
+#: admin/views/class-yoast-feature-toggles.php:103
+msgid "Find out how cornerstone content can help you improve your site structure."
+msgstr "מצא כיצד עוגני תוכן יכולים לעזור לשפר את מבנה האתר."
+
+#: admin/views/class-yoast-feature-toggles.php:102
+msgid "The cornerstone content feature lets you to mark and filter cornerstone content on your website."
+msgstr "עוגני תוכן מאפשרים לסמן ולסנן עוגני תוכן באתר."
+
+#: admin/views/class-yoast-feature-toggles.php:86
+msgid "Discover why readability is important for SEO."
+msgstr "גלה למה קריאות חשובה בשביל SEO."
+
+#: admin/views/class-yoast-feature-toggles.php:85 js/dist/new-settings.js:297
+msgid "The readability analysis offers suggestions to improve the structure and style of your text."
+msgstr "ניתוח הקריאות מציע הצעות לשיפור המבנה והסגנון של תכני האתר."
+
+#: admin/views/class-yoast-feature-toggles.php:78
+msgid "Learn how the SEO analysis can help you rank."
+msgstr "למד איך ניתוח SEO יכול לעזור להעלות בדירוג."
+
+#: admin/views/class-yoast-feature-toggles.php:77
+msgid "The SEO analysis offers suggestions to improve the SEO of your text."
+msgstr "ניתוח SEO מציע הצעות לשיפור SEO עבור תכני האתר."
+
+#: admin/views/class-yoast-feature-toggles.php:75
+#: js/dist/externals-components.js:140 js/dist/new-settings.js:35
+#: js/dist/new-settings.js:297
+msgid "SEO analysis"
+msgstr "ניתוח SEO"
+
+#: admin/formatter/class-metabox-formatter.php:239
+#: js/dist/editor-modules.js:113 js/dist/externals-components.js:7
+#: js/dist/externals/analysisReport.js:35
+msgid "Good results"
+msgstr "תוצאות טובות"
+
+#. Author URI of the plugin
+msgid "https://yoa.st/1uk"
+msgstr "https://yoa.st/1uk"
+
+#. Plugin URI of the plugin
+msgid "https://yoa.st/1uj"
+msgstr "https://yoa.st/1uj"
+
+#. translators: %1$s resolves to Yoast.com
+#: admin/class-yoast-dashboard-widget.php:122
+msgid "Latest blog posts on %1$s"
+msgstr "פוסטים אחרונים מהבלוג של %1$s"
+
+#: admin/formatter/class-metabox-formatter.php:241
+#: js/dist/externals/analysisReport.js:17
+msgid "Remove highlight from the text"
+msgstr "הסר הדגשה מהטקסט"
+
+#: src/helpers/first-time-configuration-notice-helper.php:68
+msgid "First-time SEO configuration"
+msgstr "הגדרה ראשונה של SEO"
+
+#: admin/formatter/class-metabox-formatter.php:240
+#: js/dist/externals/analysisReport.js:17
+msgid "Highlight this result in the text"
+msgstr "הדגש את התוצאה הזו בטקסט"
+
+#: admin/formatter/class-metabox-formatter.php:238
+#: js/dist/editor-modules.js:113 js/dist/externals-components.js:7
+#: js/dist/externals/analysisReport.js:35
+msgid "Considerations"
+msgstr "נקודות לשיקול דעת"
+
+#: admin/formatter/class-metabox-formatter.php:235
+#: js/dist/editor-modules.js:113 js/dist/externals-components.js:7
+#: js/dist/externals/analysisReport.js:35
+msgid "Errors"
+msgstr "שגיאות"
+
+#. translators: %s expands to ".htaccess".
+#: admin/views/tool-file-editor.php:186
+msgid "%s file"
+msgstr "קובץ %s"
+
+#. translators: %s expands to robots.txt.
+#. translators: %s expands to ".htaccess".
+#: admin/views/tool-file-editor.php:174 admin/views/tool-file-editor.php:224
+msgid "Save changes to %s"
+msgstr "שמור שינויים לקובץ %s"
+
+#. translators: %s expands to robots.txt.
+#. translators: %s expands to ".htaccess".
+#: admin/views/tool-file-editor.php:165 admin/views/tool-file-editor.php:215
+msgid "Edit the content of your %s:"
+msgstr "עריכת התוכן של הקובץ %s:"
+
+#. translators: %s expands to robots.txt.
+#: admin/views/tool-file-editor.php:125
+msgid "Create %s file"
+msgstr "צור קובץ %s"
+
+#. translators: %s expands to robots.txt.
+#: admin/views/tool-file-editor.php:65
+msgid "Updated %s"
+msgstr "%s עודכן"
+
+#. translators: %s expands to robots.txt.
+#. translators: %s expands to ".htaccess".
+#: admin/views/tool-file-editor.php:49 admin/views/tool-file-editor.php:76
+msgid "You cannot edit the %s file."
+msgstr "לא ניתן לערוך את הקובץ %s."
+
+#. translators: %s expands to robots.txt.
+#: admin/views/tool-file-editor.php:28
+msgid "You cannot create a %s file."
+msgstr "לא ניתן ליצור את הקובץ %s."
+
+#. translators: Hidden accessibility text; %1$s expands to the dependency name
+#: admin/class-suggested-plugins.php:136
+msgid "More information about %1$s"
+msgstr "מידע נוסף אודות %1$s"
+
+#: src/integrations/admin/old-configuration-integration.php:38
+msgid "Old Configuration Wizard"
+msgstr "אשף ההתקנה ישן"
+
+#. translators: %s expands to the extension title
+#: admin/views/licenses.php:215 admin/views/licenses.php:328
+msgid "Manage your %s subscription on MyYoast"
+msgstr "נהלו את המנוי שלכם ב-%s באמצעות MyYoast"
+
+#. translators: %1$s expands to the posttype label, %2$s expands anchor to blog
+#. post about cornerstone content, %3$s expands to </a>
+#: admin/filters/class-cornerstone-filter.php:104
+msgid "Mark the most important %1$s as 'cornerstone content' to improve your site structure. %2$sLearn more about cornerstone content%3$s."
+msgstr "סמן את ה%1$s החשובים ביותר כעוגני תוכן לשיפור מבנה האתר. %2$sמידע נוסף על עוגני תוכן%3$s."
+
+#. translators: Hidden accessibility text.
+#: admin/class-admin-utils.php:79 admin/class-premium-popup.php:83
+#: admin/class-premium-upsell-admin-block.php:73 admin/class-yoast-form.php:916
+#: admin/formatter/class-metabox-formatter.php:244 admin/views/licenses.php:129
+#: admin/watchers/class-slug-change-watcher.php:231
+#: src/integrations/admin/workouts-integration.php:211
+#: src/integrations/admin/workouts-integration.php:241
+#: src/presenters/admin/help-link-presenter.php:76 js/dist/academy.js:8
+#: js/dist/block-editor.js:565 js/dist/block-editor.js:567
+#: js/dist/elementor.js:95 js/dist/elementor.js:97
+#: js/dist/externals-components.js:12 js/dist/externals/componentsNew.js:138
+#: js/dist/externals/helpers.js:20 js/dist/integrations-page.js:5
+#: js/dist/integrations-page.js:7 js/dist/integrations-page.js:9
+#: js/dist/integrations-page.js:11 js/dist/integrations-page.js:13
+#: js/dist/integrations-page.js:15 js/dist/integrations-page.js:29
+#: js/dist/integrations-page.js:39 js/dist/integrations-page.js:41
+#: js/dist/integrations-page.js:43 js/dist/introductions.js:11
+#: js/dist/introductions.js:13 js/dist/new-settings.js:11
+#: js/dist/new-settings.js:13 js/dist/post-edit.js:11 js/dist/post-edit.js:13
+#: js/dist/support.js:3 js/dist/support.js:31 js/dist/support.js:33
+msgid "(Opens in a new browser tab)"
+msgstr "(פתח בטאב חדש בדפדפן)"
+
+#. translators: %1$s expands to an opening strong tag, %2$s expands to a
+#. closing strong tag
+#: admin/statistics/class-statistics-service.php:210
+msgid "Posts %1$swithout%2$s a focus keyphrase"
+msgstr "פוסטים %1$s ללא %2$s ביטוי מפתח למיקוד"
+
+#: admin/statistics/class-statistics-service.php:77
+msgid "Hey, your SEO is doing pretty well! Check out the stats:"
+msgstr "דירוג ה-SEO של האתר מצוין! בדוק כאן:"
+
+#: admin/statistics/class-statistics-service.php:73
+msgid "You don't have any published posts, your SEO scores will appear here once you make your first post!"
+msgstr "עדיין לא פורסמו פוסטים, ציון ה-SEO יופיע כאן ברגע שהפוסט הראשון יהיה באוויר!"
+
+#: admin/class-yoast-dashboard-widget.php:125
+msgid "Read more like this on our SEO blog"
+msgstr "קרא עוד על הנושא בבלוג ה-SEO שלנו"
+
+#. translators: %s expands to the readability score
+#: inc/class-wpseo-rank.php:207 inc/class-wpseo-rank.php:212
+#: inc/class-wpseo-rank.php:217
+msgid "Readability: %s"
+msgstr "קריאות: %s"
+
+#: admin/views/licenses.php:223 admin/views/licenses.php:337
+msgid "Not activated"
+msgstr "אינו מופעל"
+
+#: admin/views/licenses.php:210 admin/views/licenses.php:323
+msgid "Activated"
+msgstr "הופעל"
+
+#. translators: %1$s expands to Yoast
+#: src/presenters/admin/sidebar-presenter.php:31
+msgid "%1$s recommendations for you"
+msgstr "%1$s המלצות עבורך"
+
+#: admin/class-meta-columns.php:285
+msgid "All Readability Scores"
+msgstr "כל מדדי הקריאות"
+
+#. translators: Hidden accessibility text.
+#: admin/class-meta-columns.php:281
+msgid "Filter by Readability Score"
+msgstr "סינון לפי מדד קריאות"
+
+#. translators: %1$s expands to the request method
+#: admin/class-remote-request.php:95
+msgid "Request method %1$s is not valid."
+msgstr "המתודה הנדרשת %1$s אינה תקינה."
+
+#: admin/views/class-yoast-feature-toggles.php:108 js/dist/new-settings.js:35
+#: js/dist/new-settings.js:297
+msgid "Text link counter"
+msgstr "מונה קישורים בטקסט"
+
+#: src/integrations/admin/link-count-columns-integration.php:145
+msgid "Number of internal links linking to this post. See \"Yoast Columns\" text in the help tab for more info."
+msgstr "מספר הקישורים החיצוניים לפוסט הזה. ראה \"עמודות yoast\" טקסט בלשונית \"עזרה\" לפרטים נוספים"
+
+#: src/integrations/admin/link-count-columns-integration.php:137
+msgid "Number of outgoing internal links in this post. See \"Yoast Columns\" text in the help tab for more info."
+msgstr "מספר הקישורים הפנימיים היוצאים בפוסט זה. לקבלת מידע נוסף עיינו בטקסט של \"עמודות יוסט\" בלשונית העזרה."
+
+#. translators: %s expands to Yoast
+#: admin/class-yoast-columns.php:60
+msgid "%s Columns"
+msgstr "%s עמודות"
+
+#: admin/class-meta-columns.php:109 admin/class-meta-columns.php:111
+#: admin/taxonomy/class-taxonomy-columns.php:92
+#: admin/taxonomy/class-taxonomy-columns.php:93
+msgid "Readability score"
+msgstr "ציון קריאות"
+
+#: admin/filters/class-cornerstone-filter.php:87
+#: admin/views/class-yoast-feature-toggles.php:100
+#: js/dist/externals-components.js:10 js/dist/new-settings.js:35
+#: js/dist/new-settings.js:297
+msgid "Cornerstone content"
+msgstr "עוגני תוכן"
+
+#: admin/class-premium-upsell-admin-block.php:58 js/dist/new-settings.js:315
+msgid "Superfast internal linking suggestions"
+msgstr "הצעות סופר מהירות לקישורים פנימיים"
+
+#: admin/class-yoast-form.php:141 admin/class-yoast-form.php:146
+#: js/dist/first-time-configuration.js:6 js/dist/new-settings.js:19
+msgid "Save changes"
+msgstr "שמור שינויים"
+
+#: admin/class-premium-popup.php:89 js/dist/block-editor.js:417
+#: js/dist/block-editor.js:447 js/dist/classic-editor.js:413
+#: js/dist/classic-editor.js:443 js/dist/elementor.js:419
+#: js/dist/elementor.js:449 js/dist/externals-components.js:7
+#: js/dist/externals-components.js:121
+msgid "1 year free support and updates included!"
+msgstr "כולל שנה חינם של עדכונים ושדרוגים!"
+
+#. translators: %2$s expands to 'RS Head Cleaner' plugin name of possibly
+#. conflicting plugin with regard to differentiating output between search
+#. engines and normal users.
+#: admin/class-plugin-conflict.php:85
+msgid "The plugin %2$s changes your site's output and in doing that differentiates between search engines and normal users, a process that's called cloaking. We highly recommend that you disable it."
+msgstr "התוסף %2$s משנה את פלט האתר שלך, ובתוך כך מבדיל בין מנועי חיפוש לבין משתמשים רגילים. תהליך זה נקרא \"Cloaking\". אנו ממליצים לך מאוד לכבות אותו."
+
+#: admin/class-premium-upsell-admin-block.php:63 js/dist/new-settings.js:315
+msgid "No ads!"
+msgstr "ללא פרסומות!"
+
+#: admin/class-premium-upsell-admin-block.php:59 js/dist/new-settings.js:315
+msgid "Facebook & Twitter"
+msgstr "פייסבוק וטוויטר"
+
+#: admin/class-premium-upsell-admin-block.php:59 js/dist/new-settings.js:315
+msgid "Social media preview"
+msgstr "תצוגה ברשתות חברתיות"
+
+#: admin/class-premium-upsell-admin-block.php:57 js/dist/new-settings.js:315
+msgid "Easy redirect manager"
+msgstr "מנהל הפניות פשוט וקל"
+
+#: admin/class-premium-upsell-admin-block.php:57 js/dist/new-settings.js:315
+msgid "No more dead links"
+msgstr "בלי קישורים מתים"
+
+#: admin/class-premium-upsell-admin-block.php:60 js/dist/new-settings.js:315
+msgid "Increase your SEO reach"
+msgstr "הגדל השפעת SEO"
+
+#: admin/class-admin.php:345
+msgid "Scroll to see the table content."
+msgstr "גלול לצפיה בתוכן הטבלה."
+
+#: admin/views/partial-notifications-warnings.php:22
+msgid "No new notifications."
+msgstr "אין הודעות חדשות"
+
+#: admin/class-bulk-editor-list-table.php:893
+msgid "Save all"
+msgstr "שמור הכל"
+
+#: admin/class-bulk-editor-list-table.php:892
+msgid "Save"
+msgstr "שמירה"
+
+#. translators: 1: Author name; 2: Site name.
+#: inc/options/class-wpseo-option-titles.php:255
+msgid "%1$s, Author at %2$s"
+msgstr "%1$s, מחבר ב-%2$s"
+
+#: admin/formatter/class-metabox-formatter.php:242
+#: js/dist/externals/analysis.js:332 js/dist/externals/analysisReport.js:17
+msgid "Marks are disabled in current view"
+msgstr "סימונים אינם פעילים בתצוגה הנוכחית"
+
+#: inc/class-wpseo-replace-vars.php:1515 js/dist/first-time-configuration.js:8
+msgid "Name"
+msgstr "שם"
+
+#: admin/views/tool-import-export.php:89
+msgid "Export settings"
+msgstr "ייצא הגדרות"
+
+#: admin/class-product-upsell-notice.php:169
+msgid "Please don't show me this notification anymore"
+msgstr "נא לא להציג יותר התראה זו"
+
+#. translators: %1$s is a link start tag to the bugreport guidelines on the
+#. Yoast help center, %2$s is the link closing tag.
+#: admin/class-product-upsell-notice.php:162
+msgid "If you are experiencing issues, %1$splease file a bug report%2$s and we'll do our best to help you out."
+msgstr "אם אתה חווה בעיות, %1$sאנא מלא דו\"ח תקלות%2$s ונעשה כמיטב יכולתנו על מנת לעזור לך."
+
+#. translators: %1$s expands to Yoast SEO, %2$s is a link start tag to the
+#. plugin page on WordPress.org, %3$s is the link closing tag.
+#: admin/class-product-upsell-notice.php:154
+msgid "We've noticed you've been using %1$s for some time now; we hope you love it! We'd be thrilled if you could %2$sgive us a 5 stars rating on WordPress.org%3$s!"
+msgstr "שמנו לב שאתה משתמש ב- %1$s כבר במשך זמן מה; אנחנו מקווים שאתה אוהב אותו! נשמח אם תוכל %2$sלתת לנו דירוג של 5 כוכבים ב- WordPress.org%3$s!"
+
+#. translators: %1$s: '%%term_title%%' variable used in titles and meta's
+#. template that's not compatible with the given template, %2$s: expands to
+#. 'HelpScout beacon'
+#: admin/class-admin.php:339
+msgid "Warning: the variable %1$s cannot be used in this template. See the %2$s for more info."
+msgstr "המשתנה %1$s לא ניתן לשימוש בתבנית זו. למידע נוסף ראו %2$s."
+
+#. translators: %1$s expands anchor to premium plugin page, %2$s expands to
+#. </a>
+#: admin/class-product-upsell-notice.php:137
+msgid "By the way, did you know we also have a %1$sPremium plugin%2$s? It offers advanced features, like a redirect manager and support for multiple keyphrases. It also comes with 24/7 personal support."
+msgstr "דרך אגב, ידעת שיש לנו גם %1$sתוסף פרימיום%2$s? הוא מציע מאפיינים מתקדמים, כמו ניהול הפניות ותמיכה במספר ביטויי מפתח. כמו כן, הוא מגיע עם תמיכה אישית 24/7."
+
+#: admin/class-bulk-editor-list-table.php:800
+msgid "(no title)"
+msgstr "(ללא כותרת)"
+
+#. translators: 1: Yoast SEO
+#: admin/views/class-yoast-feature-toggles.php:150
+msgid "The %1$s admin bar menu contains useful links to third-party tools for analyzing pages and makes it easy to see if you have new notifications."
+msgstr "תפריט סרגל הניהול של %1$s מכיל קישורים שימושיים לכלים של צד שלישי לצורך ניתוח עמודים והוא מאפשר לכם לראות בקלות אם יש לכם הודעות חדשות."
+
+#: admin/views/class-yoast-feature-toggles.php:147 js/dist/new-settings.js:35
+#: js/dist/new-settings.js:297 js/dist/new-settings.js:298
+msgid "Admin bar menu"
+msgstr "תפריט בסרגל הניהול"
+
+#: admin/pages/network.php:19 admin/views/tabs/network/features.php:22
+msgid "Features"
+msgstr "מאפיינים"
+
+#: admin/views/licenses.php:199
+msgid "Gain access to our 24/7 support team"
+msgstr "קבל גישה לצוות התמיכה שלנו 24/7."
+
+#: admin/metabox/class-metabox.php:171 js/dist/externals/analysis.js:118
+#: js/dist/externals/analysis.js:240 js/dist/externals/analysis.js:332
+#: js/dist/externals/replacementVariableEditor.js:83
+#: js/dist/externals/searchMetadataPreviews.js:276 js/dist/new-settings.js:30
+#: js/dist/new-settings.js:32 js/dist/new-settings.js:35
+#: js/dist/new-settings.js:39 js/dist/new-settings.js:62
+#: js/dist/new-settings.js:73 js/dist/new-settings.js:101
+#: js/dist/new-settings.js:124 js/dist/new-settings.js:186
+#: js/dist/new-settings.js:200 js/dist/new-settings.js:210
+#: js/dist/new-settings.js:229
+msgid "SEO title"
+msgstr "כותרת SEO"
+
+#: inc/options/class-wpseo-option-titles.php:1016
+msgid "Greater than sign"
+msgstr "סימן גדול מ-"
+
+#: inc/options/class-wpseo-option-titles.php:1012
+msgid "Less than sign"
+msgstr "סימן פחות מ..."
+
+#: inc/options/class-wpseo-option-titles.php:1008
+msgid "Right angle quotation mark"
+msgstr "סימן ציטוט זוויתי ימני"
+
+#: inc/options/class-wpseo-option-titles.php:1004
+msgid "Left angle quotation mark"
+msgstr "סימן ציטוט זוויתי שמאלי"
+
+#: inc/options/class-wpseo-option-titles.php:1000
+msgid "Small tilde"
+msgstr "טילדה קטנה"
+
+#: inc/options/class-wpseo-option-titles.php:996
+msgid "Vertical bar"
+msgstr "קו אנכי"
+
+#: inc/options/class-wpseo-option-titles.php:992
+msgid "Low asterisk"
+msgstr "כוכבית נמוכה"
+
+#: inc/options/class-wpseo-option-titles.php:988
+msgid "Asterisk"
+msgstr "כוכבית"
+
+#: inc/options/class-wpseo-option-titles.php:984
+msgid "Bullet"
+msgstr "נקודה"
+
+#: inc/options/class-wpseo-option-titles.php:980
+msgid "Middle dot"
+msgstr "נקודה אמצעית"
+
+#: inc/options/class-wpseo-option-titles.php:972
+msgid "Em dash"
+msgstr "מפריד Em"
+
+#: inc/options/class-wpseo-option-titles.php:968
+msgid "En dash"
+msgstr "מפריד En"
+
+#: inc/options/class-wpseo-option-titles.php:964
+msgid "Dash"
+msgstr "מפריד"
+
+#: admin/metabox/class-metabox.php:182 admin/metabox/class-metabox.php:187
+#: js/dist/block-editor.js:454 js/dist/classic-editor.js:450
+#: js/dist/elementor.js:456
+msgid "No"
+msgstr "לא"
+
+#: admin/metabox/class-metabox.php:181 admin/metabox/class-metabox.php:186
+#: js/dist/block-editor.js:454 js/dist/classic-editor.js:450
+#: js/dist/elementor.js:456
+msgid "Yes"
+msgstr "כן"
+
+#: admin/views/tool-bulk-editor.php:63
+msgid "Posts list"
+msgstr "רשימת פוסטים"
+
+#: admin/views/tool-bulk-editor.php:62
+msgid "Posts list navigation"
+msgstr "ניווט ברשימת הפוסטים"
+
+#: admin/views/tool-bulk-editor.php:61
+msgid "Filter posts list"
+msgstr "סינון רשימת פוסטים"
+
+#. translators: Text between 1: and 2: will only be shown to screen readers. 3:
+#. expands to the product name.
+#. translators: Text between 1: and 2: will only be shown to screen readers. 3:
+#. expands to the product name, e.g. "News SEO" or "all the Yoast Plugins"
+#: admin/views/licenses.php:257 admin/views/licenses.php:370
+msgid "More information %1$sabout %3$s%2$s"
+msgstr "מידע נוסף %1$sאודות %3$s%2$s"
+
+#: admin/views/licenses.php:204 admin/views/licenses.php:317
+msgid "Installed"
+msgstr "מותקן"
+
+#: admin/views/licenses.php:198
+msgid "Premium support"
+msgstr "תמיכת פרימיום"
+
+#. translators: %1$s expands to Yoast SEO, %2$s expands to WooCommerce
+#: admin/views/licenses.php:89
+msgid "Seamless integration between %1$s and %2$s"
+msgstr "הרחבה מלאה בין %1$s לבין %2$s"
+
+#: admin/views/licenses.php:66
+msgid "Optimize your site for Google News"
+msgstr "בצע אופטימיזציה לאתר בחדשות גוגל"
+
+#. translators: Hidden accessibility text; %s: post title.
+#: admin/class-bulk-editor-list-table.php:814
+msgid "Edit &#8220;%s&#8221;"
+msgstr "ערוך את &#8220;%s&#8221;"
+
+#: admin/menu/class-base-menu.php:260 admin/menu/class-base-menu.php:264
+#: src/integrations/admin/menu-badge-integration.php:35 js/dist/academy.js:6
+msgid "Premium"
+msgstr "פרימיום"
+
+#: admin/class-admin.php:267
+msgid "Get Premium"
+msgstr "קבל פרימיום"
+
+#: admin/views/partial-notifications-warnings.php:20
+#: inc/class-wpseo-admin-bar-menu.php:396
+msgid "Notifications"
+msgstr "התראות"
+
+#: admin/views/user-profile.php:48
+msgid "Removes the focus keyphrase section from the metabox and disables all SEO-related suggestions."
+msgstr "מסיר את ביטוי מפתח למיקוד מה-metabox ומנטרל את כל המלצות ה-SEO."
+
+#: admin/views/user-profile.php:45
+msgid "Disable SEO analysis"
+msgstr "בטל ניתוח SEO"
+
+#: admin/views/js-templates-primary-term.php:28
+msgid "Make primary"
+msgstr "הגדר כראשי"
+
+#. translators: Hidden accessibility text; %s: number of notifications.
+#: admin/menu/class-admin-menu.php:118 inc/class-wpseo-admin-bar-menu.php:868
+msgid "%s notification"
+msgid_plural "%s notifications"
+msgstr[0] "התראה %s"
+msgstr[1] "%s התראות"
+
+#: admin/views/user-profile.php:57
+msgid "Disable readability analysis"
+msgstr "בטל ניתוח קריאות"
+
+#: admin/views/user-profile.php:60
+msgid "Removes the readability analysis section from the metabox and disables all readability-related suggestions."
+msgstr "מסיר את כרטיסיית ניתוח קריאות מה-metabox ומבטל את כל ההצעות הקשורות לקריאות."
+
+#: admin/views/class-yoast-feature-toggles.php:83
+#: js/dist/externals-components.js:94 js/dist/new-settings.js:35
+#: js/dist/new-settings.js:297
+msgid "Readability analysis"
+msgstr "ניתוח קריאות"
+
+#: admin/formatter/class-metabox-formatter.php:123
+#: admin/formatter/class-metabox-formatter.php:153
+#: admin/formatter/class-metabox-formatter.php:183
+#: admin/statistics/class-statistics-service.php:217
+#: inc/class-wpseo-rank.php:140 inc/class-wpseo-rank.php:176
+#: inc/class-wpseo-rank.php:208 inc/class-wpseo-rank.php:235
+#: js/dist/block-editor.js:1 js/dist/editor-modules.js:113
+#: js/dist/externals-components.js:163 js/dist/externals/analysis.js:332
+#: js/dist/frontend-inspector-resources.js:1 js/dist/post-edit.js:1
+#: js/dist/term-edit.js:1
+msgid "Needs improvement"
+msgstr "דרוש שיפור"
+
+#: admin/formatter/class-metabox-formatter.php:70
+#: admin/metabox/class-metabox-section-readability.php:28
+#: inc/class-wpseo-admin-bar-menu.php:256
+msgid "Readability"
+msgstr "קריאוּת"
+
+#: admin/formatter/class-metabox-formatter.php:237
+#: js/dist/editor-modules.js:113 js/dist/externals-components.js:7
+#: js/dist/externals/analysisReport.js:35
+msgid "Improvements"
+msgstr "שיפורים"
+
+#: admin/views/partial-notifications-errors.php:22
+msgid "Good job! We could detect no serious SEO problems."
+msgstr "עבודה טובה! לא נמצאו בעיות SEO משמעותיות."
+
+#: admin/views/partial-notifications-errors.php:21
+msgid "We have detected the following issues that affect the SEO of your site."
+msgstr "מצאנו את הסוגיות הבאות שמשפיעות על ה-SEO של אתרך."
+
+#: admin/formatter/class-metabox-formatter.php:236
+#: admin/views/partial-notifications-errors.php:20
+#: js/dist/editor-modules.js:113 js/dist/externals-components.js:7
+#: js/dist/externals/analysisReport.js:35
+msgid "Problems"
+msgstr "בעיות"
+
+#: admin/formatter/class-metabox-formatter.php:203
+msgid "Analysis"
+msgstr "ניתוח"
+
+#: admin/formatter/class-metabox-formatter.php:116
+#: admin/formatter/class-metabox-formatter.php:146
+#: admin/formatter/class-metabox-formatter.php:176 inc/class-wpseo-rank.php:138
+msgid "Not available"
+msgstr "לא זמין"
+
+#. translators: Hidden accessibility text.
+#: admin/class-meta-columns.php:252
+msgid "Filter by SEO Score"
+msgstr "סינון לפי ציון SEO"
+
+#. translators: Hidden accessibility text.
+#: admin/class-meta-columns.php:166
+msgid "Meta description not set."
+msgstr "תיאור מטא טרם נקבע."
+
+#: admin/menu/class-admin-menu.php:54 admin/pages/dashboard.php:32
+msgid "Dashboard"
+msgstr "לוח בקרה"
+
+#. translators: %1$s is a link start tag to the permalink settings page, %2$s
+#. is the link closing tag.
+#: src/services/health-check/postname-permalink-reports.php:71
+msgid "You can fix this on the %1$sPermalink settings page%2$s."
+msgstr "ניתן לתקן זאת דרך %1$sהגדרות מבנה קישורים%2$s."
+
+#: inc/class-wpseo-replace-vars.php:1479
+msgid "Replaced with the primary category of the post/page"
+msgstr "הוחלף בקטגוריה הראשית של הפוסט / העמוד"
+
+#. translators: $s expands to Yoast SEO Premium
+#. translators: %s expands to the product name, e.g. "News SEO" or "all the
+#. Yoast Plugins"
+#. translators: 1: Yoast WooCommerce SEO
+#: admin/views/licenses.php:244 admin/views/licenses.php:356
+#: js/dist/integrations-page.js:27
+msgid "Buy %s"
+msgstr "קנה %s"
+
+#. translators: %1$s expands to Yoast SEO
+#: admin/class-bulk-title-editor-list-table.php:50
+msgid "New %1$s Title"
+msgstr "כותרת %1$s חדשה"
+
+#. translators: %1$s expands to Yoast SEO
+#: admin/class-bulk-title-editor-list-table.php:48
+msgid "Existing %1$s Title"
+msgstr "כותרת %1$s קיימת"
+
+#: inc/sitemaps/class-sitemaps-cache-validator.php:294
+msgid "Expected an integer as input."
+msgstr "ערך מספרי שלם מצופה כקלט"
+
+#: inc/sitemaps/class-sitemaps-cache-validator.php:111
+msgid "Trying to build the sitemap cache key, but the postfix and prefix combination leaves too little room to do this. You are probably requesting a page that is way out of the expected range."
+msgstr "ניסינו לבנות את מפתח המטמון למפת אתר, אך השילוב של תחילית וסופית משאיר מעט מדי מקום מכדי לעשות זאת. ככל הנראה העמוד שנמצא מעבר לטווח המצופה."
+
+#: admin/views/redirects.php:32
+#: src/integrations/admin/redirects-page-integration.php:48
+msgid "Redirects"
+msgstr "הפניות"
+
+#: src/integrations/admin/crawl-settings-integration.php:247
+msgid "Remove"
+msgstr "הסר"
+
+#: src/integrations/admin/crawl-settings-integration.php:246
+msgid "Keep"
+msgstr "שמור"
+
+#. translators: %s is the taxonomy title. This will be shown to screenreaders
+#: admin/views/js-templates-primary-term.php:38
+msgid "Primary %s"
+msgstr "%s ראשי"
+
+#: admin/views/js-templates-primary-term.php:32
+msgid "Primary"
+msgstr "ראשי"
+
+#. translators: Hidden accessibility text; %1$s expands to the term title, %2$s
+#. to the taxonomy title.
+#: admin/views/js-templates-primary-term.php:18
+msgid "Make %1$s primary %2$s"
+msgstr "הפוך את %1$s ל%2$s הראשי"
+
+#: admin/pages/network.php:20 admin/views/tabs/network/integrations.php:22
+#: src/integrations/admin/integrations-page.php:80
+#: js/dist/integrations-page.js:85
+msgid "Integrations"
+msgstr "הרחבות"
+
+#: admin/taxonomy/class-taxonomy-columns.php:174
+msgid "Term is set to noindex."
+msgstr "המונח מוגדר כ-noindex."
+
+#: src/integrations/admin/crawl-settings-integration.php:200
+#: src/presenters/admin/light-switch-presenter.php:120
+msgid "Enabled"
+msgstr "פעיל"
+
+#: src/integrations/admin/crawl-settings-integration.php:199
+#: src/presenters/admin/light-switch-presenter.php:120
+msgid "Disabled"
+msgstr "מכובה"
+
+#. translators: %s: wp_title() function.
+#: inc/class-wpseo-replace-vars.php:1461
+msgid "The separator defined in your theme's %s tag."
+msgstr "הקו מפריד שהוגדר בתבנית שלך %s תגית."
+
+#: inc/class-wpseo-rank.php:139
+msgid "No index"
+msgstr "No index"
+
+#: admin/class-meta-columns.php:101 admin/class-meta-columns.php:103
+#: admin/taxonomy/class-taxonomy-columns.php:87
+#: admin/taxonomy/class-taxonomy-columns.php:88
+#: inc/class-wpseo-admin-bar-menu.php:244
+msgid "SEO score"
+msgstr "ציון SEO"
+
+#. Author of the plugin
+msgid "Team Yoast"
+msgstr "צוות Yoast"
+
+#. Description of the plugin
+msgid "The first true all-in-one SEO solution for WordPress, including on-page content analysis, XML sitemaps and much more."
+msgstr "פתרון ה-SEO הכולל הראשון עבור וורדפרס, הכולל ניתוח עמוד, מפות אתר ועוד."
+
+#. Plugin Name of the plugin
+#: admin/capabilities/class-capability-manager-integration.php:72
+#: src/presenters/meta-description-presenter.php:36 js/dist/block-editor.js:570
+msgid "Yoast SEO"
+msgstr "יוסט SEO"
+
+#: wp-seo-main.php:552
+msgid "Activation failed:"
+msgstr "ההפעלה נכשלה:"
+
+#: wp-seo-main.php:541
+msgid "The filter extension seem to be unavailable. Please ask your web host to enable it."
+msgstr "כנראה שהמסנן אינו פעיל, יש לפנות לחברת האכסון כדי להפעיל אותו."
+
+#. translators: %1$s expands to Yoast SEO, %2$s / %3$s: links to the
+#. installation manual in the Readme for the Yoast SEO code repository on
+#. GitHub
+#: wp-seo-main.php:517
+msgid "The %1$s plugin installation is incomplete. Please refer to %2$sinstallation instructions%3$s."
+msgstr "התקנת התוסף %1$s לא הושלמה. אנא פנה אל %2$sהוראות ההתקנה%3$s."
+
+#: wp-seo-main.php:495
+msgid "The Standard PHP Library (SPL) extension seem to be unavailable. Please ask your web host to enable it."
+msgstr "נראה כי ההרחבה Standard PHP Library (SPL)  אינה זמינה. נא לפנות לחברת האחסון להפעיל אותה."
+
+#: inc/class-wpseo-admin-bar-menu.php:637
+#: inc/class-wpseo-admin-bar-menu.php:685
+msgid "SEO Settings"
+msgstr "הגדרות SEO"
+
+#: inc/class-wpseo-admin-bar-menu.php:455
+msgid "Mobile-Friendly Test"
+msgstr "בדיקת תאימות למובייל"
+
+#: inc/class-wpseo-admin-bar-menu.php:450
+msgid "Google Page Speed Test"
+msgstr "בדיקת מהירות טעינת עמוד"
+
+#: inc/class-wpseo-admin-bar-menu.php:445
+msgid "Facebook Debugger"
+msgstr "פייסבוק דבאגר"
+
+#: inc/class-wpseo-admin-bar-menu.php:426
+msgid "Analyze this page"
+msgstr "נתח עמוד זה"
+
+#. translators: %s expands to an invalid URL.
+#: inc/options/class-wpseo-option.php:391
+msgid "%s does not seem to be a valid url. Please correct."
+msgstr "%s איננה כתובת חוקית. נא לתקן."
+
+#. translators: 1: Verification string from user input; 2: Service name.
+#: inc/options/class-wpseo-option.php:355
+msgid "%1$s does not seem to be a valid %2$s verification string. Please correct."
+msgstr "נראה כי %1$s איננה מחרוזת אימות %2$s תקינה. נא לתקן."
+
+#. translators: %s expands to the name of a post type (plural).
+#: inc/class-upgrade.php:1375 inc/options/class-wpseo-option-titles.php:292
+msgid "%s Archive"
+msgstr "ארכיון %s"
+
+#. translators: %s expands to the search phrase.
+#: inc/options/class-wpseo-option-titles.php:257
+msgid "You searched for %s"
+msgstr "חיפוש עבור %s"
+
+#. translators: %s expands to a twitter user name.
+#: inc/options/class-wpseo-option-social.php:184
+msgid "%s does not seem to be a valid Twitter Username. Please correct."
+msgstr "%s איננו שם משתמש חוקי בטוויטר. נא לתקן."
+
+#: inc/options/class-wpseo-option-social.php:110
+msgid "Summary with large image"
+msgstr "תקציר עם תמונה גדולה"
+
+#. translators: 1: link to post; 2: link to blog.
+#: inc/options/class-wpseo-option-titles.php:260
+msgid "The post %1$s appeared first on %2$s."
+msgstr "הפוסט %1$s הופיע לראשונה ב-%2$s."
+
+#: inc/options/class-wpseo-option-ms.php:245
+msgid "No numeric value was received."
+msgstr "לא התקבל ערך מספרי."
+
+#. translators: %s is the ID number of a blog.
+#: inc/options/class-wpseo-option-ms.php:233
+msgid "This must be an existing blog. Blog %s does not exist or has been marked as deleted."
+msgstr "זה חייב להיות אתר קיים. האתר %s לא קיימת או סומן כנמחק."
+
+#: inc/options/class-wpseo-option-ms.php:229
+#: inc/options/class-wpseo-option-ms.php:245
+msgid "The default blog setting must be the numeric blog id of the blog you want to use as default."
+msgstr "הגדרת ברירת המחדל של האתר צריכה להיות ערך מספרי של האתר בו יש להשתמש כברירת מחדל."
+
+#. translators: %1$s expands to the option name and %2$sexpands to Yoast SEO
+#: inc/options/class-wpseo-option-ms.php:210
+msgid "%1$s is not a valid choice for who should be allowed access to the %2$s settings. Value reset to the default."
+msgstr "%1$s לא ניתן לאפשר גישה לבחירה זו %2$s. הבחירה אופסה לברירת מחדל."
+
+#. translators: %s expands to a taxonomy slug.
+#: inc/options/class-wpseo-option-titles.php:565
+msgid "Please select a valid post type for taxonomy \"%s\""
+msgstr "נא לבחור סוג תוכן לטקסונומיה \"%s\""
+
+#. translators: %s expands to a post type.
+#: inc/options/class-wpseo-option-titles.php:527
+msgid "Please select a valid taxonomy for post type \"%s\""
+msgstr "נא לבחור טקסונומיה לתוכן מסוג \"%s\""
+
+#: inc/options/class-wpseo-option-titles.php:265
+msgid "You searched for"
+msgstr "חיפשת"
+
+#: inc/options/class-wpseo-option-titles.php:264
+msgid "Home"
+msgstr "דף הבית"
+
+#: inc/options/class-wpseo-option-titles.php:263
+msgid "Archives for"
+msgstr "ארכיון עבור"
+
+#: inc/options/class-wpseo-option-titles.php:262
+msgid "Error 404: Page not found"
+msgstr "שגיאה 404: הדף לא נמצא"
+
+#: admin/formatter/class-metabox-formatter.php:137
+#: admin/formatter/class-metabox-formatter.php:167
+#: admin/formatter/class-metabox-formatter.php:197
+#: admin/statistics/class-statistics-service.php:227
+#: inc/class-wpseo-rank.php:142 inc/class-wpseo-rank.php:186
+#: inc/class-wpseo-rank.php:218 inc/class-wpseo-rank.php:245
+#: js/dist/block-editor.js:1 js/dist/editor-modules.js:113
+#: js/dist/externals-components.js:163 js/dist/externals/analysis.js:332
+#: js/dist/frontend-inspector-resources.js:1 js/dist/post-edit.js:1
+#: js/dist/term-edit.js:1
+msgid "Good"
+msgstr "טוב"
+
+#: inc/class-wpseo-replace-vars.php:1525
+msgid "Replaced with a custom taxonomies description"
+msgstr "הוחלף בתיאור טקסונומיה"
+
+#: inc/class-wpseo-replace-vars.php:1524
+msgid "Replaced with a posts custom taxonomies, comma separated."
+msgstr "הוחלף בטקסונומיות פוסטים מופרדים בפסיקים."
+
+#: inc/class-wpseo-replace-vars.php:1523
+msgid "Replaced with a posts custom field value"
+msgstr "הוחלף בערך של השדה המיוחד"
+
+#: inc/class-wpseo-replace-vars.php:1522
+msgid "Replaced with the slug which caused the 404"
+msgstr "הוחלף במזהה כתובת שיצר שגיאת 404"
+
+#: inc/class-wpseo-replace-vars.php:1521
+msgid "Replaced with the posts focus keyphrase"
+msgstr "הוחלף בביטוי מפתח למיקוד של הפוסטים"
+
+#: inc/class-wpseo-replace-vars.php:1520
+msgid "Attachment caption"
+msgstr "מצורף הכיתוב"
+
+#: inc/class-wpseo-replace-vars.php:1519
+msgid "Replaced with the current page number"
+msgstr "הוחלף במספר העמוד הנוכחי"
+
+#: inc/class-wpseo-replace-vars.php:1518
+msgid "Replaced with the current page total"
+msgstr "הוחלף במספר העמודים הכולל"
+
+#: inc/class-wpseo-replace-vars.php:1517
+msgid "Replaced with the current page number with context (i.e. page 2 of 4)"
+msgstr "הוחלף במספר העמוד הנוכחי כולל מלל (למשל עמוד 2 מתוך 4)"
+
+#: inc/class-wpseo-replace-vars.php:1488
+msgid "Replaced with the current year"
+msgstr "השנה הנוכחית"
+
+#: inc/class-wpseo-replace-vars.php:1489
+msgid "Replaced with the current month"
+msgstr "החודש הנוכחי"
+
+#: inc/class-wpseo-replace-vars.php:1490
+msgid "Replaced with the current day"
+msgstr "היום הנוכחי"
+
+#: inc/class-wpseo-replace-vars.php:1487
+msgid "Replaced with the current date"
+msgstr "התאריך הנוכחי"
+
+#: inc/class-wpseo-replace-vars.php:1516
+msgid "Replaced with the post/page author's 'Biographical Info'"
+msgstr "הוחלף בביוגרפיה של מחבר הפוסט/עמוד"
+
+#: inc/class-wpseo-replace-vars.php:1515
+msgid "Replaced with the post/page author's 'nicename'"
+msgstr "הוחלף בכינוי של מחבר העמוד/פוסט"
+
+#: inc/class-wpseo-replace-vars.php:1514
+msgid "Replaced with the post/page ID"
+msgstr "הוחלף במזהה של הפוסט/עמוד"
+
+#: inc/class-wpseo-replace-vars.php:1513
+msgid "Replaced with the post/page modified time"
+msgstr "הוחלף בשעת עדכון הפוסט/עמוד"
+
+#: inc/class-wpseo-replace-vars.php:1512
+msgid "Replaced with the content type plural label"
+msgstr "הוחלף בשם של סוג התוכן בלשון רבים"
+
+#: inc/class-wpseo-replace-vars.php:1511
+msgid "Replaced with the content type single label"
+msgstr "הוחלף בשם של סוג התוכן בלשון יחיד"
+
+#: inc/class-wpseo-replace-vars.php:1484
+msgid "Replaced with the current search phrase"
+msgstr "הוחלף בביטוי החיפוש הנוכחי"
+
+#: inc/class-wpseo-replace-vars.php:1483
+msgid "Replaced with the term name"
+msgstr "הוחלף בשם המונח"
+
+#: inc/class-wpseo-replace-vars.php:1482
+msgid "Replaced with the term description"
+msgstr "הוחלף בתיאור המונח"
+
+#: inc/class-wpseo-replace-vars.php:1481
+msgid "Replaced with the tag description"
+msgstr "הוחלף בתיאור התגית"
+
+#: inc/class-wpseo-replace-vars.php:1480
+msgid "Replaced with the category description"
+msgstr "הוחלף בתיאור הקטגוריה"
+
+#: inc/class-wpseo-replace-vars.php:1478
+msgid "Replaced with the post categories (comma separated)"
+msgstr "הוחלף בקטגוריות הפוסט (מופרדות בפסיקים)"
+
+#: inc/class-wpseo-replace-vars.php:1477
+msgid "Replaced with the current tag/tags"
+msgstr "הוחלף בתגיות הנוכחיות"
+
+#: inc/class-wpseo-replace-vars.php:1476
+msgid "Replaced with the post/page excerpt (without auto-generation)"
+msgstr "הוחלף בתקציר הפוסט/עמוד (ללא יצירה אוטומטית)"
+
+#: inc/class-wpseo-replace-vars.php:1475
+msgid "Replaced with the post/page excerpt (or auto-generated if it does not exist)"
+msgstr "הוחלף בתקציר הפוסט/עמוד (או שייווצר באופן אוטומטי אם לא קיים)"
+
+#: inc/class-wpseo-replace-vars.php:1473
+msgid "The site's name"
+msgstr "שם האתר"
+
+#: inc/class-wpseo-replace-vars.php:1471
+msgid "Replaced with the title of the parent page of the current page"
+msgstr "הוחלף בכותרת של עמוד-אב"
+
+#: inc/class-wpseo-replace-vars.php:1470
+msgid "Replaced with the title of the post/page"
+msgstr "הוחלף בכותרת הפוסט/עמוד"
+
+#: inc/class-wpseo-replace-vars.php:1469
+msgid "Replaced with the date of the post/page"
+msgstr "הוחלף בתאריך הפוסט/עמוד"
+
+#. translators: 1: current page number, 2: total number of pages.
+#: inc/class-wpseo-replace-vars.php:1032
+msgid "Page %1$d of %2$d"
+msgstr "עמוד %1$d מתוך %2$d"
+
+#: inc/class-wpseo-replace-vars.php:122
+msgid "You cannot overrule a WPSEO standard variable replacement by registering a variable with the same name. Use the \"wpseo_replacements\" filter instead to adjust the replacement value."
+msgstr "לא ניתן שנות משתנה WPSEO על ידי רישום משתנה באותו שם, יש להשתמש בפילטר \"wpseo_replacements\"."
+
+#: inc/class-wpseo-replace-vars.php:118
+msgid "A replacement variable with the same name has already been registered. Try making your variable name unique."
+msgstr "כבר נרשם משתנה החלפה עם שם זהה. יש לבחור שם אחר למשתנה."
+
+#: inc/class-wpseo-replace-vars.php:108
+msgid "A replacement variable can not start with \"%%cf_\" or \"%%ct_\" as these are reserved for the WPSEO standard variable variables for custom fields and custom taxonomies. Try making your variable name unique."
+msgstr "משתנה החלפה לא יכול להתחיל עם \"%%cf_\" או עם \"%%ct_\" משום שתחיליות אלה שמורות למשתני ברירת המחדל של התוסף לתכנים מותאמים וטקסונומיות. יש לבחור שם אחר למשתנה."
+
+#: inc/class-wpseo-replace-vars.php:105
+msgid "A replacement variable can only contain alphanumeric characters, an underscore or a dash. Try renaming your variable."
+msgstr "משתנה החלפה יכול להכיל רק תווים אלפאנומריים, קו תחתון או במקף. יש לשנות את המשתנה."
+
+#. translators: %1$s resolves to Yoast SEO, %2$s resolves to the Settings
+#. submenu item.
+#: src/presenters/meta-description-presenter.php:35
+msgid "Admin only notice: this page does not show a meta description because it does not have one, either write it for this page specifically or go into the [%1$s - %2$s] menu and set up a template."
+msgstr "מנהל שים לב: דף זה לא מציג תיאור מטא בגלל שאין לו תיאור. ניתן לכתוב תיאור ספציפי לעמוד זה או לגשת לתפריט [%1$s - %2$s] וליצור תיאור גנרי."
+
+#: inc/options/class-wpseo-option-titles.php:258
+msgid "Page not found"
+msgstr "העמוד לא נמצא"
+
+#. translators: %s expands to the variable used for term title.
+#: admin/formatter/class-term-metabox-formatter.php:162
+#: inc/class-upgrade.php:1378 inc/options/class-wpseo-option-titles.php:328
+msgid "%s Archives"
+msgstr "ארכיון %s"
+
+#: admin/views/user-profile.php:28
+msgid "Meta description to use for Author page"
+msgstr "תיאור מטא בדפי מחברים"
+
+#: admin/views/user-profile.php:24
+msgid "Title to use for Author page"
+msgstr "כותרת בדף מחבר"
+
+#. translators: %1$s expands to Yoast SEO
+#: admin/views/user-profile.php:11
+msgid "%1$s settings"
+msgstr "הגדרות %1$s"
+
+#. translators: %1$s expands to Yoast SEO
+#: admin/views/tabs/tool/wpseo-export.php:15
+msgid "Export your %1$s settings"
+msgstr "ייצוא הגדרות %1$s"
+
+#: admin/class-export.php:61 admin/views/tabs/tool/wpseo-import.php:25
+#: admin/views/tabs/tool/wpseo-import.php:45
+#: admin/views/tool-import-export.php:86
+msgid "Import settings"
+msgstr "ייבוא ​​הגדרות"
+
+#: admin/views/tabs/tool/import-seo.php:18
+#: admin/views/tabs/tool/import-seo.php:49
+#: admin/views/tool-import-export.php:92
+msgid "Import from other SEO plugins"
+msgstr "ייבוא הגדרות מתוסף SEO אחר"
+
+#: admin/views/tabs/tool/import-seo.php:100
+msgid "Import"
+msgstr "ייבוא"
+
+#. translators: %s expands to robots.txt.
+#. translators: %s expands to ".htaccess".
+#: admin/views/tool-file-editor.php:135 admin/views/tool-file-editor.php:235
+msgid "If you had a %s file and it was editable, you could edit it from here."
+msgstr "אם לאתר היה קובץ %s והוא היה פתוח לכתיבה, ניתן היה לערוך אותו מכאן."
+
+#. translators: %s expands to robots.txt.
+#. translators: %s expands to ".htaccess".
+#: admin/views/tool-file-editor.php:153 admin/views/tool-file-editor.php:203
+msgid "If your %s were writable, you could edit it from here."
+msgstr "אם הקובץ %s היה פתוח לכתיבה, ניתן היה לערוך אותו מכאן."
+
+#. translators: %s expands to robots.txt.
+#: admin/views/tool-file-editor.php:116
+msgid "You don't have a %s file, create one here:"
+msgstr "לאתר אין קובץ %s, צור קובץ:"
+
+#: admin/statistics/class-statistics-service.php:80
+msgid "Below are your published posts' SEO scores. Now is as good a time as any to start improving some of your posts!"
+msgstr "בהמשך תמצאו את ציוני ה-SEO עבור הפוסט. זה זמן מצוין להתחיל לשפר את הפוסטים."
+
+#: admin/views/tabs/dashboard/dashboard.php:40
+msgid "Credits"
+msgstr "קרדיטים"
+
+#: admin/pages/tools.php:90
+msgid "&laquo; Back to Tools page"
+msgstr "חזרה לעמוד כלים"
+
+#. translators: %1$s expands to Yoast SEO
+#: admin/pages/tools.php:49
+msgid "%1$s comes with some very powerful built-in tools:"
+msgstr "%1$s מגיע עם כמה כלים מובנים חזקים מאוד:"
+
+#: admin/pages/tools.php:37
+msgid "This tool allows you to quickly change important files for your SEO, like your robots.txt and, if you have one, your .htaccess file."
+msgstr "כלי זה מאפשר לשנות בקלות קבצים חשובים לשיפור ה-SEO, לדוגמה קובץ robots.txt וקובץ .htaccess."
+
+#: admin/pages/tools.php:36
+msgid "File editor"
+msgstr "עריכת קבצים"
+
+#: admin/pages/tools.php:31
+msgid "Import settings from other SEO plugins and export your settings for re-use on (another) site."
+msgstr "ייבוא הגדרות מתוספי SEO אחרים או ייצוא הגדרות לשימוש באתר אחר."
+
+#: admin/pages/tools.php:30
+msgid "Import and Export"
+msgstr "ייבוא וייצוא"
+
+#: admin/pages/tools.php:43
+msgid "This tool allows you to quickly change titles and descriptions of your posts and pages without having to go into the editor for each page."
+msgstr "כלי זה מאפשר לך לבצע שינויים בכותרות ובתיאורי עמודים ומאמרים במהירות ללא צורך בכניסה לעורך טקסט של כל עמוד בנפרד."
+
+#: admin/pages/tools.php:42
+msgid "Bulk editor"
+msgstr "עריכה קבוצתית"
+
+#: src/integrations/admin/import-integration.php:117
+msgid "Default settings"
+msgstr "הגדרות ברירת מחדל"
+
+#: admin/views/tool-bulk-editor.php:111 js/dist/new-settings.js:231
+msgid "Description"
+msgstr "תאור"
+
+#: admin/views/tabs/network/restore-site.php:32
+msgid "Restore site to defaults"
+msgstr "שיחזור ברירת המחדל של האתר"
+
+#: admin/views/tabs/network/restore-site.php:23
+#: admin/views/tabs/network/restore-site.php:28
+msgid "Site ID"
+msgstr "ה-ID של האתר"
+
+#: admin/views/tabs/network/restore-site.php:16
+msgid "Using this form you can reset a site to the default SEO settings."
+msgstr "באמצעות טופס זה ניתן לשחזר את הגדרות ברירת המחדל."
+
+#: admin/views/tabs/network/general.php:54
+msgid "Privacy sensitive (FB admins and such), theme specific (title rewrite) and a few very site specific settings will not be imported to new sites."
+msgstr "הגדרות רגישות לפרטיות (מנהלי פייסבוק וכאלה), הגדרות ספציפי לתבנית (שכתוב כותרות) וכמה הגדרות ספציפיות אחרות לא ייובאו לאתרים חדשים."
+
+#. translators: 1: link open tag; 2: link close tag.
+#: admin/views/tabs/network/general.php:47
+msgid "Enter the %1$sSite ID%2$s for the site whose settings you want to use as default for all sites that are added to your network. Leave empty for none (i.e. the normal plugin defaults will be used)."
+msgstr "יש להכניס את %1$sמזהה האתר%2$s שבהגדרותיו תרצה להשתמש כברירת מחדל עבור כל האתרים שהוספו לרשת. השאר ריק אם אין אתר כזה (במצב זה יעשה שימוש בהגדרות ברירת המחדל של התוסף)."
+
+#: admin/views/tabs/network/general.php:40
+msgid "Choose the site whose settings you want to use as default for all sites that are added to your network. If you choose 'None', the normal plugin defaults will be used."
+msgstr "יש לבחור את האתר שהגדרותיו ישמשו כהגדרות ברירת מחדל לכל אחר חדש שיתווסף לרשת. אם לא יבחר אתר מסוים, יעשה שימשו בהגדרות ברירת המחדל של התוסף."
+
+#: admin/views/tabs/network/general.php:37
+#: admin/views/tabs/network/general.php:43
+msgid "New sites in the network inherit their SEO settings from this site"
+msgstr "אתרים חדשים ברשת יורשים את הגדרות ה-SEO שלהם מאתר זה."
+
+#: admin/views/tabs/network/general.php:28
+msgid "Super Admins only"
+msgstr "סופר מנהלים בלבד"
+
+#: admin/views/tabs/network/general.php:27
+msgid "Site Admins (default)"
+msgstr "מנהלי אתר (ברירת מחדל)"
+
+#. translators: %1$s expands to Yoast SEO
+#: admin/views/tabs/network/general.php:25
+msgid "Who should have access to the %1$s settings"
+msgstr "קבע למי תהייה גישה להגדרות %1$s "
+
+#: admin/class-yoast-network-admin.php:80
+msgid "spam"
+msgstr "ספאם"
+
+#: admin/class-yoast-network-admin.php:79
+msgid "mature"
+msgstr "בוגר"
+
+#: admin/class-yoast-network-admin.php:78
+msgid "archived"
+msgstr "אורכב"
+
+#: admin/class-yoast-network-admin.php:77
+msgid "public"
+msgstr "ציבורי"
+
+#. translators: %s expands to the name of a site within a multisite network.
+#: admin/class-yoast-network-admin.php:174
+msgid "%s restored to default SEO settings."
+msgstr "%s שיחזרו להגדרות SEO ברירת מחדל."
+
+#: admin/class-yoast-network-admin.php:140
+msgid "Settings Updated."
+msgstr "עדכון הגדרות."
+
+#: admin/views/tool-bulk-editor.php:109 inc/class-wpseo-replace-vars.php:1470
+#: js/dist/externals-redux.js:1
+msgid "Title"
+msgstr "כותרת"
+
+#: admin/views/tabs/network/general.php:54
+msgid "Take note:"
+msgstr "רשום הערה:"
+
+#. translators: %1$s expands to Yoast SEO.
+#: admin/views/licenses.php:125
+msgid "%1$s Extensions"
+msgstr "הרחבות %1$s"
+
+#. translators: %1$s expands to Yoast SEO
+#: admin/class-plugin-availability.php:82 admin/views/licenses.php:82
+msgid "Seamlessly integrate WooCommerce with %1$s and get extra features!"
+msgstr "שלבו בצורה חלקה את ווקומרס עם %1$s וקבלו תכונות נוספות!"
+
+#: admin/class-plugin-availability.php:70 admin/views/licenses.php:35
+msgid "Rank better locally and in Google Maps, without breaking a sweat!"
+msgstr "דירוג גבוה יותר בחיפוש מקומי ובגוגל מפות, בלי לשבור את הראש!"
+
+#: admin/class-plugin-availability.php:60 admin/views/licenses.php:63
+msgid "Are you in Google News? Increase your traffic from Google News by optimizing for it!"
+msgstr "האם האתר מופיע בגוגל חדשות? הגדילו את התנועה מגוגל חדשות על ידי אופטימיזציה יעודית!"
+
+#: admin/class-plugin-availability.php:50 admin/views/licenses.php:49
+msgid "Optimize your videos to show them off in search results and get more clicks!"
+msgstr "אופטימיזציה לוידאו תחשוף אותם בתוצאות מנועי חיפוש ותייצר יותר הקלקות!"
+
+#. translators: %1$s expands to Yoast SEO
+#: admin/class-plugin-availability.php:38 admin/views/licenses.php:24
+msgid "The premium version of %1$s with more features & support."
+msgstr "גרסת פרימיום של %1$s עם תמיכה ומאפיינים נוספים."
+
+#: src/integrations/admin/first-time-configuration-integration.php:481
+#: js/dist/new-settings.js:301
+msgid "Person"
+msgstr "אדם"
+
+#: inc/class-wpseo-replace-vars.php:1496
+msgid "Permalink"
+msgstr "קישור ישיר"
+
+#: vendor_prefixed/wordproof/wordpress-sdk/app/Translations/DefaultTranslations.php:43
+msgid "Authenticate"
+msgstr "אימות"
+
+#. Translators: %1$s: expands to 'Yoast SEO Premium', %2$s: links to Yoast SEO
+#. Premium plugin page.
+#: admin/google_search_console/views/gsc-redirect-nopremium.php:22
+msgid "To be able to create a redirect and fix this issue, you need %1$s. You can buy the plugin, including one year of support and updates, on %2$s."
+msgstr "כדי שיתאפשר לכם לבצע הפניה ולתקן את הבעיה בזו, אתם צריכים %1$s. אתם יכולים לרכוש את התוסף, כולל שנה של תמיכה תכנית ועדכונים, ב- %2$s."
+
+#. Translators: %s: expands to Yoast SEO Premium
+#: admin/google_search_console/views/gsc-redirect-nopremium.php:15
+msgid "Creating redirects is a %s feature"
+msgstr "יצירת הפניות היא אפשרות של %s"
+
+#: admin/views/redirects.php:175 admin/views/redirects.php:222
+msgid "New URL"
+msgstr "כתובת חדשה"
+
+#: admin/views/redirects.php:112
+msgid "URL"
+msgstr "URL"
+
+#. translators: %s: 'Facebook' plugin name of possibly conflicting plugin
+#: admin/class-yoast-plugin-conflict.php:182
+msgid "Deactivate %s"
+msgstr "כיבוי %s"
+
+#. translators: %1$s: 'Facebook & Open Graph' plugin name(s) of possibly
+#. conflicting plugin(s), %2$s to Yoast SEO
+#: admin/class-yoast-plugin-conflict.php:178
+msgid "The %1$s plugin might cause issues when used in conjunction with %2$s."
+msgstr "התוסף %1$s עלול ליצור בעיות כשמשתמשים בו יחד עם %2$s."
+
+#: admin/class-yoast-form.php:741 admin/metabox/class-metabox.php:650
+#: admin/taxonomy/class-taxonomy-fields-presenter.php:127
+msgid "Upload Image"
+msgstr "העלאת תמונה"
+
+#. translators: %s is the plugin name
+#: admin/class-yoast-dashboard-widget.php:75
+msgid "%s Posts Overview"
+msgstr "סקירת %s"
+
+#: src/deprecated/src/integrations/admin/social-templates-integration.php:219
+msgid "Social settings"
+msgstr "הגדרות חברתיות"
+
+#: admin/google_search_console/views/gsc-redirect-nopremium.php:27
+#: js/dist/elementor.js:95 js/dist/externals-components.js:132
+#: js/dist/externals/componentsNew.js:136 js/dist/introductions.js:11
+#: js/dist/new-settings.js:11 js/dist/new-settings.js:19
+#: js/dist/new-settings.js:43 js/dist/post-edit.js:11 js/dist/support.js:31
+msgid "Close"
+msgstr "סגור"
+
+#. translators: %1$s expands to Yoast SEO, %2$s: 'Google XML Sitemaps' plugin
+#. name of possibly conflicting plugin with regard to the creation of sitemaps.
+#: admin/class-plugin-conflict.php:76
+msgid "Both %1$s and %2$s can create XML sitemaps. Having two XML sitemaps is not beneficial for search engines and might slow down your site."
+msgstr "גם %1$s וגם %2$s יכולים ליצור מפת אתר בפורמט XML. לשתי מפות אתר בפורמט XML אין יתרון מבחינת מנועי חיפוש, והן עלולות להאט את האתר."
+
+#. translators: %1$s expands to Yoast SEO.
+#: admin/class-plugin-conflict.php:69
+msgid "Configure %1$s's Open Graph settings"
+msgstr "הגדר הגדרות Open Graph עבור %1$s"
+
+#. translators: %1$s expands to Yoast SEO, %2$s: 'Facebook' plugin name of
+#. possibly conflicting plugin with regard to creating OpenGraph output.
+#: admin/class-plugin-conflict.php:65
+msgid "Both %1$s and %2$s create Open Graph output, which might make Facebook, Twitter, LinkedIn and other social networks use the wrong texts and images when your pages are being shared."
+msgstr "גם %1$s וגם %2$s יוצרים פלט Open Graph, מה שעלול לגרום לפייסבוק, טוויטר, לינקדאין ורשתות חברתיות אחרות להשתמש בתכנים כתובים ובתמונות לא נכונות כשמשתפים עמודים."
+
+#: admin/formatter/class-metabox-formatter.php:130
+#: admin/formatter/class-metabox-formatter.php:160
+#: admin/statistics/class-statistics-service.php:222
+#: inc/class-wpseo-rank.php:141 inc/class-wpseo-rank.php:181
+#: inc/class-wpseo-rank.php:213 js/dist/block-editor.js:1
+#: js/dist/editor-modules.js:113 js/dist/externals-components.js:163
+#: js/dist/externals/analysis.js:332 js/dist/frontend-inspector-resources.js:1
+#: js/dist/post-edit.js:1 js/dist/term-edit.js:1
+msgid "OK"
+msgstr "תקין"
+
+#: admin/class-meta-columns.php:116
+msgid "Meta Desc."
+msgstr "תיאור מטא"
+
+#: admin/class-meta-columns.php:256
+msgid "All SEO Scores"
+msgstr "כל ציוני SEO"
+
+#: admin/metabox/class-metabox.php:949
+#: src/integrations/third-party/elementor.php:481
+msgid "SEO issue: The featured image should be at least 200 by 200 pixels to be picked up by Facebook and other social media sites."
+msgstr "בעיית SEO: התמונה הראשית צריכה להיות בגודל 200x200 פיקסלים לפחות בכדי שפייסבוק ורשתות חברתיות אחרות ישתמשו בה."
+
+#: admin/metabox/class-metabox.php:888 admin/taxonomy/class-taxonomy.php:161
+#: admin/taxonomy/class-taxonomy.php:294
+#: src/integrations/third-party/elementor.php:429
+msgid "(no parent)"
+msgstr "(ללא הורה)"
+
+#: admin/class-meta-columns.php:750
+msgid "Post is set to noindex."
+msgstr "מוגדר לא לאנדקס."
+
+#: admin/metabox/class-metabox.php:214
+msgid "The URL that this page should redirect to."
+msgstr "כתובת ה URL אליו דף זה פונה."
+
+#: admin/metabox/class-metabox.php:213
+msgid "301 Redirect"
+msgstr "הפניית 301"
+
+#. translators: 1: link open tag; 2: link close tag.
+#: admin/metabox/class-metabox.php:202
+msgid "The canonical URL that this page should point to. Leave empty to default to permalink. %1$sCross domain canonical%2$s supported too."
+msgstr "כתובת קנוניקל אליה צריך דף זה להפנות. ניתן להשאיר ריק לברירת המחדל של מבנה הקישורים. תומך גם ב%1$sדומיינים שונים%2$s."
+
+#: admin/metabox/class-metabox.php:198 js/dist/block-editor.js:466
+#: js/dist/classic-editor.js:462 js/dist/elementor.js:468
+msgid "Canonical URL"
+msgstr "כתובת קנוניקל"
+
+#: admin/metabox/class-metabox.php:196
+msgid "Title to use for this page in breadcrumb paths"
+msgstr "כותרת לשימוש בעמוד זה בנתיב של פירורי לחם"
+
+#: admin/metabox/class-metabox.php:195 js/dist/block-editor.js:465
+#: js/dist/classic-editor.js:461 js/dist/elementor.js:467
+msgid "Breadcrumbs Title"
+msgstr "כותרת פירורי לחם"
+
+#: admin/metabox/class-metabox.php:193 js/dist/block-editor.js:464
+#: js/dist/classic-editor.js:460 js/dist/elementor.js:466
+msgid "No Snippet"
+msgstr "אין סניפט"
+
+#: admin/metabox/class-metabox.php:192 js/dist/block-editor.js:464
+#: js/dist/classic-editor.js:460 js/dist/elementor.js:466
+msgid "No Archive"
+msgstr "אין ארכיון"
+
+#: admin/metabox/class-metabox.php:191 js/dist/block-editor.js:464
+#: js/dist/classic-editor.js:460 js/dist/elementor.js:466
+msgid "No Image Index"
+msgstr "אין אינדקס תמונה"
+
+#: admin/class-yoast-network-admin.php:43 src/config/schema-types.php:163
+#: src/integrations/settings-integration.php:552 js/dist/new-settings.js:19
+#: js/dist/new-settings.js:319
+msgid "None"
+msgstr "ללא"
+
+#: admin/metabox/class-metabox.php:189 js/dist/block-editor.js:464
+#: js/dist/classic-editor.js:460 js/dist/elementor.js:466
+msgid "Meta robots advanced"
+msgstr "Meta Robots למתקדמים"
+
+#: admin/metabox/class-metabox.php:177
+msgid "Warning: even though you can set the meta robots setting here, the entire site is set to noindex in the sitewide privacy settings, so these settings won't have an effect."
+msgstr "אזהרה: למרות שניתן להגדיר כאן הגדרות לרובוטים, כל האתר מוגדר noindex בהגדרות הפרטיות, כך שלהגדרות אלה לא תהיינה השפעה."
+
+#: admin/metabox/class-metabox.php:172 js/dist/externals/analysis.js:332
+#: js/dist/externals/replacementVariableEditor.js:83
+#: js/dist/externals/searchMetadataPreviews.js:276 js/dist/new-settings.js:30
+#: js/dist/new-settings.js:32 js/dist/new-settings.js:35
+#: js/dist/new-settings.js:39 js/dist/new-settings.js:62
+#: js/dist/new-settings.js:73 js/dist/new-settings.js:101
+#: js/dist/new-settings.js:124 js/dist/new-settings.js:186
+#: js/dist/new-settings.js:200 js/dist/new-settings.js:210
+#: js/dist/new-settings.js:229
+msgid "Meta description"
+msgstr "תיאור מטא"
+
+#: admin/class-meta-columns.php:115
+msgid "SEO Title"
+msgstr "כותרת SEO"
+
+#: inc/class-wpseo-replace-vars.php:1521
+msgid "Focus keyword"
+msgstr "מילת מפתח למיקוד"
+
+#: admin/import/class-import-settings.php:117
+msgid "Settings successfully imported."
+msgstr "הגדרות יובאו בהצלחה."
+
+#: admin/import/class-import-settings.php:85
+msgid "Settings could not be imported:"
+msgstr "לא ניתן לייבא את ההגדרות:"
+
+#: admin/class-customizer.php:193
+msgid "Breadcrumb for 404 pages:"
+msgstr "פירורי לחם לעמודי 404:"
+
+#: admin/class-customizer.php:181
+msgid "Prefix for search result pages:"
+msgstr "קידומת לעמודי תוצאות חיפוש:"
+
+#: admin/class-customizer.php:169
+msgid "Prefix for archive pages:"
+msgstr "קידומת לעמודי ארכיון:"
+
+#: admin/class-customizer.php:157
+msgid "Prefix for breadcrumbs:"
+msgstr "קידומת לפירורי לחם:"
+
+#: admin/class-customizer.php:145
+msgid "Anchor text for the homepage:"
+msgstr "טקסט עוגן לעמוד הבית:"
+
+#: admin/class-customizer.php:132
+msgid "Breadcrumbs separator:"
+msgstr "מפריד פירורי לחם:"
+
+#. translators: %s is the name of the plugin
+#: admin/class-customizer.php:86
+msgid "%s Breadcrumbs"
+msgstr "%s פירורי לחם"
+
+#: admin/class-config.php:108 admin/metabox/class-metabox.php:917
+#: admin/taxonomy/class-taxonomy.php:179
+#: src/integrations/third-party/elementor.php:455
+msgid "Use Image"
+msgstr "השתמש בתמונה"
+
+#: admin/class-bulk-editor-list-table.php:1012
+msgid "Action"
+msgstr "פעולה"
+
+#: admin/class-bulk-editor-list-table.php:1007
+msgid "Page URL/Slug"
+msgstr "כתובת/סלאג"
+
+#: admin/class-bulk-editor-list-table.php:1006
+msgid "Publication date"
+msgstr "תאריך פרסום"
+
+#: admin/class-bulk-editor-list-table.php:1005
+msgid "Post Status"
+msgstr "סטטוס"
+
+#: admin/class-bulk-editor-list-table.php:1003
+msgid "WP Page Title"
+msgstr "כותרת של וורדפרס"
+
+#: admin/class-bulk-editor-list-table.php:837 js/dist/block-editor.js:107
+#: js/dist/classic-editor.js:103 js/dist/editor-modules.js:5
+#: js/dist/elementor.js:109 js/dist/wincher-dashboard-widget.js:1
+#: js/dist/wincher-dashboard-widget.js:76
+msgid "View"
+msgstr "הצג"
+
+#. translators: Hidden accessibility text; %s: post title.
+#: admin/class-bulk-editor-list-table.php:836
+msgid "View &#8220;%s&#8221;"
+msgstr "הצג \"%s\""
+
+#: admin/class-bulk-editor-list-table.php:827
+msgid "Preview"
+msgstr "תצוגה מקדימה"
+
+#. translators: Hidden accessibility text; %s: post title.
+#: admin/class-bulk-editor-list-table.php:826
+msgid "Preview &#8220;%s&#8221;"
+msgstr "תצוגה מקדימה של \"%s\""
+
+#: admin/class-bulk-editor-list-table.php:815
+#: js/dist/first-time-configuration.js:20
+#: js/dist/first-time-configuration.js:22 js/dist/installation-success.js:13
+msgid "Edit"
+msgstr "עריכה"
+
+#: admin/class-bulk-editor-list-table.php:421 admin/views/redirects.php:141
+msgid "Filter"
+msgstr "סנן"
+
+#. translators: %s expands to the number of trashed posts in localized format.
+#: admin/class-bulk-editor-list-table.php:342
+msgctxt "posts"
+msgid "Trash <span class=\"count\">(%s)</span>"
+msgid_plural "Trash <span class=\"count\">(%s)</span>"
+msgstr[0] "פח <span class=\"count\">(%s)</span>"
+msgstr[1] "פח <span class=\"count\">(%s)</span>"
+
+#. translators: %s expands to the number of posts in localized format.
+#: admin/class-bulk-editor-list-table.php:293
+msgctxt "posts"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "הכל <span class=\"count\">(%s)</span>"
+msgstr[1] "הכל <span class=\"count\">(%s)</span>"
+
+#: admin/class-bulk-description-editor-list-table.php:47
+msgid "New Yoast Meta Description"
+msgstr "תיאור מטא חדש"
+
+#: admin/class-bulk-description-editor-list-table.php:46
+msgid "Existing Yoast Meta Description"
+msgstr "תיאור מטא נוכחי"
+
+#: admin/class-admin.php:300
+msgid "Facebook profile URL"
+msgstr "כתובת פרופיל פייסבוק"
+
+#: admin/class-admin.php:307
+msgid "Twitter username (without @)"
+msgstr "משתמש טוויטר (ללא @)"
+
+#: admin/class-admin.php:231 js/dist/structured-data-blocks.js:15
+msgid "FAQ"
+msgstr "שאלות נפוצות"
+
+#: admin/class-admin.php:226 admin/views/redirects.php:42
+#: src/integrations/settings-integration.php:314
+#: src/presenters/meta-description-presenter.php:37
+#: js/dist/structured-data-blocks.js:11
+msgid "Settings"
+msgstr "הגדרות"
+
+#: src/presenters/admin/search-engines-discouraged-presenter.php:33
+msgid "Huge SEO Issue: You're blocking access to robots."
+msgstr "בעית SEO רצינית: אתה מונע גישה של רובוטים לאתר."
+
+#: admin/class-admin.php:184
+msgid "Posts"
+msgstr "פוסטים"
+
+#: admin/menu/class-network-admin-menu.php:63
+msgid "Edit Files"
+msgstr "עריכת קבצים"
+
+#: admin/menu/class-admin-menu.php:89
+#: admin/menu/class-network-admin-menu.php:56 admin/pages/network.php:18
+#: js/dist/new-settings.js:313
+msgid "General"
+msgstr "כללי"
+
+#: admin/menu/class-network-admin-menu.php:66
+msgid "Extensions"
+msgstr "הרחבות"
+
+#: admin/menu/class-admin-menu.php:91
+msgid "Search Console"
+msgstr "קונסולת חיפוש"
+
+#: admin/menu/class-admin-menu.php:95 js/dist/new-settings.js:297
+msgid "Tools"
+msgstr "כלים"
+
+#: admin/views/class-yoast-feature-toggles.php:136 js/dist/new-settings.js:35
+#: js/dist/new-settings.js:298 js/dist/new-settings.js:299
+msgid "XML sitemaps"
+msgstr "מפות XML"
+
+#: admin/metabox/class-metabox.php:441
+#: admin/taxonomy/class-taxonomy-metabox.php:158 js/dist/new-settings.js:39
+msgid "Social"
+msgstr "חברתי"
+
+#: admin/metabox/class-metabox.php:416
+#: admin/taxonomy/class-taxonomy-metabox.php:140
+#: inc/class-wpseo-admin-bar-menu.php:716
+#: src/services/health-check/report-builder.php:168
+#: js/dist/structured-data-blocks.js:15
+msgid "SEO"
+msgstr "SEO"
+
+#. translators: %1$s expands to Yoast SEO, %2$s expands to the installed
+#. version, %3$s expands to Gutenberg
+#: admin/class-admin-gutenberg-compatibility-notification.php:88
+msgid "%1$s detected you are using version %2$s of %3$s, please update to the latest version to prevent compatibility issues."
+msgstr "%1$s זיהה שאתם משתמשים בגרסה %2$s של %3$s, יש לעדכן לגרסה האחרונה כדי למנוע בעיות תאימות."
+
+#: src/services/health-check/default-tagline-runner.php:31
+msgid "Just another WordPress site"
+msgstr "עוד אתר וורדפרס"
+
+#: admin/ajax.php:194
+msgid "You have used HTML in your value which is not allowed."
+msgstr "השתמשת ב-HTML בערך שהזנת, וזה אסור."
+
+#. translators: %s expands to the name of a post type (plural).
+#: admin/ajax.php:185
+msgid "You can't edit %s that aren't yours."
+msgstr "אינך יכול לערוך %s שלא שלך."
+
+#. translators: %s expands to post type name.
+#: admin/ajax.php:173
+msgid "You can't edit %s."
+msgstr "אינך יכול לערוך %s."
+
+#. translators: %s expands to post type.
+#: admin/ajax.php:161
+msgid "Post has an invalid Content Type: %s."
+msgstr "לפוסט יש סוג תוכן לא חוקי: %s."
+
+#: admin/ajax.php:150
+msgid "Post doesn't exist."
+msgstr "הפוסט אינו קיים."
