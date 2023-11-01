@@ -17,7 +17,7 @@ function buildItemsGrid(items) {
     itemElm.innerHTML = `
       <h5>${item.title.rendered}</h5>
       <ul>
-        <li>מספר פריט: ${item.ACF.current_catalog_number}</li>
+        <li class="catalog-number">מספר פריט: ${item.ACF.current_catalog_number}</li>
         <li>${item.ACF.description}</li>
       </ul>
     `

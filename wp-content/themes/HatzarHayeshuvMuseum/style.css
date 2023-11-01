@@ -48,3 +48,11 @@ main .items-grid .item {
 main .items-grid .item:hover {
   transform: scale(1.03);
 }
+
+.item h5 {
+  margin-block: 0.5rem;
+  font-size: 1.1rem;
+}
+.item.catalog-number {
+  font-size: 0.9rem;
+}
