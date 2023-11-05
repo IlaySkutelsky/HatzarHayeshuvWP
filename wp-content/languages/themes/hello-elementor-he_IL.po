@@ -1,0 +1,407 @@
+# Translation of Themes - Hello Elementor in Hebrew
+# This file is distributed under the same license as the Themes - Hello Elementor package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-10-26 11:07:04+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.0-alpha.11\n"
+"Language: he_IL\n"
+"Project-Id-Version: Themes - Hello Elementor\n"
+
+#. Description of the theme
+#, gp-priority: high
+msgid "Hello Elementor is a lightweight and minimalist WordPress theme that was built specifically to work seamlessly with the Elementor page builder plugin. The theme is free, open-source, and designed for users who want a flexible, easy-to-use, and customizable website. The theme, which is optimized for performance, provides a solid foundation for users to build their own unique designs using the Elementor drag-and-drop site builder. Its simplicity and flexibility make it a great choice for both beginners and experienced Web Creators."
+msgstr "\"הלו\" היא תבנית וורדפרס מינימליסטית וקלת משקל שנבנתה במיוחד כדי לעבוד בצורה חלקה עם אלמנטור. התבנית הינה חינמית ובקוד פתוח ומיועדת למשתמשים שרוצים אתר גמיש, קל לשימוש וניתן להתאמה אישית. התבנית שמאופטמת לביצועים מהירים במיוחד, מספקת בסיס איתן לבנות עיצובים ייחודיים באמצעות ממשק דראג-אנד-דרופ של אלמנטור, שהפשטות והגמישות שלו הופכות אותו לבחירה מצוינת למתחילים וליוצרי אינטרנט מנוסים כאחד."
+
+#. Theme Name of the theme
+#, gp-priority: high
+msgid "Hello Elementor"
+msgstr "שלום אלמנטור"
+
+#: includes/settings-functions.php:19
+msgid "Theme Settings"
+msgstr "הגדרות תבנית"
+
+#: includes/settings-functions.php:18 assets/js/hello-admin.js:103
+#: assets/js/hello-admin.js:144
+msgid "Hello Theme Settings"
+msgstr "הגדרות תבנית הלו"
+
+#. translators: %s: Link that opens Elementor's "Site Identity" panel.
+#: includes/settings/settings-footer.php:279
+#: includes/settings/settings-header.php:269
+#: includes/settings/settings-header.php:286
+msgid "Go to <a href=\"%s\">Site Identity</a> to manage your site's title"
+msgstr "עבור אל <a href=\"%s\">זהות האתר</a> כדי להגדיר את כותרת האתר."
+
+#: includes/admin-functions.php:139
+msgid "Explore Elementor Page Builder Plugin"
+msgstr "חקור את תוסף בונה האתרים אלמנטור"
+
+#: includes/admin-functions.php:47
+msgid "The Hello Theme is a lightweight starter theme that works perfectly with the Elementor award-winning page builder plugin. Once you download and activate the plugin, you are only 1 click away from building an amazing website."
+msgstr "תבנית שלום אלמנטור היא תבנית קלת משקל שעובדת בצורה מושלמת עם תוסף בונה האתרים עטור הפרסים של אלמנטור. ברגע שמורידים ומפעילים את התוסף, המרחק לבניית אתר מדהים מתקצר."
+
+#: includes/admin-functions.php:38
+msgid "The Hello Theme is a lightweight starter theme that works perfectly with the Elementor award-winning page builder plugin. Once you activate the plugin, you are only 1 click away from building an amazing website."
+msgstr "תבנית שלום אלמנטור היא תבנית קלת משקל שעובדת בצורה מושלמת עם תוסף בונה האתרים עטור הפרסים של אלמנטור. ברגע שמפעילים את התוסף, המרחק לבניית אתר מדהים מתקצר."
+
+#: includes/settings/settings-footer.php:495
+#: includes/settings/settings-header.php:518
+msgid "Upgrade"
+msgstr "שדרג"
+
+#: header.php:31
+msgid "Skip to content"
+msgstr "דלג לתוכן"
+
+#: includes/settings/settings-header.php:534
+msgid "Create Header"
+msgstr "יצירת כותרת עליונה (הדר)"
+
+#: includes/settings/settings-header.php:532
+msgid "Create a custom header with the new Theme Builder"
+msgstr "יצירת אזור כותרת עליונה (הדר) באמצעות בונה התבניות החדש"
+
+#: includes/settings/settings-header.php:516
+msgid "Create a custom header with multiple options"
+msgstr "יצירת כותרת עליונה (הדר) עם אפשרויות עיצוב ופריסה שונות"
+
+#: includes/settings/settings-header.php:467
+msgid "Toggle Color"
+msgstr "החלפת צבע"
+
+#: includes/settings/settings-header.php:441
+msgid "None"
+msgstr "ללא"
+
+#. translators: %d: Breakpoint number.
+#: includes/settings/settings-header.php:440
+msgid "Tablet (< %dpx)"
+msgstr "תצוגת טאבלט (< %dpx)"
+
+#. translators: %d: Breakpoint number.
+#: includes/settings/settings-header.php:438
+msgid "Mobile (< %dpx)"
+msgstr "תצוגת טלפונים (< %dpx)"
+
+#: includes/settings/settings-header.php:433
+msgid "Breakpoint"
+msgstr "נקודת עצירה"
+
+#: includes/settings/settings-header.php:422
+msgid "Dropdown"
+msgstr "רשימה נפתחת"
+
+#: includes/settings/settings-header.php:421
+msgid "Horizontal"
+msgstr "אופקי"
+
+#: includes/settings/settings-header.php:417
+msgid "Menu Layout"
+msgstr "פריסת תפריט"
+
+#: includes/settings/settings-footer.php:511
+msgid "Create Footer"
+msgstr "יצירת כותרת תחתונה (פוטר)"
+
+#: includes/settings/settings-footer.php:510
+#: includes/settings/settings-header.php:533
+msgid "With the new Theme Builder you can jump directly into each part of your site"
+msgstr "עם בונה התבניות החדש ניתן לדלג ישירות לכל מקטע באתר"
+
+#: includes/settings/settings-footer.php:509
+msgid "Create a custom footer with the new Theme Builder"
+msgstr "יצירת כותרת תחתונה (פוטר) באמצעות בונה התבניות החדש"
+
+#: includes/settings/settings-footer.php:494
+#: includes/settings/settings-header.php:517
+msgid "Upgrade to Elementor Pro and enjoy free design and many more features"
+msgstr "שדרג לאלמנטור פרו כדי ליהנות מחופש עיצובי בלתי מוגבל ואין ספור פיצ'רים נוספים"
+
+#: includes/settings/settings-footer.php:493
+msgid "Create a custom footer with multiple options"
+msgstr "יצירת כותרת תחתונה (פוטר) עם אפשרויות עיצוב ופריסה שונות"
+
+#: includes/settings/settings-footer.php:438
+msgid "All rights reserved"
+msgstr "כל הזכויות שמורות"
+
+#: includes/settings/settings-footer.php:396
+#: includes/settings/settings-header.php:453
+msgid "Color"
+msgstr "צבע"
+
+#: includes/settings/settings-footer.php:388
+#: includes/settings/settings-header.php:409
+msgid "Changes will be reflected in the preview only after the page reloads."
+msgstr "השינויים ישתקפו בתצוגה המקדימה רק לאחר טעינת העמוד מחדש."
+
+#: includes/settings/settings-footer.php:380
+#: includes/settings/settings-header.php:401
+msgid "Go to the <a href=\"%s\" target=\"_blank\">Menus screen</a> to manage your menus."
+msgstr "עבור אל <a href=\"%s\" target=\"_blank\">מסך התפריטים</a> כדי לנהל את התפריטים באתר."
+
+#: includes/settings/settings-footer.php:367
+#: includes/settings/settings-header.php:388
+msgid "Go to <a href=\"%s\" target=\"_blank\">Menus screen</a> to create one."
+msgstr "עבור אל <a href=\"%s\" target=\"_blank\">מסך התפריטים</a> כדי ליצור תפריט."
+
+#: includes/settings/settings-footer.php:367
+#: includes/settings/settings-header.php:388
+msgid "There are no menus in your site."
+msgstr "באתר זה אין תפריטים."
+
+#: includes/settings/settings-footer.php:357
+#: includes/settings/settings-header.php:378
+msgid "— Select a Menu —"
+msgstr "בחירת תפריט ניווט"
+
+#. translators: %s: Link that opens Elementor's "Site Identity" panel.
+#: includes/settings/settings-footer.php:335
+#: includes/settings/settings-header.php:349
+msgid "Go to <a href=\"%s\">Site Identity</a> to manage your site's tagline"
+msgstr "עבור אל <a href=\"%s\">זהות האתר</a> כדי להגדיר את תיאור האתר."
+
+#: includes/settings/settings-footer.php:263
+#: includes/settings/settings-footer.php:321
+#: includes/settings/settings-footer.php:408
+#: includes/settings/settings-footer.php:460
+#: includes/settings/settings-header.php:266
+#: includes/settings/settings-header.php:335
+#: includes/settings/settings-header.php:482
+msgid "Typography"
+msgstr "טיפוגרפיה"
+
+#: includes/settings/settings-footer.php:247
+#: includes/settings/settings-footer.php:306
+#: includes/settings/settings-footer.php:445
+#: includes/settings/settings-header.php:250
+#: includes/settings/settings-header.php:320
+msgid "Text Color"
+msgstr "צבע טקסט"
+
+#. translators: %s: Link that opens Elementor's "Site Identity" panel.
+#: includes/settings/settings-footer.php:219
+#: includes/settings/settings-header.php:222
+msgid "Go to <a href=\"%s\">Site Identity</a> to manage your site's logo"
+msgstr "עבור אל <a href=\"%s\">זהות האתר</a> כדי להגדיר את הלוגו של האתר."
+
+#: includes/settings/settings-footer.php:216
+#: includes/settings/settings-header.php:219
+msgid "Logo Width"
+msgstr "רוחב לוגו"
+
+#: includes/settings/settings-footer.php:206
+#: includes/settings/settings-header.php:209
+msgid "Title"
+msgstr "כותרת"
+
+#: includes/settings/settings-footer.php:205
+#: includes/settings/settings-header.php:208
+msgid "Logo"
+msgstr "לוגו"
+
+#: includes/settings/settings-footer.php:201
+#: includes/settings/settings-header.php:204
+msgid "Type"
+msgstr "סוג"
+
+#: includes/settings/settings-footer.php:179
+#: includes/settings/settings-header.php:175
+msgid "Background"
+msgstr "רקע"
+
+#: includes/settings/settings-footer.php:153
+#: includes/settings/settings-header.php:139
+msgid "Gap"
+msgstr "מרווח"
+
+#: includes/settings/settings-footer.php:127
+#: includes/settings/settings-header.php:113
+msgid "Content Width"
+msgstr "רוחב תוכן"
+
+#: includes/settings/settings-footer.php:116
+#: includes/settings/settings-header.php:102
+msgid "Full Width"
+msgstr "רוחב מלא"
+
+#: includes/settings/settings-footer.php:115
+#: includes/settings/settings-header.php:101
+msgid "Boxed"
+msgstr "מתוחם"
+
+#: includes/settings/settings-footer.php:113
+#: includes/settings/settings-header.php:99
+msgid "Width"
+msgstr "רוחב"
+
+#: includes/settings/settings-footer.php:102
+#: includes/settings/settings-header.php:88
+msgid "Centered"
+msgstr "ממורכז"
+
+#: includes/settings/settings-footer.php:101
+#: includes/settings/settings-header.php:87
+msgid "Inverted"
+msgstr "הפוך"
+
+#: includes/settings/settings-footer.php:100
+#: includes/settings/settings-header.php:86
+msgid "Default"
+msgstr "ברירת מחדל"
+
+#: includes/settings/settings-footer.php:98
+#: includes/settings/settings-header.php:84
+msgid "Layout"
+msgstr "פריסה"
+
+#: includes/settings/settings-footer.php:86
+#: includes/settings/settings-footer.php:420
+msgid "Copyright"
+msgstr "זכויות יוצרים"
+
+#: includes/settings/settings-footer.php:74
+#: includes/settings/settings-footer.php:348
+#: includes/settings/settings-footer.php:376
+#: includes/settings/settings-header.php:73
+#: includes/settings/settings-header.php:362
+#: includes/settings/settings-header.php:397
+#: template-parts/dynamic-header.php:59
+msgid "Menu"
+msgstr "תפריט"
+
+#: includes/settings/settings-footer.php:62
+#: includes/settings/settings-footer.php:296
+#: includes/settings/settings-header.php:62
+#: includes/settings/settings-header.php:303
+msgid "Tagline"
+msgstr "תיאור האתר"
+
+#: includes/settings/settings-footer.php:53
+#: includes/settings/settings-footer.php:65
+#: includes/settings/settings-footer.php:77
+#: includes/settings/settings-footer.php:89
+#: includes/settings/settings-header.php:54
+#: includes/settings/settings-header.php:65
+#: includes/settings/settings-header.php:76
+msgid "Hide"
+msgstr "להסתיר"
+
+#: includes/settings/settings-footer.php:52
+#: includes/settings/settings-footer.php:64
+#: includes/settings/settings-footer.php:76
+#: includes/settings/settings-footer.php:88
+#: includes/settings/settings-header.php:53
+#: includes/settings/settings-header.php:64
+#: includes/settings/settings-header.php:75
+msgid "Show"
+msgstr "להציג"
+
+#: includes/settings/settings-footer.php:50
+#: includes/settings/settings-footer.php:191
+#: includes/settings/settings-header.php:51
+#: includes/settings/settings-header.php:187
+msgid "Site Logo"
+msgstr "לוגו אתר"
+
+#: includes/elementor-functions.php:208
+msgid "Use this experiment to design header and footer using Elementor Site Settings. <a href=\"%s\" target=\"_blank\">Learn More</a>"
+msgstr "השתמש בניסוי הזה כדי לעצב את הכותרת העליונה (הדר) והתחתונה (פוטר) באמצעות הגדרות האתר של אלמנטור. <a href=\"%s\" target=\"_blank\">למד עוד</a>"
+
+#: includes/elementor-functions.php:207
+msgid "Hello Theme Header & Footer"
+msgstr "עיצוב כותרת עליונה ותחתונה"
+
+#: includes/admin-functions.php:133
+msgid "Get Elementor"
+msgstr "התחל עם אלמנטור"
+
+#: functions.php:31 includes/settings/settings-footer.php:21
+#: includes/settings/settings-footer.php:42
+msgid "Footer"
+msgstr "כותרת תחתונה (פוטר)"
+
+#: functions.php:30 includes/settings/settings-header.php:23
+#: includes/settings/settings-header.php:43
+msgid "Header"
+msgstr "כותרת עליונה (הדר)"
+
+#: includes/admin-functions.php:137
+msgid "Thanks for installing the Hello Theme!"
+msgstr "תודה על התקנת התבנית שלום אלמנטור!"
+
+#: includes/admin-functions.php:49
+msgid "Install Elementor"
+msgstr "התקנת אלמנטור"
+
+#: includes/admin-functions.php:40
+msgid "Activate Elementor"
+msgstr "הפעלת אלמנטור"
+
+#. translators: 1: number of comments
+#: comments.php:39
+msgctxt "comments title"
+msgid "%1$s Response"
+msgid_plural "%1$s Responses"
+msgstr[0] "תגובה %1$s"
+msgstr[1] "%1$s תגובות"
+
+#: comments.php:35
+msgctxt "comments title"
+msgid "One Response"
+msgstr "תגובה אחת"
+
+#. Translators: HTML arrow
+#: template-parts/archive.php:51 template-parts/search.php:57
+msgid "newer %s"
+msgstr "%s חדשות יותר"
+
+#. Translators: HTML arrow
+#: template-parts/archive.php:49 template-parts/search.php:55
+msgid "%s older"
+msgstr "%s ישנות יותר"
+
+#: template-parts/search.php:43
+msgid "It seems we can't find what you're looking for."
+msgstr "עושה רושם שהתוכן המבוקש לא נמצא."
+
+#: template-parts/search.php:17
+msgid "Search results for: "
+msgstr "תוצאות חיפוש עבור: "
+
+#: template-parts/dynamic-footer.php:33 template-parts/dynamic-header.php:36
+#: template-parts/header.php:29
+msgid "Home"
+msgstr "דף הבית"
+
+#: template-parts/single.php:27
+msgid "Tagged "
+msgstr "תוייג "
+
+#: template-parts/404.php:21
+msgid "It looks like nothing was found at this location."
+msgstr "עושה רושם שהתוכן המבוקש לא נמצא בכתובת זו."
+
+#: template-parts/404.php:16
+msgid "The page can&rsquo;t be found."
+msgstr "העמוד המבוקש לא נמצא."
+
+#. Author URI of the theme
+#, gp-priority: low
+msgid "https://elementor.com/?utm_source=wp-themes&utm_campaign=author-uri&utm_medium=wp-dash"
+msgstr "https://elementor.com/?utm_source=wp-themes&utm_campaign=author-uri&utm_medium=wp-dash"
+
+#. Theme URI of the theme
+#, gp-priority: low
+msgid "https://elementor.com/hello-theme/?utm_source=wp-themes&utm_campaign=theme-uri&utm_medium=wp-dash"
+msgstr "https://elementor.com/hello-theme/?utm_source=wp-themes&utm_campaign=theme-uri&utm_medium=wp-dash"
+
+#. Author of the theme
+#, gp-priority: low
+msgid "Elementor Team"
+msgstr "צוות אלמנטור"
