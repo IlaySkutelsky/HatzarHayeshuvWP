@@ -76,6 +76,7 @@ main .items-grid .item {
   color: black;
   background: white;
   transition: 300ms all ease-in-out;
+  overflow: scroll;
 }
 main .items-grid .item:hover {
   transform: scale(1.03);
@@ -87,10 +88,6 @@ main .items-grid .item:hover {
 }
 .item.catalog-number {
   font-size: 0.9rem;
-}
-.item ul {
-  overflow: scroll;
-  max-height: 80%;
 }
 
 .item i {
