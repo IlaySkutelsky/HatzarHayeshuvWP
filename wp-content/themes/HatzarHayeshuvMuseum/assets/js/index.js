@@ -23,7 +23,12 @@ function buildItemsGrid(items) {
     let itemElm = document.createElement('a')
     itemElm.classList.add('item')
     itemElm.href = `/wp-admin/post.php?post=${item.id}&action=edit`
+    let itemImageHTMLString
+    if (item.fimg_url) itemImageHTMLString = `<div class="featured-image" style="background-image: url('${item.fimg_url}')"></div>`
+    // if (item.fimg_url) itemImageHTMLString = `<img class="featured-image" src="${item.fimg_url}"/>`
+    else itemImageHTMLString = `<div class="featured-image-placeholder"></div>`
     itemElm.innerHTML = `
+      ${itemImageHTMLString}
       <h5>${item.title.rendered}</h5>
       <ul>
         <li class="catalog-number">מספר פריט: ${item.ACF.current_catalog_number}</li>
@@ -36,7 +41,7 @@ function buildItemsGrid(items) {
 
 function handleSearchBarInput(e) {
   let searchTerm = e.target.value;
-  if (!searchTerm) return
+  if (!searchTerm) buildItemsGrid(initialItems)
   let resultItems = structuredClone(initialItems).reduce((prevValue, curValue) => {
     let resultItem = getResultItem(curValue, searchTerm)
     if (resultItem) prevValue.push(resultItem)

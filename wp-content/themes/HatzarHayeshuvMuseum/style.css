@@ -60,11 +60,13 @@ main {
 main .items-grid {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
+  max-width: 80%;
 }
 
 main .items-grid .item {
-  min-width: 6rem;
-  min-height: 7rem;
+  width: 13rem;
+  height: 15rem;
   border: 1px solid black;
   padding: 0.5rem;
   border-radius: 5px;
@@ -86,8 +88,26 @@ main .items-grid .item:hover {
 .item.catalog-number {
   font-size: 0.9rem;
 }
+.item ul {
+  overflow: scroll;
+  max-height: 80%;
+}
 
 .item i {
   font-style: normal;
   background-color: yellow;
+}
+
+.item .featured-image-placeholder {
+  height: 10rem;
+  width: 100%;
+  background-color: #ccc;
+  border-radius: 5px;
+}
+.item .featured-image {
+  height: 10rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;
 }

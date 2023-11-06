@@ -47,3 +47,35 @@ function expose_ACF_fields( $object ) {
 }
 
 add_action( 'rest_api_init', 'create_ACF_meta_in_REST' );
+
+function register_rest_images() {
+	$postypes_to_exclude = ['acf-field-group','acf-field'];
+	$extra_postypes_to_include = ["page"];
+	$post_types = array_diff(get_post_types(["_builtin" => false], 'names'),$postypes_to_exclude);
+
+	array_push($post_types, $extra_postypes_to_include);
+
+	foreach ($post_types as $post_type) {
+		register_rest_field( $post_type,
+			'fimg_url',
+			array(
+				'get_callback'    => 'get_rest_featured_image',
+				'update_callback' => null,
+				'schema'          => null,
+			)
+		);
+	}
+}
+
+function get_rest_featured_image( $object, $field_name, $request ) {
+    if ( $object['featured_media'] ) {
+        $img = wp_get_attachment_image_src( $object['featured_media'] , 'full' );
+        if ( empty( $img ) ) {
+            return false;
+        }
+        return $img[0];
+    }
+    return false;
+}
+
+add_action( 'rest_api_init', 'register_rest_images' );
