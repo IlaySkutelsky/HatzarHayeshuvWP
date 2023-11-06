@@ -65,8 +65,8 @@ main .items-grid {
 }
 
 main .items-grid .item {
-  width: 13rem;
-  height: 15rem;
+  width: 16rem;
+  height: 24rem;
   border: 1px solid black;
   padding: 0.5rem;
   border-radius: 5px;
