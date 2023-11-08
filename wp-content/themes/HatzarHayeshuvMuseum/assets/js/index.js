@@ -1,5 +1,10 @@
 
 let initialItems = []
+let isLoaderVisible = false
+const SearchState = {
+  query: '',
+  field: ''
+}
 
 async function init() {
   let dataURL = `wp-json/wp/v2/item`
@@ -7,17 +12,50 @@ async function init() {
   let items = await response.json()
   initialItems = items.slice()
   console.log(items);
-  buildItemsGrid(items)
-  document.querySelector(".search-bar input").addEventListener("input", debounce(handleSearchBarInput, 1000))
+  buildUI()
+  document.querySelector(".search-bar input").addEventListener("input", debounce(handleSearch, 600))
+  document.querySelector("select#field-select").addEventListener("change", debounce(handleSearch, 600))
 }
 
-function clearItemsGrid() {
-  let parentElm = document.querySelector('.items-grid')
-  parentElm.innerHTML = ''
+function buildUI(items) {
+  renderInfoTitle(items)
+  let resetUI = !items
+  if (resetUI) items = initialItems
+
+  buildSearchParams(items)
+
+  buildItemsGrid(items) 
+}
+
+function renderInfoTitle(items) {
+  let text
+  if (!items) text = initialItems.length + ' פריטים במערכת'
+  else text = `נמצאו ${items.length} פריטים במערכת`
+  document.querySelector('h2.info-title').innerText = text
+}
+
+function buildSearchParams(items) {
+  let relevantItems = items.filter(i => i && i.ACF && i.ACF.characteristics && i.ACF.characteristics.field )
+  let fieldOptions = relevantItems.map(item => item.ACF.characteristics.field)
+  fieldOptions = [...new Set(fieldOptions)]
+  
+  let fieldSelectElm = document.querySelector('select#field-select')
+  fieldSelectElm.innerHTML = '<option value="">תחום</option>'
+
+  for (let i = 0; i < fieldOptions.length; i++) {
+    const option = fieldOptions[i]
+    let newOptionElm = document.createElement('option')
+    newOptionElm.value = option
+    newOptionElm.innerText = option
+    // TODO mark as selected if in state
+    if (option == SearchState.field) newOptionElm.setAttribute('selected', true)
+    fieldSelectElm.appendChild(newOptionElm)
+  }
 }
 
 function buildItemsGrid(items) {
   let parentElm = document.querySelector('.items-grid')
+  parentElm.innerHTML = ''
   for (let i = 0; i < items.length; i++) {
     const item = items[i];
     let itemElm = document.createElement('a')
@@ -37,31 +75,50 @@ function buildItemsGrid(items) {
     `
     parentElm.append(itemElm)
   }
+  let loaderElm = document.createElement('div')
+  loaderElm.classList.add('loader')
+  if (!isLoaderVisible) loaderElm.classList.add('hidden')
+  parentElm.append(loaderElm)
 }
 
-function handleSearchBarInput(e) {
-  let searchTerm = e.target.value;
-  if (!searchTerm) buildItemsGrid(initialItems)
-  let resultItems = structuredClone(initialItems).reduce((prevValue, curValue) => {
-    let resultItem = getResultItem(curValue, searchTerm)
-    if (resultItem) prevValue.push(resultItem)
-    return prevValue
-  }, [])
-  clearItemsGrid()
-  buildItemsGrid(resultItems)
+function handleSearch(e) {
+  loaderVisibilty(true)
+  let searchTerm = document.querySelector('.search-bar input').value;
+  let field = document.querySelector('select#field-select').value;
+  SearchState.query = searchTerm
+  SearchState.field = field
+  if (!searchTerm && !field) return buildUI()
+  let resultItems = structuredClone(initialItems)
+  if (searchTerm) {
+    resultItems = resultItems.reduce((prevValue, curValue) => {
+      let resultItem = getResultItemFromQuery(curValue, searchTerm)
+      if (resultItem) prevValue.push(resultItem)
+      return prevValue
+    }, [])
+  }
+  if (field) {
+    resultItems = resultItems.filter(item => item.ACF.characteristics.field == field)
+  }
+  buildUI(resultItems)
+  loaderVisibilty(false)
 }
 
-function getResultItem(item, searchTerm) {
+const excludedKeys = [
+  'fimg_url'
+]
+
+function getResultItemFromQuery(item, searchTerm) {
   let foundSearchTerm = false;
   for (let key in item) {
     if (typeof item[key] === 'object' && item[key] !== null) {
-      let resultSubItem = getResultItem(item[key], searchTerm)
+      let resultSubItem = getResultItemFromQuery(item[key], searchTerm)
       if (resultSubItem) {
         foundSearchTerm = true
         item[key] = resultSubItem
       }
     } else if (item.hasOwnProperty(key)) {
       let value = item[key]
+      if (excludedKeys.includes(key)) continue
       if (typeof value==='string' && value.match(searchTerm)) {
         item[key] = value.replaceAll(searchTerm, function(a, b){
             return '<i>' + a + '</i>';
@@ -72,6 +129,12 @@ function getResultItem(item, searchTerm) {
   }
   if (foundSearchTerm) return item
   else return null
+}
+
+function loaderVisibilty(on) {
+  let loaderElm = document.querySelector('.items-grid .loader')
+  if (on) loaderElm.classList.remove('hidden')
+  else loaderElm.classList.add('hidden')
 }
 
 const debounce = (callback, wait) => {

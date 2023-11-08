@@ -29,10 +29,14 @@ main {
   align-items: center;
 }
 
-/* --- Search bar --- */
+.skip-link.screen-reader-text {
+  display: none;
+}
+
+/* --- Search container --- */
 .search-bar {
   display: flex;
-  margin-block: 1rem 3rem;
+  margin-block: 1rem;
   width: 24rem;
 }
 
@@ -53,6 +57,22 @@ main {
   cursor: pointer;
   width: 2.5rem;
   padding: 5px;
+}
+
+.search-params {
+  display: flex;
+  height: 2rem;
+}
+
+#field-select {
+  min-width: 5rem;
+  padding-inline: 0.5rem;
+}
+
+/* --- Items grid --- */
+
+h2.info-title {
+  margin-bottom: 3rem;
 }
 
 /* --- Items grid --- */
@@ -107,4 +127,14 @@ main .items-grid .item:hover {
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 5px;
+}
+
+.loader.hidden {
+  display: none;
+}
+.loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(1px);
 }

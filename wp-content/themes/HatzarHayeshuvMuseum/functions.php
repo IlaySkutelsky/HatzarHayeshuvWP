@@ -2,10 +2,31 @@
 function add_custom_javascript() {
 	?>
 		<script src="<?php echo get_home_url()?>/wp-content/themes/HatzarHayeshuvMuseum/assets/js/index.js"></script>
+	<?php
+}
+function add_custom_css() {
+	?>
 		<link rel="stylesheet" href="<?php echo get_home_url()?>/wp-content/themes/HatzarHayeshuvMuseum/style.css" media="all">
 	<?php
 }
-add_action('wp_head', 'add_custom_javascript');
+function redirect_to_home() {
+	?>
+		<script>
+			window.location.replace("<?php echo get_home_url()?>");
+		</script>
+	<?php
+}
+
+global $wp;
+$home_url = home_url( $wp->request );
+$current_url = home_url($_SERVER['REQUEST_URI']);
+if ($current_url == $home_url || $current_url == ($home_url . '/') ) {
+	add_action('wp_head', 'add_custom_javascript');
+	add_action('wp_head', 'add_custom_css');
+} else {
+	add_action('wp_head', 'add_custom_css');
+	add_action('wp_head', 'redirect_to_home');
+}
 
 function clear_styles_and_scripts() {
   global $wp_scripts;
