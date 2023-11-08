@@ -9,6 +9,13 @@ function add_custom_css() {
 		<link rel="stylesheet" href="<?php echo get_home_url()?>/wp-content/themes/HatzarHayeshuvMuseum/style.css" media="all">
 	<?php
 }
+function add_custom_metatags() {
+	?>
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+	<?php
+}
 function redirect_to_home() {
 	?>
 		<script>
@@ -21,11 +28,11 @@ global $wp;
 $home_url = home_url( $wp->request );
 $current_url = home_url($_SERVER['REQUEST_URI']);
 if ($current_url == $home_url || $current_url == ($home_url . '/') ) {
+	add_action('wp_head', 'add_custom_metatags');
 	add_action('wp_head', 'add_custom_javascript');
 	add_action('wp_head', 'add_custom_css');
 } else {
 	add_action('wp_head', 'add_custom_css');
-	add_action('wp_head', 'redirect_to_home');
 }
 
 function clear_styles_and_scripts() {
