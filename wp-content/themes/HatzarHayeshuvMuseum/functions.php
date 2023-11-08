@@ -107,3 +107,7 @@ function get_rest_featured_image( $object, $field_name, $request ) {
 }
 
 add_action( 'rest_api_init', 'register_rest_images' );
+
+wp_using_ext_object_cache(false);
+wp_cache_flush();
+wp_cache_init();
