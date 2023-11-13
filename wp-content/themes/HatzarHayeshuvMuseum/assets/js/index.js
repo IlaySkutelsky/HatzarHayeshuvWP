@@ -1,12 +1,13 @@
 
 let initialItems = []
-let isLoaderVisible = false
+let loaderTimeoutID = null
 const SearchState = {
   query: '',
   field: ''
 }
 
 async function init() {
+  document.addEventListener("load", () => loaderTimeoutID(true))
   let dataURL = `wp-json/wp/v2/item`
   let response = await fetch(dataURL)
   let items = await response.json()
@@ -25,6 +26,7 @@ function buildUI(items) {
   buildSearchParams(items)
 
   buildItemsGrid(items) 
+  loaderVisibilty(false)
 }
 
 function renderInfoTitle(items) {
@@ -75,10 +77,10 @@ function buildItemsGrid(items) {
     `
     parentElm.append(itemElm)
   }
-  let loaderElm = document.createElement('div')
-  loaderElm.classList.add('loader')
-  if (!isLoaderVisible) loaderElm.classList.add('hidden')
-  parentElm.append(loaderElm)
+  // let loaderElm = document.createElement('div')
+  // loaderElm.classList.add('loader')
+  // if (!isLoaderVisible) loaderElm.classList.add('hidden')
+  // parentElm.append(loaderElm)
 }
 
 function handleSearch(e) {
@@ -132,7 +134,7 @@ function getResultItemFromQuery(item, searchTerm) {
 }
 
 function loaderVisibilty(on) {
-  let loaderElm = document.querySelector('.items-grid .loader')
+  let loaderElm = document.querySelector('div.loader')
   if (on) loaderElm.classList.remove('hidden')
   else loaderElm.classList.add('hidden')
 }

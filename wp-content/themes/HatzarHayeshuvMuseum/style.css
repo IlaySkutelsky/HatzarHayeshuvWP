@@ -29,6 +29,33 @@ main {
   align-items: center;
 }
 
+.loader.hidden {
+  display: none;
+}
+.loader {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  /* backdrop-filter: blur(1px); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 3px solid black;
+  border-top: none;
+  border-bottom: none;
+  animation: loader-spin 1s ease-in-out infinite, 
+             loader-width 0.6s ease-in-out infinite alternate both;
+}
+
 .skip-link.screen-reader-text {
   display: none;
 }
@@ -129,12 +156,11 @@ main .items-grid .item:hover {
   border-radius: 5px;
 }
 
-.loader.hidden {
-  display: none;
+@keyframes loader-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
-.loader {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(1px);
+@keyframes loader-width {
+  0% { border-width: 1px; }
+  100% { border-width: 8px; }
 }
