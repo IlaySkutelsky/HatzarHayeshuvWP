@@ -1,0 +1,124 @@
+.meta-box-sortables .postbox.acf_postbox {
+  overflow: visible; }
+
+.field[data-acf-relationship-create-enabled="true"] .label label {
+  display: inline-block; }
+.field[data-acf-relationship-create-enabled="true"] .label a.acf-relationship-create-link {
+  display: inline-block;
+  float: right;
+  text-decoration: none; }
+
+/**
+ * Special treatment when working with relationship fields in media modal
+ */
+tr[data-acf-relationship-create-enabled="true"] .label label {
+  display: inline-block; }
+tr[data-acf-relationship-create-enabled="true"] .label a.acf-relationship-create-link {
+  display: inline-block;
+  float: right;
+  text-decoration: none;
+  padding-top: 7px;
+  margin-top: 5px; }
+
+/**
+ * Tooltip
+ *
+ * Duplicated & adapted from .acf-fc-popup
+ */
+#acf-rc-popup {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 3px;
+  background: #333739;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  min-width: 135px;
+  z-index: 9999999999999; }
+  #acf-rc-popup:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    margin: 0 0 0 -6px;
+    width: 0;
+    height: 0;
+    border: transparent solid 6px;
+    border-top-color: #333739;
+    z-index: 2; }
+  #acf-rc-popup.bottom:before {
+    top: auto;
+    bottom: 100%;
+    border-top-color: transparent;
+    border-bottom-color: #333739; }
+  #acf-rc-popup ul,
+  #acf-rc-popup ul li {
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap; }
+  #acf-rc-popup ul li {
+    position: relative;
+    float: none;
+    border-top: #2B2F31 solid 1px; }
+    #acf-rc-popup ul li:first-child {
+      margin: 0;
+      border-top: 0 none; }
+    #acf-rc-popup ul li a {
+      position: relative;
+      display: block;
+      color: #F9F9F9;
+      font-size: 12px;
+      line-height: 14px;
+      padding: 6px 8px;
+      text-decoration: none;
+      text-align: left;
+      text-shadow: none; }
+      #acf-rc-popup ul li a:hover {
+        color: #fff;
+        background: #288FBC;
+        text-shadow: #1E698B 0 1px 0; }
+      #acf-rc-popup ul li a .status {
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        height: 14px;
+        width: 14px;
+        border-radius: 8px;
+        font-size: 8px;
+        line-height: 15px;
+        border: #288FBC solid 1px;
+        text-align: center;
+        color: #DFDFDF;
+        display: none; }
+        #acf-rc-popup ul li a .status.warning {
+          border-color: #e86740; }
+      #acf-rc-popup ul li a:hover .status {
+        border-color: #fff;
+        color: #fff; }
+    #acf-rc-popup ul li:first-child a {
+      border-radius: 3px 3px 0 0; }
+    #acf-rc-popup ul li:last-child a {
+      border-radius: 0 0 3px 3px; }
+    #acf-rc-popup ul li:only-child a {
+      border-radius: 3px; }
+  #acf-rc-popup a.focus {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 100%;
+    top: 0;
+    opacity: 0; }
+
+/**
+ * Thickbox
+ */
+#TB_overlay {
+  z-index: 170000; }
+
+#TB_window {
+  z-index: 170001; }
+
+/*# sourceMappingURL=acf-relationship-create.css.map */
