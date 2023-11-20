@@ -119,7 +119,7 @@ function add_other_selected_options_to_fields( $post_id ) {
 
     // Get newly saved values.
     $values = get_fields( $post_id );
-	// consolelog($values);
+// 	consolelog($values);
 	
 	// https://support.advancedcustomfields.com/forums/topic/updating-field-settings-in-php/
 
