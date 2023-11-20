@@ -196,7 +196,7 @@ function add_other_selected_options_to_fields( $post_id ) {
 	    update_field('field_65524df8c9fa6', '', $post_id);
 	}
 	
-// 	echo "<script>history.go(-2);</script>";
+ 	// echo "<script>history.go(-2);</script>";
 }
 
 function add_new_option_to_field_choices($field_name, $new_value) {
