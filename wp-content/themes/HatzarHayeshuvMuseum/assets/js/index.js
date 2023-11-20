@@ -85,7 +85,7 @@ function buildSearchParams(items) {
     let newOptionElm = document.createElement('option')
     newOptionElm.value = option
     newOptionElm.innerText = option
-    if (option == SearchState[attribute]) newOptionElm.setAttribute('selected', true)
+    if (option == SearchState.movement) newOptionElm.setAttribute('selected', true)
     selectElm.appendChild(newOptionElm)
   }
 }
