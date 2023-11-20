@@ -8,14 +8,40 @@ const SearchState = {
 
 async function init() {
   document.addEventListener("load", () => loaderTimeoutID(true))
-  let dataURL = `wp-json/wp/v2/item`
-  let response = await fetch(dataURL)
-  let items = await response.json()
+  let itemsDataURL = `wp-json/wp/v2/item`
+  let movementsDataURL = `wp-json/wp/v2/movement`
+  const [itemsResponse, movementsResponse] = await Promise.all([
+    fetch(itemsDataURL),
+    fetch(movementsDataURL),
+  ]);
+  let items = await itemsResponse.json()
   initialItems = items.slice()
+  let movements = await movementsResponse.json()
+  for (let item of initialItems) {
+    if (item && item.ACF && item.ACF.movements && item.ACF.movements.length) {
+      const itemMovements = item.ACF.movements
+      for (let i=0; i<itemMovements.length; i++) {
+        const itemMovement = itemMovements[i]
+        itemMovements[i] = movements.filter(m => m.ID === itemMovement.ID)[0]
+      }
+    }
+  }
+
+
   console.log(items);
   buildUI()
   document.querySelector(".search-bar input").addEventListener("input", debounce(handleSearch, 600))
-  document.querySelector("select#field-select").addEventListener("change", debounce(handleSearch, 600))
+  let selectors = [
+    "select#field-select",
+    "select#materials-select",
+    '.row.location select[name="room"]',
+    '.row.location select[name="position"]',
+    '.row.location select[name="shelf"]',
+    '.row.location select[name="box"]',
+  ]
+  for (let selector of selectors) {
+    document.querySelector(selector).addEventListener("change", debounce(handleSearch, 600))
+  }
 }
 
 function buildUI(items) {
@@ -37,21 +63,30 @@ function renderInfoTitle(items) {
 }
 
 function buildSearchParams(items) {
-  let relevantItems = items.filter(i => i && i.ACF && i.ACF.characteristics && i.ACF.characteristics.field )
-  let fieldOptions = relevantItems.map(item => item.ACF.characteristics.field)
-  fieldOptions = [...new Set(fieldOptions)]
-  
-  let fieldSelectElm = document.querySelector('select#field-select')
-  fieldSelectElm.innerHTML = '<option value="">תחום</option>'
+  fillSelectWithOptionsFrom(items, 'charcteristics', 'field', 'תחום')
+  fillSelectWithOptionsFrom(items, 'charcteristics', 'materials', 'חומר')
+  fillSelectWithOptionsFrom(items, 'location', 'room', 'חדר')
+  fillSelectWithOptionsFrom(items, 'location', 'position', 'מיקום')
+  fillSelectWithOptionsFrom(items, 'location', 'shelf', 'מדף')
+  fillSelectWithOptionsFrom(items, 'location', 'box', 'קופסה')
+}
 
-  for (let i = 0; i < fieldOptions.length; i++) {
-    const option = fieldOptions[i]
+function fillSelectWithOptionsFrom(items, group, attribute, placeholder) {
+  let relevantItems = items.filter(i => i && i.ACF && i.ACF[group] && i.ACF[group][attribute])
+  let options = relevantItems.map(item => item.ACF[group][attribute])
+  options = options.flat()
+  options = [...new Set(options)]
+  
+  let selectElm = document.querySelector(`select#${attribute}-select`)
+  selectElm.innerHTML = `<option value="">${placeholder}</option>`
+
+  for (let i = 0; i < options.length; i++) {
+    const option = options[i]
     let newOptionElm = document.createElement('option')
     newOptionElm.value = option
     newOptionElm.innerText = option
-    // TODO mark as selected if in state
-    if (option == SearchState.field) newOptionElm.setAttribute('selected', true)
-    fieldSelectElm.appendChild(newOptionElm)
+    if (option == SearchState[attribute]) newOptionElm.setAttribute('selected', true)
+    selectElm.appendChild(newOptionElm)
   }
 }
 
@@ -77,19 +112,27 @@ function buildItemsGrid(items) {
     `
     parentElm.append(itemElm)
   }
-  // let loaderElm = document.createElement('div')
-  // loaderElm.classList.add('loader')
-  // if (!isLoaderVisible) loaderElm.classList.add('hidden')
-  // parentElm.append(loaderElm)
 }
 
 function handleSearch(e) {
   loaderVisibilty(true)
   let searchTerm = document.querySelector('.search-bar input').value;
   let field = document.querySelector('select#field-select').value;
+  let material = document.querySelector('select#materials-select').value;
+  let room = document.querySelector('.row.location select[name="room"]').value;
+  let position = document.querySelector('.row.location select[name="position"]').value;
+  let shelf = document.querySelector('.row.location select[name="shelf"]').value;
+  let box = document.querySelector('.row.location select[name="box"]').value;
+
   SearchState.query = searchTerm
   SearchState.field = field
-  if (!searchTerm && !field) return buildUI()
+  SearchState.material = material
+  SearchState.room = room
+  SearchState.position = position
+  SearchState.shelf = shelf
+  SearchState.box = box
+
+  if (!searchTerm && !field && !material && !room && !position && !shelf && !box) return buildUI()
   let resultItems = structuredClone(initialItems)
   if (searchTerm) {
     resultItems = resultItems.reduce((prevValue, curValue) => {
@@ -100,6 +143,21 @@ function handleSearch(e) {
   }
   if (field) {
     resultItems = resultItems.filter(item => item.ACF.characteristics.field == field)
+  }
+  if (material) {
+    resultItems = resultItems.filter(item => item.ACF.characteristics.materials.includes(material))
+  }
+  if (room) {
+    resultItems = resultItems.filter(item => item.ACF.location.room === room)
+  }
+  if (position) {
+    resultItems = resultItems.filter(item => item.ACF.location.position === position)
+  }
+  if (shelf) {
+    resultItems = resultItems.filter(item => item.ACF.location.shelf === shelf)
+  }
+  if (box) {
+    resultItems = resultItems.filter(item => item.ACF.location.box === box)
   }
   buildUI(resultItems)
   loaderVisibilty(false)
@@ -131,6 +189,26 @@ function getResultItemFromQuery(item, searchTerm) {
   }
   if (foundSearchTerm) return item
   else return null
+}
+
+function resetSearch() {
+  document.querySelector('.search-bar input').value = ''
+  document.querySelector('select#field-select').value = 'חומר'
+  document.querySelector('select#materials-select').value = ''
+  document.querySelector('.row.location select[name="room"]').value = ''
+  document.querySelector('.row.location select[name="position"]').value = ''
+  document.querySelector('.row.location select[name="shelf"]').value = ''
+  document.querySelector('.row.location select[name="box"]').value = ''
+
+  SearchState.query = ''
+  SearchState.field = ''
+  SearchState.material = ''
+  SearchState.room = ''
+  SearchState.position = ''
+  SearchState.shelf = ''
+  SearchState.box = ''
+
+  buildUI()
 }
 
 function loaderVisibilty(on) {

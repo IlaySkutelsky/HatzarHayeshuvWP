@@ -61,10 +61,15 @@ main {
 }
 
 /* --- Search container --- */
+
+.search-container {
+  width: 32rem;
+  position: relative;
+}
+
 .search-bar {
   display: flex;
   margin-block: 1rem;
-  width: 24rem;
 }
 
 .search-bar input {
@@ -88,12 +93,40 @@ main {
 
 .search-params {
   display: flex;
+  min-height: 2rem;
+  flex-wrap: wrap;
+}
+.search-params .row {
+  width: 100%;
+  display: flex;
   height: 2rem;
+  margin-block: 0.5rem;
+}
+.search-params .row.attributes{
+  gap: 2rem;
 }
 
-#field-select {
+.search-params select {
   min-width: 5rem;
   padding-inline: 0.5rem;
+  width: 50%;
+}
+.search-params .row.location{
+  gap: 0.5rem;
+}
+.search-params .row.location input{
+  width: 25%;
+  /* gap: 2rem; */
+}
+
+
+#reset-btn {
+  position: absolute;
+  top: 1rem;
+  left: -3rem;
+  height: 2.4rem;
+  width: 2.4rem;
+  font-size: 1.2rem;
 }
 
 /* --- Items grid --- */
@@ -109,6 +142,7 @@ main .items-grid {
   gap: 1rem;
   flex-wrap: wrap;
   max-width: 80%;
+  padding-bottom: 3rem;
 }
 
 main .items-grid .item {

@@ -1,17 +1,40 @@
 <main dir="rtl">
-	<h1>מוזיאון חצר הישוב הישן – מערכת ניהול אוספים</h1>
-	<div class="search-container">
-		<div class="search-bar">
-			<input type="text">
-			<button>🔍</button>
-		</div>
-		<div class="search-params">
-			<select name="field" id="field-select">
-				<option value="">תחום</option>
-			</select>
-		</div>
-	</div>
-	<h2 class="info-title"></h2>
-	<div class="items-grid"></div>
-	<div class="loader"></div>
+    <h1>מוזיאון חצר הישוב הישן – מערכת ניהול אוספים</h1>
+    <div class="search-container">
+        <div class="search-bar">
+            <input type="text" name="query">
+            <button>🔍</button>
+        </div>
+        <div class="search-params">
+            <div class="row attributes">
+                <select name="field" id="field-select">
+                    <option value="">תחום</option>
+                </select>
+                <select name="materials" id="materials-select">
+                    <option value="">חומר</option>
+                </select>
+                <select name="movement" id="movement-select">
+                    <option value="">תנועה</option>
+                </select>
+            </div>
+            <div class="row location">
+                <select name="room" id="room-select">
+                    <option value="">חדר</option>
+                </select>
+                <select name="position" id="position-select">
+                    <option value="">מיקום</option>
+                </select>
+                <select name="shelf" id="shelf-select">
+                    <option value="">מדף</option>
+                </select>
+                <select name="box" id="box-select">
+                    <option value="">קופסה</option>
+                </select>
+            </div>
+        </div>
+        <button id="reset-btn" onclick="resetSearch()">✖️</button>
+    </div>
+    <h2 class="info-title"></h2>
+    <div class="items-grid"></div>
+    <div class="loader"></div>
 </main>
