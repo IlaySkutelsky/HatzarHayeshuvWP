@@ -22,7 +22,7 @@ async function init() {
       const itemMovements = item.ACF.movements
       for (let i=0; i<itemMovements.length; i++) {
         const itemMovement = itemMovements[i]
-        itemMovements[i] = movements.filter(m => m.ID === itemMovement.ID)[0]
+        itemMovements[i] = movements.filter(m => m.id === itemMovement.ID)[0]
       }
     }
   }
