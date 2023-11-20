@@ -119,7 +119,7 @@ function add_other_selected_options_to_fields( $post_id ) {
 
     // Get newly saved values.
     $values = get_fields( $post_id );
-	consolelog($values);
+	// consolelog($values);
 	
 	// https://support.advancedcustomfields.com/forums/topic/updating-field-settings-in-php/
 
@@ -208,6 +208,52 @@ function add_new_option_to_field_choices($field_name, $new_value) {
 
 }
 
+add_action('acf/save_post', 'insert_new_movement');
+function insert_new_movement( $post_id ) {
+    // Get newly saved values.
+    $values = get_fields( $post_id );
+    
+	if (!$values['new_movement'] || !$values['new_movement']['has_new_movement']) return;
+    consolelog('got here');
+
+	$createPage = array(
+		"post_title" => $values['new_movement']['new_movement_name'],
+		"post_content" => '',
+		"post_status" => "publish",
+		"post_type" => 'movement',
+		"post_name" => $values['new_movement']['new_movement_name'],
+	);
+
+	// Insert the post into the database
+	$new_movement_id = wp_insert_post( $createPage );
+	if (!$new_movement_id) return;
+    consolelog('saved new movement');
+
+    update_field('field_6533c9b9ea456', $values['new_movement']['new_movement_type'], $new_movement_id);
+    update_field('field_6533caf5ea457', $values['new_movement']['new_movement_date'], $new_movement_id);
+    update_field('field_6533cb1aea458', $values['new_movement']['new_movement_to'], $new_movement_id);
+    update_field('field_6533cb21ea459', [ $post_id ], $new_movement_id);
+    consolelog('updated new movement fields');
+    
+	// Add new movement to item movements
+	$current_item_movements = $values['movements'];
+	if ($current_item_movements === '') $current_item_movements = [];
+ 	$current_item_movements[] = $new_movement_id;
+ 	update_field('field_6533d051394c8', $current_item_movements, $post_id);
+    consolelog('Added new movement to items movements');
+ 	
+ 	// Empty new movement fields on post
+	$charects = Array(
+		'field_65578bfbba16c' => false,
+		'field_65578c6307e8f' => '',
+		'field_65578c8407e90' => 'השאלה',
+		'field_65578ca807e91' => '',
+		'field_65578cc007e92' => ''
+	);
+	update_field('field_65578c1fba16d', $charects, $post_id);
+    consolelog('emptied item new movement fields');
+}
+	
 function consolelog($data) {
     $output = json_encode($data);
 
