@@ -170,7 +170,7 @@ function handleSearch(e) {
   }
   if (movement) {
     resultItems = resultItems.filter(item => {
-      return !!item.ACF.movements && item.ACF.movements.some(m => m.type === movement)
+      return !!item.ACF.movements && item.ACF.movements.some(m => m.ACF.type === movement)
     })
   }
   if (room) {
