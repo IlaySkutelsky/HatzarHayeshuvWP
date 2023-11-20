@@ -34,6 +34,7 @@ async function init() {
   let selectors = [
     "select#field-select",
     "select#materials-select",
+    "select#movement-select",
     '.row.location select[name="room"]',
     '.row.location select[name="position"]',
     '.row.location select[name="shelf"]',
@@ -69,6 +70,24 @@ function buildSearchParams(items) {
   fillSelectWithOptionsFrom(items, 'location', 'position', 'מיקום')
   fillSelectWithOptionsFrom(items, 'location', 'shelf', 'מדף')
   fillSelectWithOptionsFrom(items, 'location', 'box', 'קופסה')
+
+  let relevantItems = items.filter(i => i && i.ACF && i.ACF.movements)
+  let itemMovements = relevantItems.map(item => item.ACF.movements)
+  itemMovements = itemMovements.flat()
+  let options = itemMovements.map(item => item.ACF.type)
+  options = [...new Set(options)]
+  
+  let selectElm = document.querySelector(`select#movement-select`)
+  selectElm.innerHTML = `<option value="">תנועה</option>`
+
+  for (let i = 0; i < options.length; i++) {
+    const option = options[i]
+    let newOptionElm = document.createElement('option')
+    newOptionElm.value = option
+    newOptionElm.innerText = option
+    if (option == SearchState[attribute]) newOptionElm.setAttribute('selected', true)
+    selectElm.appendChild(newOptionElm)
+  }
 }
 
 function fillSelectWithOptionsFrom(items, group, attribute, placeholder) {
@@ -119,6 +138,7 @@ function handleSearch(e) {
   let searchTerm = document.querySelector('.search-bar input').value;
   let field = document.querySelector('select#field-select').value;
   let material = document.querySelector('select#materials-select').value;
+  let movement = document.querySelector('select#movement-select').value;
   let room = document.querySelector('.row.location select[name="room"]').value;
   let position = document.querySelector('.row.location select[name="position"]').value;
   let shelf = document.querySelector('.row.location select[name="shelf"]').value;
@@ -127,12 +147,13 @@ function handleSearch(e) {
   SearchState.query = searchTerm
   SearchState.field = field
   SearchState.material = material
+  SearchState.movement = movement
   SearchState.room = room
   SearchState.position = position
   SearchState.shelf = shelf
   SearchState.box = box
 
-  if (!searchTerm && !field && !material && !room && !position && !shelf && !box) return buildUI()
+  if (!searchTerm && !field && !material && !movement && !room && !position && !shelf && !box) return buildUI()
   let resultItems = structuredClone(initialItems)
   if (searchTerm) {
     resultItems = resultItems.reduce((prevValue, curValue) => {
@@ -146,6 +167,11 @@ function handleSearch(e) {
   }
   if (material) {
     resultItems = resultItems.filter(item => item.ACF.characteristics.materials.includes(material))
+  }
+  if (movement) {
+    resultItems = resultItems.filter(item => {
+      return item.ACF.movements.some(m => m.type === movement)
+    })
   }
   if (room) {
     resultItems = resultItems.filter(item => item.ACF.location.room === room)
@@ -195,6 +221,7 @@ function resetSearch() {
   document.querySelector('.search-bar input').value = ''
   document.querySelector('select#field-select').value = 'חומר'
   document.querySelector('select#materials-select').value = ''
+  document.querySelector('select#movement-select').value = ''
   document.querySelector('.row.location select[name="room"]').value = ''
   document.querySelector('.row.location select[name="position"]').value = ''
   document.querySelector('.row.location select[name="shelf"]').value = ''
@@ -203,6 +230,7 @@ function resetSearch() {
   SearchState.query = ''
   SearchState.field = ''
   SearchState.material = ''
+  SearchState.movement = ''
   SearchState.room = ''
   SearchState.position = ''
   SearchState.shelf = ''
