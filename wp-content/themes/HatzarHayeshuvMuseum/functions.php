@@ -259,3 +259,5 @@ function consolelog($data) {
 
     echo "<script>console.log('Debug Objects:');console.log(JSON.parse(`" . $output . "`.replace(/[\u0000-\u001F\u007F-\u009F]/g, '')));</script>";
 }
+
+define( 'DISALLOW_FILE_EDIT', true );
