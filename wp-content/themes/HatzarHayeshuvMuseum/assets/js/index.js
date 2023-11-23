@@ -64,8 +64,8 @@ function renderInfoTitle(items) {
 }
 
 function buildSearchParams(items) {
-  fillSelectWithOptionsFrom(items, 'charcteristics', 'field', 'תחום')
-  fillSelectWithOptionsFrom(items, 'charcteristics', 'materials', 'חומר')
+  fillSelectWithOptionsFrom(items, 'characteristics', 'field', 'תחום')
+  fillSelectWithOptionsFrom(items, 'characteristics', 'materials', 'חומר')
   fillSelectWithOptionsFrom(items, 'location', 'room', 'חדר')
   fillSelectWithOptionsFrom(items, 'location', 'position', 'מיקום')
   fillSelectWithOptionsFrom(items, 'location', 'shelf', 'מדף')
