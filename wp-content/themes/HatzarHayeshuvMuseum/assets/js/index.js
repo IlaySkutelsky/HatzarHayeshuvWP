@@ -245,6 +245,10 @@ function loaderVisibilty(on) {
   else loaderElm.classList.add('hidden')
 }
 
+function openAddItem() {
+  window.open("/wp-admin/post-new.php?post_type=item", "_blank");
+}
+
 const debounce = (callback, wait) => {
   let timeoutId = null;
   return (...args) => {

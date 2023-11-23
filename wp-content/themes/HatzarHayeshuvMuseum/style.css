@@ -29,6 +29,25 @@ main {
   align-items: center;
 }
 
+.add-item-btn {
+  position: absolute;
+  top: 3rem;
+  right: 1rem;
+  font-size: 1.4rem;
+  display: flex;
+  cursor: pointer;
+}
+.add-item-btn .text{
+  display: block;
+  width: 0rem;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: all 200ms ease-in-out;
+}
+.add-item-btn:hover .text{
+  width: 9rem;
+}
+
 .loader.hidden {
   display: none;
 }
