@@ -75,6 +75,7 @@ function buildSearchParams(items) {
   let itemMovements = relevantItems.map(item => item.ACF.movements)
   itemMovements = itemMovements.flat()
   let options = itemMovements.map(item => item.ACF.type)
+  options = options.map(i => i.replace(/(<i>|<\/i>)/g, ''))
   options = [...new Set(options)]
   
   let selectElm = document.querySelector(`select#movement-select`)
@@ -94,6 +95,7 @@ function fillSelectWithOptionsFrom(items, group, attribute, placeholder) {
   let relevantItems = items.filter(i => i && i.ACF && i.ACF[group] && i.ACF[group][attribute])
   let options = relevantItems.map(item => item.ACF[group][attribute])
   options = options.flat()
+  options = options.map(i => i.replace(/(<i>|<\/i>)/g, ''))
   options = [...new Set(options)]
   
   let selectElm = document.querySelector(`select#${attribute}-select`)
@@ -119,7 +121,6 @@ function buildItemsGrid(items) {
     itemElm.href = `/wp-admin/post.php?post=${item.id}&action=edit`
     let itemImageHTMLString
     if (item.fimg_url) itemImageHTMLString = `<div class="featured-image" style="background-image: url('${item.fimg_url}')"></div>`
-    // if (item.fimg_url) itemImageHTMLString = `<img class="featured-image" src="${item.fimg_url}"/>`
     else itemImageHTMLString = `<div class="featured-image-placeholder"></div>`
     itemElm.innerHTML = `
       ${itemImageHTMLString}
