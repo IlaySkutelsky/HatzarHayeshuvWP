@@ -138,7 +138,7 @@ function handleSearch(e) {
   loaderVisibilty(true)
   let searchTerm = document.querySelector('.search-bar input').value;
   let field = document.querySelector('select#field-select').value;
-  let material = document.querySelector('select#materials-select').value;
+  let materials = document.querySelector('select#materials-select').value;
   let movement = document.querySelector('select#movement-select').value;
   let room = document.querySelector('.row.location select[name="room"]').value;
   let position = document.querySelector('.row.location select[name="position"]').value;
@@ -147,7 +147,7 @@ function handleSearch(e) {
 
   SearchState.query = searchTerm
   SearchState.field = field
-  SearchState.material = material
+  SearchState.materials = materials
   SearchState.movement = movement
   SearchState.room = room
   SearchState.position = position
