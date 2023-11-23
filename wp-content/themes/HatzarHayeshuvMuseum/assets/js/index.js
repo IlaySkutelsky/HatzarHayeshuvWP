@@ -154,7 +154,7 @@ function handleSearch(e) {
   SearchState.shelf = shelf
   SearchState.box = box
 
-  if (!searchTerm && !field && !material && !movement && !room && !position && !shelf && !box) return buildUI()
+  if (!searchTerm && !field && !materials && !movement && !room && !position && !shelf && !box) return buildUI()
   let resultItems = structuredClone(initialItems)
   if (searchTerm) {
     resultItems = resultItems.reduce((prevValue, curValue) => {
@@ -166,8 +166,8 @@ function handleSearch(e) {
   if (field) {
     resultItems = resultItems.filter(item => item.ACF.characteristics.field == field)
   }
-  if (material) {
-    resultItems = resultItems.filter(item => item.ACF.characteristics.materials.includes(material))
+  if (materials) {
+    resultItems = resultItems.filter(item => item.ACF.characteristics.materials.includes(materials))
   }
   if (movement) {
     resultItems = resultItems.filter(item => {
@@ -253,7 +253,7 @@ function resetSearch() {
 
   SearchState.query = ''
   SearchState.field = ''
-  SearchState.material = ''
+  SearchState.materials = ''
   SearchState.movement = ''
   SearchState.room = ''
   SearchState.position = ''
