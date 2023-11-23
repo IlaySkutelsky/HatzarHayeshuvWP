@@ -158,7 +158,7 @@ function handleSearch(e) {
   let resultItems = structuredClone(initialItems)
   if (searchTerm) {
     resultItems = resultItems.reduce((prevValue, curValue) => {
-      let resultItem = getResultItemFromQuery(curValue, searchTerm)
+      let resultItem = getResultItemFromQuery(curValue, searchableProperties, searchTerm)
       if (resultItem) prevValue.push(resultItem)
       return prevValue
     }, [])
@@ -194,11 +194,34 @@ const excludedKeys = [
   'fimg_url'
 ]
 
-function getResultItemFromQuery(item, searchTerm) {
+const searchableProperties = {
+  title: {
+    rendered: true
+  },
+  ACF: {
+    attribution: true,
+    condition: {
+      physical_description: true
+    },
+    current_catalog_number: true,
+    description: true,
+    hebrew_date: true,
+    history: true,
+    minting: true,
+    notes: true,
+    origin: true,
+    photographer: true,
+    previous_catalog_number: true,
+    source: true
+  }
+}
+
+function getResultItemFromQuery(item, searchableProperties, searchTerm) {
   let foundSearchTerm = false;
   for (let key in item) {
+    if (!searchableProperties[key]) continue
     if (typeof item[key] === 'object' && item[key] !== null) {
-      let resultSubItem = getResultItemFromQuery(item[key], searchTerm)
+      let resultSubItem = getResultItemFromQuery(item[key], searchableProperties[key], searchTerm)
       if (resultSubItem) {
         foundSearchTerm = true
         item[key] = resultSubItem
