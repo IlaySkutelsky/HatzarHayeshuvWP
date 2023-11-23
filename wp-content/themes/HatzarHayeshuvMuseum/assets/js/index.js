@@ -41,7 +41,7 @@ async function init() {
     '.row.location select[name="box"]',
   ]
   for (let selector of selectors) {
-    document.querySelector(selector).addEventListener("change", debounce(handleSearch, 600))
+    document.querySelector(selector).addEventListener("change", handleSearch)
   }
 }
 
