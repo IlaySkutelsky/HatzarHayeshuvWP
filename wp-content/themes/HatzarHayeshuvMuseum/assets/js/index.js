@@ -136,58 +136,62 @@ function buildItemsGrid(items) {
 
 function handleSearch(e) {
   loaderVisibilty(true)
-  let searchTerm = document.querySelector('.search-bar input').value;
-  let field = document.querySelector('select#field-select').value;
-  let materials = document.querySelector('select#materials-select').value;
-  let movement = document.querySelector('select#movement-select').value;
-  let room = document.querySelector('.row.location select[name="room"]').value;
-  let position = document.querySelector('.row.location select[name="position"]').value;
-  let shelf = document.querySelector('.row.location select[name="shelf"]').value;
-  let box = document.querySelector('.row.location select[name="box"]').value;
+  try {
+    let searchTerm = document.querySelector('.search-bar input').value;
+    let field = document.querySelector('select#field-select').value;
+    let materials = document.querySelector('select#materials-select').value;
+    let movement = document.querySelector('select#movement-select').value;
+    let room = document.querySelector('.row.location select[name="room"]').value;
+    let position = document.querySelector('.row.location select[name="position"]').value;
+    let shelf = document.querySelector('.row.location select[name="shelf"]').value;
+    let box = document.querySelector('.row.location select[name="box"]').value;
 
-  SearchState.query = searchTerm
-  SearchState.field = field
-  SearchState.materials = materials
-  SearchState.movement = movement
-  SearchState.room = room
-  SearchState.position = position
-  SearchState.shelf = shelf
-  SearchState.box = box
+    SearchState.query = searchTerm
+    SearchState.field = field
+    SearchState.materials = materials
+    SearchState.movement = movement
+    SearchState.room = room
+    SearchState.position = position
+    SearchState.shelf = shelf
+    SearchState.box = box
 
-  if (!searchTerm && !field && !materials && !movement && !room && !position && !shelf && !box) return buildUI()
-  let resultItems = structuredClone(initialItems)
-  if (searchTerm) {
-    resultItems = resultItems.reduce((prevValue, curValue) => {
-      let resultItem = getResultItemFromQuery(curValue, searchableProperties, searchTerm)
-      if (resultItem) prevValue.push(resultItem)
-      return prevValue
-    }, [])
+    if (!searchTerm && !field && !materials && !movement && !room && !position && !shelf && !box) return buildUI()
+    let resultItems = structuredClone(initialItems)
+    if (searchTerm) {
+      resultItems = resultItems.reduce((prevValue, curValue) => {
+        let resultItem = getResultItemFromQuery(curValue, searchableProperties, searchTerm)
+        if (resultItem) prevValue.push(resultItem)
+        return prevValue
+      }, [])
+    }
+    if (field) {
+      resultItems = resultItems.filter(item => item.ACF.characteristics.field == field)
+    }
+    if (materials) {
+      resultItems = resultItems.filter(item => item.ACF.characteristics.materials.includes(materials))
+    }
+    if (movement) {
+      resultItems = resultItems.filter(item => {
+        return !!item.ACF.movements && item.ACF.movements.some(m => m.ACF.type === movement)
+      })
+    }
+    if (room) {
+      resultItems = resultItems.filter(item => item.ACF.location.room === room)
+    }
+    if (position) {
+      resultItems = resultItems.filter(item => item.ACF.location.position === position)
+    }
+    if (shelf) {
+      resultItems = resultItems.filter(item => item.ACF.location.shelf === shelf)
+    }
+    if (box) {
+      resultItems = resultItems.filter(item => item.ACF.location.box === box)
+    }
+    buildUI(resultItems)
+    loaderVisibilty(false)
+  } catch (error) {
+    loaderVisibilty(false)
   }
-  if (field) {
-    resultItems = resultItems.filter(item => item.ACF.characteristics.field == field)
-  }
-  if (materials) {
-    resultItems = resultItems.filter(item => item.ACF.characteristics.materials.includes(materials))
-  }
-  if (movement) {
-    resultItems = resultItems.filter(item => {
-      return !!item.ACF.movements && item.ACF.movements.some(m => m.ACF.type === movement)
-    })
-  }
-  if (room) {
-    resultItems = resultItems.filter(item => item.ACF.location.room === room)
-  }
-  if (position) {
-    resultItems = resultItems.filter(item => item.ACF.location.position === position)
-  }
-  if (shelf) {
-    resultItems = resultItems.filter(item => item.ACF.location.shelf === shelf)
-  }
-  if (box) {
-    resultItems = resultItems.filter(item => item.ACF.location.box === box)
-  }
-  buildUI(resultItems)
-  loaderVisibilty(false)
 }
 
 const excludedKeys = [

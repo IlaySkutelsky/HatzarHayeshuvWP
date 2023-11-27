@@ -89,6 +89,7 @@ main {
 .search-bar {
   display: flex;
   margin-block: 1rem;
+  position: relative;
 }
 
 .search-bar input {
@@ -99,7 +100,7 @@ main {
   padding: 5px;
 }
 
-.search-bar button {
+.search-bar #search-btn {
   content: "\2026"; /* ascii code for the ellipsis character */
   border: 1px solid black;
   border-radius: 5px 0 0 5px;
@@ -108,6 +109,17 @@ main {
   cursor: pointer;
   width: 2.5rem;
   padding: 5px;
+}
+
+.search-bar #reset-btn {
+  position: absolute;
+  top: 0;
+  left: -3rem;
+  height: 100%;
+  font-size: 1.2rem;
+  aspect-ratio: 1 /1;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 .search-params {
@@ -139,14 +151,6 @@ main {
 }
 
 
-#reset-btn {
-  position: absolute;
-  top: 1rem;
-  left: -3rem;
-  height: 2.4rem;
-  width: 2.4rem;
-  font-size: 1.2rem;
-}
 
 /* --- Items grid --- */
 

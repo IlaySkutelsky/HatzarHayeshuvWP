@@ -3,7 +3,8 @@
     <div class="search-container">
         <div class="search-bar">
             <input type="text" name="query">
-            <button>🔍</button>
+            <button id="search-btn">🔍</button>
+            <button id="reset-btn" onclick="resetSearch()">✖️</button>
         </div>
         <div class="search-params">
             <div class="row attributes">
@@ -32,13 +33,12 @@
                 </select>
             </div>
         </div>
-        <button id="reset-btn" onclick="resetSearch()">✖️</button>
     </div>
     <h2 class="info-title"></h2>
     <div class="items-grid"></div>
     <button class="add-item-btn" onclick="openAddItem()">
         <span class="icon">➕</span>
-        <span class="text">להוספת פריט</span>
+        <span class="text">הוספת פריט</span>
     </button>
     <div class="loader"></div>
 </main>
