@@ -144,7 +144,7 @@ function add_other_selected_options_to_fields( $post_id ) {
 	$new_period = $values['תקופה'] == "אחר"? $values['תקופה_אחר'] : false;
 	if ($new_period) add_new_option_to_field_choices('תקופה', $new_period);
 
-	if ($new_color || $new_field || $new_ethnicity || $new_metrial || $new_technique) {
+	if ($new_color || $new_field || $new_ethnicity || $new_material || $new_technique) {
 
 		if ($new_color) {
 			$new_color_array = $values['characteristics']['colors'];
