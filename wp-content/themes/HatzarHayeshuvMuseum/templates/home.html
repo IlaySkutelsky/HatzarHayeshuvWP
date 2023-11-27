@@ -3,8 +3,16 @@
     <div class="search-container">
         <div class="search-bar">
             <input type="text" name="query">
-            <button id="search-btn">🔍</button>
-            <button id="reset-btn" onclick="resetSearch()">✖️</button>
+            <button id="search-btn" class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" width="20" height="20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                </svg>
+            </button>
+            <button id="reset-btn" class="icon" onclick="resetSearch()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke-width="1.5" color="#000">
+                    <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="m7 17 5-5m5-5-5 5m0 0L7 7m5 5 5 5"/>
+                </svg>
+            </button>
         </div>
         <div class="search-params">
             <div class="row attributes">
@@ -37,7 +45,11 @@
     <h2 class="info-title"></h2>
     <div class="items-grid"></div>
     <button class="add-item-btn" onclick="openAddItem()">
-        <span class="icon">➕</span>
+        <span class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke-width="1.5" color="#000">
+                <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="M6 12h6m6 0h-6m0 0V6m0 6v6"/>
+            </svg>
+        </span>
         <span class="text">הוספת פריט</span>
     </button>
     <div class="loader"></div>

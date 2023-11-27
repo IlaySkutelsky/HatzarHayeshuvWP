@@ -35,6 +35,7 @@ main {
   right: 1rem;
   font-size: 1.4rem;
   display: flex;
+  align-items: center;
   cursor: pointer;
 }
 .add-item-btn .text{
@@ -42,6 +43,7 @@ main {
   width: 0rem;
   overflow: hidden;
   white-space: nowrap;
+  margin-bottom: 2px;
   transition: all 200ms ease-in-out;
 }
 .add-item-btn:hover .text{
@@ -79,6 +81,12 @@ main {
   display: none;
 }
 
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* --- Search container --- */
 
 .search-container {
@@ -114,7 +122,7 @@ main {
 .search-bar #reset-btn {
   position: absolute;
   top: 0;
-  left: -3rem;
+  left: -5rem;
   height: 100%;
   font-size: 1.2rem;
   aspect-ratio: 1 /1;
@@ -134,7 +142,7 @@ main {
   margin-block: 0.5rem;
 }
 .search-params .row.attributes{
-  gap: 2rem;
+  gap: calc(2rem + 5px);
 }
 
 .search-params select {
@@ -143,7 +151,7 @@ main {
   width: 50%;
 }
 .search-params .row.location{
-  gap: 0.5rem;
+  gap: calc(0.5rem + 5px);
 }
 .search-params .row.location input{
   width: 25%;
@@ -162,7 +170,7 @@ h2.info-title {
 
 main .items-grid {
   display: flex;
-  gap: 1rem;
+  gap: calc(1rem + 10px);
   flex-wrap: wrap;
   max-width: 80%;
   padding-bottom: 3rem;
