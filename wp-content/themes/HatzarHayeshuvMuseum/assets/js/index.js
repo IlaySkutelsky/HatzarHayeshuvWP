@@ -6,13 +6,32 @@ const SearchState = {
   field: ''
 }
 
+async function recursiveFetchType(url, counter) {
+  if (!counter) counter=1
+  let items = await fetch(url+'?per_page=100&page='+counter)
+  if (items.length >= counter*100) items.push(...recursiveFetchType(url, counter++))
+  return items
+}
+
+function getAllofType(url) {
+  return new Promise(async function(resolve, reject) {
+    try {
+      let allItems = recursiveFetchType(url)
+      if (allItems) resolve(allItems)
+      else reject('no items from url ' + url)
+    } catch (error) {
+      reject(error)
+    }
+  })
+}
+
 async function init() {
   document.addEventListener("load", () => loaderTimeoutID(true))
   let itemsDataURL = `wp-json/wp/v2/item`
   let movementsDataURL = `wp-json/wp/v2/movement`
   const [itemsResponse, movementsResponse] = await Promise.all([
-    fetch(itemsDataURL),
-    fetch(movementsDataURL),
+    getAllofType(itemsDataURL),
+    getAllofType(movementsDataURL),
   ]);
   let items = await itemsResponse.json()
   initialItems = items.slice()
