@@ -260,6 +260,10 @@ main .items-grid .item:hover {
   font-size: 1.1rem;
   line-height: 1.5rem;
 }
+.item-page #movements {
+  white-space: pre;
+}
+
 @media print {
   .item-page .buttons-menu {
     display: none;
