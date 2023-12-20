@@ -60,13 +60,13 @@ async function init() {
   document.getElementById('depth').innerHTML = acf.characteristics.size.depth
   document.getElementById('general').innerHTML = acf.characteristics.size.general
   document.getElementById('physical-description').innerHTML = acf.condition.physical_description
-  document.getElementById('report').innerHTML = acf.condition.report
+  document.getElementById('report').innerHTML = acf.condition.report? acf.condition.report : ''
   document.getElementById('attribution').innerHTML = acf.attribution
   document.getElementById('uses').innerHTML = acf.uses
   document.getElementById('origin').innerHTML = acf.origin
   document.getElementById('status').innerHTML = acf.status
   document.getElementById('source').innerHTML = acf.source
-  document.getElementById('phtographer').innerHTML = acf.phtographer
+  document.getElementById('phtographer').innerHTML = acf.phtographer? acf.phtographer : ''
   document.getElementById('box').innerHTML = acf.location.box
   document.getElementById('position').innerHTML = acf.location.position
   document.getElementById('room').innerHTML = acf.location.room
@@ -74,10 +74,16 @@ async function init() {
   document.getElementById('registration-date').innerHTML = acf.registration_date
   document.getElementById('notes').innerHTML = acf.notes
   document.getElementById('registrant-name').innerHTML = acf.registrant_name
-  document.getElementById('movements').innerHTML = movements != ""? acf.movements.map(m => getMovementByID(m.ID)).reduce((acc, m) => acc + `${m.ACF.type} - ${m.ACF.to} - ${m.ACF.date}\n`,'') : "" ;
+  document.getElementById('movements').innerHTML = movements != ""? acf.movements.map(m => movementToText(getMovementByID(m.ID))).join('\n') : ''
+}
 
-
-
+function movementToText(m) {
+  if (m.title.rendered) return m.title.rendered
+  let str = ''
+  if (m.ACF.type) str += m.ACF.type + ' - '
+  if (m.ACF.to) str += m.ACF.to + ' - '
+  if (m.ACF.date) str += m.ACF.date + ' - '
+  return str.slice(0, str.length - 3)
 }
 
 init()

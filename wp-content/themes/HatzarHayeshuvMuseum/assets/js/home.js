@@ -137,7 +137,7 @@ function buildItemsGrid(items) {
     const item = items[i];
     let itemElm = document.createElement('a')
     itemElm.classList.add('item')
-    itemElm.href = `/item/${item.title.rendered}`
+    itemElm.href = item.link
     let itemImageHTMLString
     if (item.fimg_url) itemImageHTMLString = `<div class="featured-image" style="background-image: url('${item.fimg_url}')"></div>`
     else itemImageHTMLString = `<div class="featured-image-placeholder"></div>`
@@ -304,6 +304,13 @@ const debounce = (callback, wait) => {
       callback(...args);
     }, wait);
   };
+}
+
+function toPlainText(text) {
+    let areaElement = document.createElement("textarea");
+    areaElement.innerHTML = text;
+
+    return areaElement.value;
 }
 
 init()

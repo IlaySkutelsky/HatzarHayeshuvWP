@@ -7,12 +7,12 @@ function add_home_javascript() {
 function add_javascript_post_data() {
 	?>
 		<script>
-			window.WP_POST = JSON.parse(`<?php echo json_encode(get_post());?>`)
+			window.WP_POST = JSON.parse(atob(`<?php echo base64_encode(json_encode(get_post()));?>`))
 			window.WP_POST_ACF = JSON.parse(atob(`<?php 
 				$acf_obj = get_fields(get_post()->ID);
 				echo base64_encode(json_encode($acf_obj));
 			?>`))
-			window.WP_POST_IMAGE = `<?php echo wp_get_attachment_image_src( get_post_thumbnail_id(get_post()->ID, 'full' ))[0]; ?>`;
+			window.WP_POST_IMAGE = `<?php echo json_encode(wp_get_attachment_image_src( get_post_thumbnail_id(get_post()->ID, 'full' ))); ?>`;
 			
 		</script>
 	<?php
@@ -274,6 +274,28 @@ $post_type ) {
     return $params;
 }, 10, 2 );
 
+function create_my_post( $value, $post_id, $field ) {
+	
+	$title = get_the_title($post_id);
+	$new_title = trim(preg_replace('/\s+/',' ', $title));
+	$new_slug = sanitize_title( $new_title ) . "-" . $post_id;
+
+	$postdata = array(
+		'ID'          => $post_id,
+		'post_title'  => $new_title,
+		'post_name'   => $new_slug,
+	);	
+
+	if ( get_post_type() === 'item' ) {
+		remove_action('save_post', 'create_my_post');
+		wp_update_post( $postdata );
+		add_action('save_post', 'create_my_post');
+	}	
+
+	return $value;
+}
+
+add_filter( 'acf/update_value', 'create_my_post', 10, 3);
 
 function consolelog($data) {
     $output = json_encode($data);
