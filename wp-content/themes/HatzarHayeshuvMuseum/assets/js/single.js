@@ -74,7 +74,7 @@ async function init() {
   document.getElementById('registration-date').innerHTML = acf.registration_date
   document.getElementById('notes').innerHTML = acf.notes
   document.getElementById('registrant-name').innerHTML = acf.registrant_name
-  document.getElementById('movements').innerHTML = acf.movements.map(m => getMovementByID(m.ID)).reduce((acc, m) => acc + `${m.ACF.type} - ${m.ACF.to} - ${m.ACF.date}\n`,'')
+  document.getElementById('movements').innerHTML = movements != ""? acf.movements.map(m => getMovementByID(m.ID)).reduce((acc, m) => acc + `${m.ACF.type} - ${m.ACF.to} - ${m.ACF.date}\n`,'') : "" ;
 
 
 

@@ -238,6 +238,10 @@ main .items-grid .item:hover {
   text-align: end;
   top: 3rem;
   left: 1rem;
+  gap: 1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px 5px;
+  border-radius: 5px;
 }
 
 .item-page .list {
@@ -250,4 +254,14 @@ main .items-grid .item:hover {
 }
 .item-page .list p span:first-of-type {
   background-color: rgba(0, 0, 0, 0.2);
+}
+.item-page #desc {
+  width: 80%;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+@media print {
+  .item-page .buttons-menu {
+    display: none;
+  }
 }
