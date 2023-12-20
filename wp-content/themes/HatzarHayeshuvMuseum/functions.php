@@ -12,7 +12,7 @@ function add_javascript_post_data() {
 				$acf_obj = get_fields(get_post()->ID);
 				echo base64_encode(json_encode($acf_obj));
 			?>`))
-			window.WP_POST_IMAGE = `<?php echo json_encode(wp_get_attachment_image_src( get_post_thumbnail_id(get_post()->ID ), 'full' ))[0]; ?>`;
+			window.WP_POST_IMAGE = `<?php echo wp_get_attachment_image_src( get_post_thumbnail_id(get_post()->ID ), 'full' )[0]; ?>`;
 			
 		</script>
 	<?php
