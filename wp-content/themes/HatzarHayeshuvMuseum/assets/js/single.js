@@ -31,13 +31,14 @@ async function init() {
   console.log(window.WP_POST);
   console.log(window.WP_POST_ACF);
   console.log(window.WP_MOVEMENTS);
+  console.log(window.WP_POST_IMAGE);
 
   let post = window.WP_POST
   let acf = window.WP_POST_ACF
 
   document.getElementById('editing-link').href = `/wp-admin/post.php?post=${post.ID}&action=edit`
 
-  document.getElementById('featured-image').src = acf.images.url
+  document.getElementById('featured-image').src = window.WP_POST_IMAGE
   document.getElementById('title').innerHTML = post.post_title
   document.getElementById('desc').innerHTML = acf.description
 
