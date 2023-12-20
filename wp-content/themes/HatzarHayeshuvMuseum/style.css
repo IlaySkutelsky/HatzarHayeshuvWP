@@ -229,3 +229,25 @@ main .items-grid .item:hover {
   0% { border-width: 1px; }
   100% { border-width: 8px; }
 }
+
+
+.item-page .buttons-menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  top: 3rem;
+  left: 1rem;
+}
+
+.item-page .list {
+  width: 60%;
+}
+.item-page .list p {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted black;
+}
+.item-page .list p span:first-of-type {
+  background-color: rgba(0, 0, 0, 0.2);
+}

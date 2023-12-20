@@ -1,7 +1,18 @@
 <?php
-function add_custom_javascript() {
+function add_home_javascript() {
 	?>
-		<script src="<?php echo get_home_url()?>/wp-content/themes/HatzarHayeshuvMuseum/assets/js/index.js"></script>
+		<script src="<?php echo get_home_url()?>/wp-content/themes/HatzarHayeshuvMuseum/assets/js/home.js"></script>
+	<?php
+}
+function add_javascript_post_data() {
+	?>
+		<script>
+			window.WP_POST = JSON.parse(`<?php echo json_encode(get_post());?>`)
+			window.WP_POST_ACF = JSON.parse(atob(`<?php 
+				$acf_obj = get_fields(get_post()->ID);
+				echo base64_encode(json_encode($acf_obj));
+			?>`))
+		</script>
 	<?php
 }
 function add_custom_css() {
@@ -29,11 +40,10 @@ $home_url = home_url( $wp->request );
 $current_url = home_url($_SERVER['REQUEST_URI']);
 if ($current_url == $home_url || $current_url == ($home_url . '/') ) {
 	add_action('wp_head', 'add_custom_metatags');
-	add_action('wp_head', 'add_custom_javascript');
-	add_action('wp_head', 'add_custom_css');
-} else {
-	add_action('wp_head', 'add_custom_css');
+	add_action('wp_head', 'add_home_javascript');
 }
+add_action('wp_head', 'add_custom_css');
+add_action('wp_head', 'add_javascript_post_data');
 
 function clear_styles_and_scripts() {
   global $wp_scripts;

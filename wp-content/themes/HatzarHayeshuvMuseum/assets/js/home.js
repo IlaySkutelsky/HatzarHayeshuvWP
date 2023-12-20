@@ -137,7 +137,7 @@ function buildItemsGrid(items) {
     const item = items[i];
     let itemElm = document.createElement('a')
     itemElm.classList.add('item')
-    itemElm.href = `/wp-admin/post.php?post=${item.id}&action=edit`
+    itemElm.href = `/item/${item.title.rendered}`
     let itemImageHTMLString
     if (item.fimg_url) itemImageHTMLString = `<div class="featured-image" style="background-image: url('${item.fimg_url}')"></div>`
     else itemImageHTMLString = `<div class="featured-image-placeholder"></div>`
