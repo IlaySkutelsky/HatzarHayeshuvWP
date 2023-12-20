@@ -160,7 +160,7 @@ function add_other_selected_options_to_fields( $post_id ) {
 			$new_color_array = $values['characteristics']['colors'];
 			array_push($new_color_array, $new_color);
 			// $new_color = [...$values['characteristics']['colors'], $new_color];
-			$new_color_array = array_filter($new_color_array, fn($n) => $n !== "אחר");
+			$new_color_array = array_filter($new_color_array, fn($n)=> $n !== "אחר");
 			$new_color = $new_color_array;
 		}
 		if ($new_material) {
@@ -206,7 +206,7 @@ function add_other_selected_options_to_fields( $post_id ) {
 	    update_field('field_65524df8c9fa6', '', $post_id);
 	}
 	
- 	// echo "<script>history.go(-2);</script>";
+ 	echo "<script>history.go(-2);</script>";
 }
 
 function add_new_option_to_field_choices($field_name, $new_value) {
@@ -263,7 +263,16 @@ function insert_new_movement( $post_id ) {
 	update_field('field_65578c1fba16d', $charects, $post_id);
     consolelog('emptied item new movement fields');
 }
-	
+
+add_filter( 'rest_post_collection_params', function ( $params, WP_Post_Type 
+$post_type ) {
+    if ( 'item' === $post_type->name && isset( $params['per_page'] ) ) {
+        $params['per_page']['maximum'] = PHP_INT_MAX;
+    }
+    return $params;
+}, 10, 2 );
+
+
 function consolelog($data) {
     $output = json_encode($data);
 
