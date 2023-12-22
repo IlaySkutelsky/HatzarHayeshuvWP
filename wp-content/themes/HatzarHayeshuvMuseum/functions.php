@@ -297,6 +297,15 @@ function create_my_post( $value, $post_id, $field ) {
 
 add_filter( 'acf/update_value', 'create_my_post', 10, 3);
 
+add_action('admin_head', 'add_id_to_acf_relation');
+function add_id_to_acf_relation() {
+  echo '<style>
+	.acf-relationship .list .acf-rel-item::after {
+		content: " - " attr(data-id);
+	}
+  </style>';
+}
+
 function consolelog($data) {
     $output = json_encode($data);
 
