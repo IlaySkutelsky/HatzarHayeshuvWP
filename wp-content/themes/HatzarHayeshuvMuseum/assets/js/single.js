@@ -25,13 +25,21 @@ function getMovementByID(id) {
 }
 
 async function init() {
-  let movementsDataURL = `/wp-json/wp/v2/movement`
-  window.WP_MOVEMENTS = await getAllofType(movementsDataURL)
 
+  let itemsDataURL = `/wp-json/wp/v2/item`
+  let movementsDataURL = `/wp-json/wp/v2/movement`
+  const [itemsResponse, movementsResponse] = await Promise.all([
+    getAllofType(itemsDataURL),
+    getAllofType(movementsDataURL),
+  ]);
+  window.WP_MOVEMENTS = movementsResponse
+  window.WP_ITEMS = itemsResponse
+
+  console.log(window.WP_POST_TYPE);
   console.log(window.WP_POST);
   console.log(window.WP_POST_ACF);
   console.log(window.WP_MOVEMENTS);
-  console.log(window.WP_POST_IMAGE);
+  console.log(window.WP_ITEMS);
 
   let post = window.WP_POST
   let acf = window.WP_POST_ACF

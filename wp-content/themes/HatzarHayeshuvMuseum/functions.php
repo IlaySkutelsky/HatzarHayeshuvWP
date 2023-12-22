@@ -4,14 +4,20 @@ function add_home_javascript() {
 		<script src="<?php echo get_home_url()?>/wp-content/themes/HatzarHayeshuvMuseum/assets/js/home.js"></script>
 	<?php
 }
+function add_exhibitions_javascript() {
+	?>
+		<script src="<?php echo get_home_url()?>/wp-content/themes/HatzarHayeshuvMuseum/assets/js/exhibitions.js"></script>
+	<?php
+}
 function add_javascript_post_data() {
 	?>
 		<script>
-			window.WP_POST = JSON.parse(atob(`<?php echo base64_encode(json_encode(get_post()));?>`))
+			window.WP_POST_TYPE = `<?php echo get_post_type() ?>`;
+			window.WP_POST = JSON.parse(atob(`<?php echo base64_encode(json_encode(get_post()));?>`));
 			window.WP_POST_ACF = JSON.parse(atob(`<?php 
 				$acf_obj = get_fields(get_post()->ID);
 				echo base64_encode(json_encode($acf_obj));
-			?>`))
+			?>`));
 			window.WP_POST_IMAGE = `<?php echo wp_get_attachment_image_src( get_post_thumbnail_id(get_post()->ID ), 'full' )[0]; ?>`;
 			
 		</script>
@@ -29,20 +35,16 @@ function add_custom_metatags() {
 		<meta http-equiv="Expires" content="0" />
 	<?php
 }
-function redirect_to_home() {
-	?>
-		<script>
-			window.location.replace("<?php echo get_home_url()?>");
-		</script>
-	<?php
-}
 
 global $wp;
 $home_url = home_url( $wp->request );
 $current_url = home_url($_SERVER['REQUEST_URI']);
+add_action('wp_head', 'add_custom_metatags');
 if ($current_url == $home_url || $current_url == ($home_url . '/') ) {
-	add_action('wp_head', 'add_custom_metatags');
 	add_action('wp_head', 'add_home_javascript');
+}
+else if ($current_url == ($home_url . '/exhibitions/') ) {
+	add_action('wp_head', 'add_exhibitions_javascript');
 }
 add_action('wp_head', 'add_custom_css');
 add_action('wp_head', 'add_javascript_post_data');
