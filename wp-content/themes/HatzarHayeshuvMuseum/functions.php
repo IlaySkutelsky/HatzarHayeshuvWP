@@ -135,26 +135,42 @@ function add_other_selected_options_to_fields( $post_id ) {
 	
 	// https://support.advancedcustomfields.com/forums/topic/updating-field-settings-in-php/
 
-	$new_color = in_array("אחר", $values['characteristics']['colors'])? $values['characteristics']['צבע_אחר'] : false;
-	if ($new_color) add_new_option_to_field_choices('colors', $new_color);
+	if (!$values) return;
 
-	$new_field = $values['characteristics']['field'] == "אחר"? $values['characteristics']['תחום_אחר'] : false;
-	if ($new_field) add_new_option_to_field_choices('field', $new_field);
+	if ($values['characteristics'] && $values['characteristics']['colors']) {
+		$new_color = in_array("אחר", $values['characteristics']['colors'])? $values['characteristics']['צבע_אחר'] : false;
+		if ($new_color) add_new_option_to_field_choices('colors', $new_color);
+	}
 
-	$new_ethnicity = $values['characteristics']['ethnicity'] == "אחר"? $values['characteristics']['עדה_אחר'] : false;
-	if ($new_ethnicity) add_new_option_to_field_choices('ethnicity', $new_ethnicity);
+	if ($values['characteristics'] && $values['characteristics']['field']) {
+		$new_field = $values['characteristics']['field'] == "אחר"? $values['characteristics']['תחום_אחר'] : false;
+		if ($new_field) add_new_option_to_field_choices('field', $new_field);
+	}
 
-	$new_material = in_array("אחר", $values['characteristics']['materials'])? $values['characteristics']['חומרים_אחר'] : false;
-	if ($new_material) add_new_option_to_field_choices('materials', $new_material);
+	if ($values['characteristics'] && $values['characteristics']['ethnicity']) {
+		$new_ethnicity = $values['characteristics']['ethnicity'] == "אחר"? $values['characteristics']['עדה_אחר'] : false;
+		if ($new_ethnicity) add_new_option_to_field_choices('ethnicity', $new_ethnicity);
+	}
 
-	$new_technique = in_array("אחר", $values['characteristics']['techniques'])? $values['characteristics']['טכניקות_אחר'] : false;
-	if ($new_technique) add_new_option_to_field_choices('techniques', $new_technique);
+	if ($values['characteristics'] && $values['characteristics']['materials']) {
+		$new_material = in_array("אחר", $values['characteristics']['materials'])? $values['characteristics']['חומרים_אחר'] : false;
+		if ($new_material) add_new_option_to_field_choices('materials', $new_material);
+	}
 
-	$new_status = $values['status'] == "אחר"? $values['סטטוס_אחר'] : false;
-	if ($new_status) add_new_option_to_field_choices('status', $new_status);
+	if ($values['characteristics'] && $values['characteristics']['techniques']) {
+		$new_technique = in_array("אחר", $values['characteristics']['techniques'])? $values['characteristics']['טכניקות_אחר'] : false;
+		if ($new_technique) add_new_option_to_field_choices('techniques', $new_technique);
+	}
 
-	$new_period = $values['תקופה'] == "אחר"? $values['תקופה_אחר'] : false;
-	if ($new_period) add_new_option_to_field_choices('תקופה', $new_period);
+	if ($values['status']) {
+		$new_status = $values['status'] == "אחר"? $values['סטטוס_אחר'] : false;
+		if ($new_status) add_new_option_to_field_choices('status', $new_status);
+	}
+
+	if ($values['תקופה']) {
+		$new_period = $values['תקופה'] == "אחר"? $values['תקופה_אחר'] : false;
+		if ($new_period) add_new_option_to_field_choices('תקופה', $new_period);
+	}
 
 	if ($new_color || $new_field || $new_ethnicity || $new_material || $new_technique) {
 
@@ -207,8 +223,6 @@ function add_other_selected_options_to_fields( $post_id ) {
 	    update_field('field_6533ac6e66ff3', $new_period, $post_id);
 	    update_field('field_65524df8c9fa6', '', $post_id);
 	}
-	
- 	echo "<script>history.go(-2);</script>";
 }
 
 function add_new_option_to_field_choices($field_name, $new_value) {
