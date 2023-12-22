@@ -1,7 +1,7 @@
 <main class="item-page">
 	<script defer src="/wp-content/themes/HatzarHayeshuvMuseum/assets/js/single.js"></script>
 
-	<img id="featured-image" src="">
+	<img id="featured-image" src="" onclick="expandImage(event)">
 	<h1 id="title"></h1>
   <p id="desc"></p>
   <div class="list">
@@ -109,4 +109,7 @@
 		<a id="editing-link" href="/">לעריכת הפריט</a>
     <a href="" onclick="print()">להדפסת הפריט</a>
 	</div>
+  <div id="expanded-image-container" class="hidden" onclick="closeImage()">
+    <img src="" alt="">
+  </div>
 </main>

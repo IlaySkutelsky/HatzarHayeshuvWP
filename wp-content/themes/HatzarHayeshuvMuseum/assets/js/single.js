@@ -86,4 +86,16 @@ function movementToText(m) {
   return str.slice(0, str.length - 3)
 }
 
+function expandImage(e) {
+  let expandedImgContainer = document.getElementById('expanded-image-container')
+  expandedImgContainer.classList.remove('hidden')
+  expandedImgContainer.querySelector('img').src = e.target.src
+}
+
+function closeImage() {
+  let expandedImgContainer = document.querySelector('#expanded-image-container')
+  expandedImgContainer.classList.add('hidden')
+  expandedImgContainer.querySelector('img').src = ''
+}
+
 init()

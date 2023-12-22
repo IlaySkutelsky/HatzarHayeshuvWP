@@ -246,6 +246,7 @@ main .items-grid .item:hover {
 
 .item-page .list {
   width: 60%;
+  margin-bottom: 3rem;
 }
 .item-page .list p {
   display: flex;
@@ -263,9 +264,26 @@ main .items-grid .item:hover {
 .item-page #movements {
   white-space: pre;
 }
+.item-page #expanded-image-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.item-page #expanded-image-container img {
+  height: 80%;
+}
 
 @media print {
   .item-page .buttons-menu {
     display: none;
   }
+}
+
+.hidden {
+ display: none !important;
 }
