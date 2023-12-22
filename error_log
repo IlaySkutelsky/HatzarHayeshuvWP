@@ -1417,3 +1417,23 @@
 [22-Dec-2023 08:32:53 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 111
 [22-Dec-2023 08:32:53 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 111
 [22-Dec-2023 08:32:53 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 111
+[22-Dec-2023 09:18:22 UTC] PHP Warning:  Undefined property: stdClass::$id in /home/manaoycm/public_html/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php on line 669
+[22-Dec-2023 09:18:22 UTC] PHP Warning:  Undefined property: stdClass::$post_parent in /home/manaoycm/public_html/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php on line 672
+[22-Dec-2023 09:18:32 UTC] PHP Warning:  Attempt to read property "ID" on null in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 12
+[22-Dec-2023 09:18:32 UTC] PHP Warning:  Attempt to read property "ID" on null in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 15
+[22-Dec-2023 09:18:32 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 15
+[22-Dec-2023 09:18:33 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 111
+[22-Dec-2023 09:18:33 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 111
+[22-Dec-2023 09:18:33 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 111
+[22-Dec-2023 09:18:33 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 111
+[22-Dec-2023 09:18:33 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 111
+[22-Dec-2023 11:19:58 UTC] PHP Warning:  Attempt to read property "ID" on null in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 12
+[22-Dec-2023 11:19:58 UTC] PHP Warning:  Attempt to read property "ID" on null in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 15
+[22-Dec-2023 11:19:58 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 15
+[22-Dec-2023 11:19:59 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 111
+[22-Dec-2023 11:19:59 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 111
+[22-Dec-2023 11:19:59 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 111
+[22-Dec-2023 11:19:59 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 111
+[22-Dec-2023 11:19:59 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 111
+[22-Dec-2023 11:21:54 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 15
+[22-Dec-2023 11:22:16 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 15
