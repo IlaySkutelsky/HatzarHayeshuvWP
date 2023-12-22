@@ -67,7 +67,7 @@ function buildItemsGrid(items) {
     exhibitionElm.classList.add('item')
     // exhibitionElm.href = exhibitionElm.link
     let itemImageHTMLString
-    if (exhibition.fimg_url) itemImageHTMLString = `<div class="featured-image" style="background-image: url('${exhibition.fimg_url}')"></div>`
+    if (exhibition.ACF.image) itemImageHTMLString = `<div class="featured-image" style="background-image: url('${exhibition.ACF.image}')"></div>`
     else itemImageHTMLString = `<div class="featured-image-placeholder"></div>`
     exhibitionElm.innerHTML = `
       ${itemImageHTMLString}
