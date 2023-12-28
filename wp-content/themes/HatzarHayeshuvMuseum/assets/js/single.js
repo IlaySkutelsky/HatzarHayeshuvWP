@@ -82,7 +82,7 @@ async function init() {
   document.getElementById('registration-date').innerHTML = acf.registration_date
   document.getElementById('notes').innerHTML = acf.notes
   document.getElementById('registrant-name').innerHTML = acf.registrant_name
-  document.getElementById('movements').innerHTML = movements != ""? acf.movements.map(m => movementToText(getMovementByID(m.ID))).join('\n') : ''
+  document.getElementById('movements').innerHTML = acf.movements.movements != ""? acf.movements.map(m => movementToText(getMovementByID(m.ID))).join('\n') : ''
 }
 
 function reportToLinks(reports) {
