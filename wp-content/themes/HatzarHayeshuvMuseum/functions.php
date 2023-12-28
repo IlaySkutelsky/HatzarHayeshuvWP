@@ -290,8 +290,9 @@ $post_type ) {
     return $params;
 }, 10, 2 );
 
-function create_my_post( $value, $post_id, $field ) {
+function create_my_post( $value ) {
 	
+	$post_id = get_the_ID();
 	$title = get_the_title($post_id);
 	$new_title = trim(preg_replace('/\s+/',' ', $title));
 	$new_slug = sanitize_title( $new_title ) . "-" . $post_id;
