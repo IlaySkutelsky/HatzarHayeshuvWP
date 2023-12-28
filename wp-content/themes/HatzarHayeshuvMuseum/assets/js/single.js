@@ -87,7 +87,8 @@ async function init() {
 
 function reportToLinks(reports) {
   let str = ''
-  reports.forEach(report => {
+  reports.forEach(reportObj => {
+    let report = reportObj.report_file
     if (str.length) str += '</br>'
     str += `<a href="${report.url}" target="_blank">${report.title}</a>`
   });
