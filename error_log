@@ -2169,3 +2169,37 @@
 [28-Dec-2023 10:50:26 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
 [28-Dec-2023 10:50:26 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
 [28-Dec-2023 10:50:26 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
+[28-Dec-2023 11:02:35 UTC] PHP Warning:  Attempt to read property "ID" on null in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 18
+[28-Dec-2023 11:02:35 UTC] PHP Warning:  Attempt to read property "ID" on null in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 21
+[28-Dec-2023 11:02:35 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 21
+[28-Dec-2023 11:02:36 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
+[28-Dec-2023 11:02:36 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
+[28-Dec-2023 11:02:36 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
+[28-Dec-2023 11:02:36 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
+[28-Dec-2023 11:02:36 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
+[28-Dec-2023 11:02:36 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
+[28-Dec-2023 11:02:36 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
+[28-Dec-2023 11:02:43 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
+[28-Dec-2023 11:02:43 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
+[28-Dec-2023 11:02:43 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
+[28-Dec-2023 11:02:43 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
+[28-Dec-2023 11:02:43 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
+[28-Dec-2023 11:02:43 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
+[28-Dec-2023 11:02:43 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
+[28-Dec-2023 11:03:30 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
+[28-Dec-2023 11:03:30 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
+[28-Dec-2023 11:03:30 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
+[28-Dec-2023 11:03:30 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
+[28-Dec-2023 11:03:30 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
+[28-Dec-2023 11:03:30 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
+[28-Dec-2023 11:03:30 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
+[28-Dec-2023 11:03:46 UTC] PHP Warning:  Attempt to read property "ID" on null in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 18
+[28-Dec-2023 11:03:46 UTC] PHP Warning:  Attempt to read property "ID" on null in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 21
+[28-Dec-2023 11:03:46 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 21
+[28-Dec-2023 11:09:00 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
+[28-Dec-2023 11:09:00 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
+[28-Dec-2023 11:09:00 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
+[28-Dec-2023 11:09:00 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
+[28-Dec-2023 11:09:00 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
+[28-Dec-2023 11:09:00 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
+[28-Dec-2023 11:09:00 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
