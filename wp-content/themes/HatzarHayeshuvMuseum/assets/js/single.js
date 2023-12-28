@@ -68,7 +68,7 @@ async function init() {
   document.getElementById('depth').innerHTML = acf.characteristics.size.depth
   document.getElementById('general').innerHTML = acf.characteristics.size.general
   document.getElementById('physical-description').innerHTML = acf.condition.physical_description
-  document.getElementById('report').innerHTML = acf.condition.report? acf.condition.report : ''
+  document.getElementById('report').innerHTML = acf.condition.report? reportToLinks(acf.condition.report) : ''
   document.getElementById('attribution').innerHTML = acf.attribution
   document.getElementById('uses').innerHTML = acf.uses
   document.getElementById('origin').innerHTML = acf.origin
@@ -83,6 +83,15 @@ async function init() {
   document.getElementById('notes').innerHTML = acf.notes
   document.getElementById('registrant-name').innerHTML = acf.registrant_name
   document.getElementById('movements').innerHTML = movements != ""? acf.movements.map(m => movementToText(getMovementByID(m.ID))).join('\n') : ''
+}
+
+function reportToLinks(reports) {
+  let str = ''
+  reports.forEach(report => {
+    if (str.length) str += '</br>'
+    str += `<a href="${report.url}" target="_blank">${report.title}</a>`
+  });
+  return str
 }
 
 function movementToText(m) {
