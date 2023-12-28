@@ -255,6 +255,7 @@ main .items-grid .item:hover {
 }
 .item-page .list p span:first-of-type {
   background-color: rgba(0, 0, 0, 0.2);
+  height: fit-content;
 }
 .item-page #desc {
   width: 80%;
