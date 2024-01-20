@@ -52,5 +52,164 @@
         </span>
         <span class="text">הוספת פריט</span>
     </button>
+	<div class="buttons-menu">
+        <a href="" onclick="openCSVModal(event)">להורדת הפריטים בפורמט CSV</a>
+	</div>
+    <dialog id="csv-modal">
+        <h2>בחירת שדות</h2>
+        <form method="dialog">
+            <div class="columns">
+                <div class="col">
+                    <label for="column-title">Title</label>
+                    <input checked type="checkbox" name="column-title" id="column-title" data-key="title.rendered">
+                </div>
+                <div class="col">
+                    <label for="column-featured-image">Featured Image</label>
+                    <input checked type="checkbox" name="column-featured-image" id="column-featured-image" data-key="fimg_url">
+                </div>
+                <div class="col">
+                    <label for="column-desc">Desc</label>
+                    <input checked type="checkbox" name="column-desc" id="column-desc" data-key="ACF.description">
+                </div>
+                <div class="col">
+                    <label for="column-current-catalog-number">Current Catalog Number</label>
+                    <input checked type="checkbox" name="column-current-catalog-number" id="column-current-catalog-number" data-key="ACF.current_catalog_number">
+                </div>
+                <div class="col">
+                    <label for="column-previous-catalog-number">Previous Catalog Number</label>
+                    <input checked type="checkbox" name="column-previous-catalog-number" id="column-previous-catalog-number" data-key="ACF.previous_catalog_number">
+                </div>
+                <div class="col">
+                    <label for="column-date">Date</label>
+                    <input checked type="checkbox" name="column-date" id="column-date" data-key="ACF.date">
+                </div>
+                <div class="col">
+                    <label for="column-eng-name">Eng Name</label>
+                    <input checked type="checkbox" name="column-eng-name" id="column-eng-name" data-key="ACF.name_english">
+                </div>
+                <div class="col">
+                    <label for="column-eng-desc">Eng Desc</label>
+                    <input checked type="checkbox" name="column-eng-desc" id="column-eng-desc" data-key="ACF.description_english">
+                </div>
+                <div class="col">
+                    <label for="column-hebrew-date">Hebrew Date</label>
+                    <input checked type="checkbox" name="column-hebrew-date" id="column-hebrew-date" data-key="ACF.hebrew_date">
+                </div>
+                <div class="col">
+                    <label for="column-period">Period</label>
+                    <input checked type="checkbox" name="column-period" id="column-period" data-key="ACF.תקופה">
+                </div>
+                <div class="col">
+                    <label for="column-history">History</label>
+                    <input checked type="checkbox" name="column-history" id="column-history" data-key="ACF.history">
+                </div>
+                <div class="col">
+                    <label for="column-color">Color</label>
+                    <input checked type="checkbox" name="column-color" id="column-color" data-key="ACF.characteristics.colors.joinArray">
+                </div>
+                <div class="col">
+                    <label for="column-field">Field</label>
+                    <input checked type="checkbox" name="column-field" id="column-field" data-key="ACF.characteristics.field">
+                </div>
+                <div class="col">
+                    <label for="column-ethnicity">Ethnicity</label>
+                    <input checked type="checkbox" name="column-ethnicity" id="column-ethnicity" data-key="ACF.characteristics.ethnicity">
+                </div>
+                <div class="col">
+                    <label for="column-materials">Materials</label>
+                    <input checked type="checkbox" name="column-materials" id="column-materials" data-key="ACF.characteristics.materials.joinArray">
+                </div>
+                <div class="col">
+                    <label for="column-width">Width</label>
+                    <input checked type="checkbox" name="column-width" id="column-width" data-key="ACF.characteristics.size.width">
+                </div>
+                <div class="col">
+                    <label for="column-length">Length</label>
+                    <input checked type="checkbox" name="column-length" id="column-length" data-key="ACF.characteristics.size.length">
+                </div>
+                <div class="col">
+                    <label for="column-height">Height</label>
+                    <input checked type="checkbox" name="column-height" id="column-height" data-key="ACF.characteristics.size.height">
+                </div>
+                <div class="col">
+                    <label for="column-diameter">Diameter</label>
+                    <input checked type="checkbox" name="column-diameter" id="column-diameter" data-key="ACF.characteristics.size.diameter">
+                </div>
+                <div class="col">
+                    <label for="column-depth">Depth</label>
+                    <input checked type="checkbox" name="column-depth" id="column-depth" data-key="ACF.characteristics.size.depth">
+                </div>
+                <div class="col">
+                    <label for="column-general">General</label>
+                    <input checked type="checkbox" name="column-general" id="column-general" data-key="ACF.characteristics.size.general">
+                </div>
+                <div class="col">
+                    <label for="column-physical-description">Physical Description</label>
+                    <input checked type="checkbox" name="column-physical-description" id="column-physical-description" data-key="ACF.condition.physical_description">
+                </div>
+                <div class="col">
+                    <label for="column-attribution">Attribution</label>
+                    <input checked type="checkbox" name="column-attribution" id="column-attribution" data-key="ACF.attribtution">
+                </div>
+                <div class="col">
+                    <label for="column-eng-attribution">Eng Attribution</label>
+                    <input checked type="checkbox" name="column-eng-attribution" id="column-eng-attribution" data-key="ACF.attribtution_english">
+                </div>
+                <div class="col">
+                    <label for="column-uses">Uses</label>
+                    <input checked type="checkbox" name="column-uses" id="column-uses" data-key="ACF.uses">
+                </div>
+                <div class="col">
+                    <label for="column-origin">Origin</label>
+                    <input checked type="checkbox" name="column-origin" id="column-origin" data-key="ACF.origin">
+                </div>
+                <div class="col">
+                    <label for="column-status">Status</label>
+                    <input checked type="checkbox" name="column-status" id="column-status" data-key="ACF.status">
+                </div>
+                <div class="col">
+                    <label for="column-source">Source</label>
+                    <input checked type="checkbox" name="column-source" id="column-source" data-key="ACF.source">
+                </div>
+                <div class="col">
+                    <label for="column-photographer">Photographer</label>
+                    <input checked type="checkbox" name="column-photographer" id="column-photographer" data-key="ACF.photographer">
+                </div>
+                <div class="col">
+                    <label for="column-box">Box</label>
+                    <input checked type="checkbox" name="column-box" id="column-box" data-key="ACF.location.box">
+                </div>
+                <div class="col">
+                    <label for="column-position">Position</label>
+                    <input checked type="checkbox" name="column-position" id="column-position" data-key="ACF.location.position">
+                </div>
+                <div class="col">
+                    <label for="column-room">Room</label>
+                    <input checked type="checkbox" name="column-room" id="column-room" data-key="ACF.location.room">
+                </div>
+                <div class="col">
+                    <label for="column-shelf">Shelf</label>
+                    <input checked type="checkbox" name="column-shelf" id="column-shelf" data-key="ACF.location.shelf">
+                </div>
+                <div class="col">
+                    <label for="column-registration-date">Registration Date</label>
+                    <input checked type="checkbox" name="column-registration-date" id="column-registration-date" data-key="ACF.registration_date">
+                </div>
+                <div class="col">
+                    <label for="column-notes">Notes</label>
+                    <input checked type="checkbox" name="column-notes" id="column-notes" data-key="ACF.notes">
+                </div>
+                <div class="col">
+                    <label for="column-registrant-name">Registrant Name</label>
+                    <input checked type="checkbox" name="column-registrant-name" id="column-registrant-name" data-key="ACF.registrant_name">
+                </div>
+            </div>
+            <div class="buttons">
+                <button>ביטול</button>
+                <button onclick="downloadCSV()">הורדה</button>
+            </div>
+        </form>
+    </dialog>
+
     <div class="loader"></div>
 </main>

@@ -221,6 +221,31 @@ main .items-grid .item:hover {
   border-radius: 5px;
 }
 
+dialog#csv-modal {
+  margin-top: 50vh;
+  transform: translateY(-50%);
+  min-width: 20%;
+}
+dialog#csv-modal h2 {
+  margin-top: 0;
+}
+dialog#csv-modal .columns {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+dialog#csv-modal .columns .col{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+}
+dialog#csv-modal .buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
 @keyframes loader-spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
@@ -231,7 +256,7 @@ main .items-grid .item:hover {
 }
 
 
-.item-page .buttons-menu {
+.buttons-menu {
   position: fixed;
   display: flex;
   flex-direction: column;

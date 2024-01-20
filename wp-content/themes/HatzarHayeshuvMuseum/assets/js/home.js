@@ -290,6 +290,104 @@ function resetSearch() {
   buildUI()
 }
 
+function openCSVModal(e) {
+  e.preventDefault()
+  let modalElm = document.getElementById('csv-modal')
+  modalElm.show()
+}
+
+function downloadCSV() {
+  // let columns = { 
+  //   'title': 'title.rendered',
+  //   'featured-image': 'fimg_url',
+  //   'desc': 'ACF.description',
+  //   'current-catalog-number': 'ACF.current_catalog_number',
+  //   'previous-catalog-number': 'ACF.previous_catalog_number',
+  //   'date': 'ACF.date',
+  //   'eng-name': 'ACF.name_english',
+  //   'eng-desc': 'ACF.description_english',
+  //   'hebrew-date': 'ACF.hebrew_date',
+  //   'period': 'ACF.תקופה',
+  //   'history': 'ACF.history',
+  //   'color': 'ACF.characteristics.colors.joinArray',
+  //   'field': 'ACF.characteristics.field',
+  //   'ethnicity': 'ACF.characteristics.ethnicity',
+  //   'materials': 'ACF.characteristics.materials.joinArray',
+  //   'width': 'ACF.characteristics.size.width',
+  //   'length': 'ACF.characteristics.size.length',
+  //   'height': 'ACF.characteristics.size.height',
+  //   'diameter': 'ACF.characteristics.size.diameter',
+  //   'depth': 'ACF.characteristics.size.depth',
+  //   'general': 'ACF.characteristics.size.general',
+  //   'physical-description': 'ACF.condition.physical_description',
+  //   'attribution': 'ACF.attribtution',
+  //   'eng-attribution': 'ACF.attribtution_english',
+  //   'uses': 'ACF.uses',
+  //   'origin': 'ACF.origin',
+  //   'status': 'ACF.status',
+  //   'source': 'ACF.source',
+  //   'photographer': 'ACF.photographer',
+  //   'box': 'ACF.location.box',
+  //   'position': 'ACF.location.position',
+  //   'room': 'ACF.location.room',
+  //   'shelf': 'ACF.location.shelf',
+  //   'registration-date': 'ACF.registration_date',
+  //   'notes': 'ACF.notes',
+  //   'registrant-name': 'ACF.registrant_name',
+  //  }
+  let columns = {}
+  let checkboxesElms = document.querySelectorAll('dialog#csv-modal .columns .col input')
+  checkboxesElms.forEach(checkboxElm => {
+    if (!checkboxElm.checked) return
+    let value = checkboxElm.dataset.key
+    let key = checkboxElm.id.replace('column-', '')
+    columns[key] = value
+  })
+  let data = ''
+  for (let i = 0; i<Object.keys(columns).length; i++) {
+    data += Object.keys(columns)[i] + ', '
+  }
+  data += '\n'
+  for (let i = 0; i<initialItems.length; i++) {
+    const item = initialItems[i];
+    for (let j = 0; j<Object.values(columns).length; j++) {
+      let key = Object.values(columns)[j]
+      let value = access(key, item) || ''
+      value = `"${value}"`
+      if (key) data += value + ', '
+    }
+    data += '\n'
+  }
+  download_file("mana.csv", data)
+}
+
+const access = (path, object) => {
+  return path.split('.').reduce(function(o, i) {
+    if (i === 'joinArray') return o.join(', ')
+    else return o[i]
+  }, object)
+}
+
+function download_file(name, contents, mime_type) {
+    mime_type = mime_type || "text/plain";
+
+    var blob = new Blob([contents], {type: mime_type});
+
+    var dlink = document.createElement('a');
+    dlink.download = name;
+    dlink.href = window.URL.createObjectURL(blob);
+    dlink.onclick = function(e) {
+        // revokeObjectURL needs a delay to work properly
+        var that = this;
+        setTimeout(function() {
+            window.URL.revokeObjectURL(that.href);
+        }, 1500);
+    };
+
+    dlink.click();
+    dlink.remove();
+}
+
 function loaderVisibilty(on) {
   let loaderElm = document.querySelector('div.loader')
   if (on) loaderElm.classList.remove('hidden')
