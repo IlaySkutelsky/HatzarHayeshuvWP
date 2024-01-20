@@ -113,6 +113,7 @@ function buildSearchParams(items) {
 function fillSelectWithOptionsFrom(items, group, attribute, placeholder) {
   let relevantItems = items.filter(i => i && i.ACF && i.ACF[group] && i.ACF[group][attribute])
   let options = relevantItems.map(item => item.ACF[group][attribute])
+  options = options.map(i => typeof(i)==='object'?Object.values(i):i)
   options = options.flat()
   options = options.map(i => i.replace(/(<i>|<\/i>)/g, ''))
   options = [...new Set(options)]
