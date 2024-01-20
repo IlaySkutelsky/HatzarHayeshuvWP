@@ -94,7 +94,7 @@ function buildSearchParams(items) {
   let itemMovements = relevantItems.map(item => item.ACF.movements)
   itemMovements = itemMovements.flat()
   let options = itemMovements.map(item => item.ACF.type)
-  options = options.map(i => i.replace(/(<i>|<\/i>)/g, ''))
+  options = options.map(i => i.replaceAll(/(<i>|<\/i>)/g, ''))
   options = [...new Set(options)]
   
   let selectElm = document.querySelector(`select#movement-select`)
@@ -115,7 +115,7 @@ function fillSelectWithOptionsFrom(items, group, attribute, placeholder) {
   let options = relevantItems.map(item => item.ACF[group][attribute])
   options = options.map(i => typeof(i)==='object'?Object.values(i):i)
   options = options.flat()
-  options = options.map(i => i.replace(/(<i>|<\/i>)/g, ''))
+  options = options.map(i => i.replaceAll(/(<i>|<\/i>)/g, ''))
   options = [...new Set(options)]
   
   let selectElm = document.querySelector(`select#${attribute}-select`)
@@ -353,7 +353,7 @@ function downloadCSV() {
     for (let j = 0; j<Object.values(columns).length; j++) {
       let key = Object.values(columns)[j]
       let value = access(key, item) || ''
-      value = value.replace('"', '""')
+      value = value.replaceAll('"', '""')
       value = `"${value}"`
       data += value + ', '
     }
