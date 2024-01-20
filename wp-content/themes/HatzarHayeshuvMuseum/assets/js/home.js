@@ -353,8 +353,9 @@ function downloadCSV() {
     for (let j = 0; j<Object.values(columns).length; j++) {
       let key = Object.values(columns)[j]
       let value = access(key, item) || ''
+      value = value.replace('"', '""')
       value = `"${value}"`
-      if (key) data += value + ', '
+      data += value + ', '
     }
     data += '\n'
   }
