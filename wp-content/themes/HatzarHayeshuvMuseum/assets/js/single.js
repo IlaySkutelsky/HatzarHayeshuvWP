@@ -77,7 +77,7 @@ async function init() {
   document.getElementById('origin').innerHTML = acf.origin
   document.getElementById('status').innerHTML = acf.status
   document.getElementById('source').innerHTML = acf.source
-  document.getElementById('phtographer').innerHTML = acf.phtographer? acf.phtographer : ''
+  document.getElementById('phtographer').innerHTML = acf.photographer? acf.photographer : ''
   document.getElementById('box').innerHTML = acf.location.box
   document.getElementById('position').innerHTML = acf.location.position
   document.getElementById('room').innerHTML = acf.location.room
