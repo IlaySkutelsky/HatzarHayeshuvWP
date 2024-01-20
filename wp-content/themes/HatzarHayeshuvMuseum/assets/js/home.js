@@ -188,7 +188,10 @@ function handleSearch(e) {
       resultItems = resultItems.filter(item => item.ACF.characteristics.field == field)
     }
     if (materials) {
-      resultItems = resultItems.filter(item => item.ACF.characteristics.materials.includes(materials))
+      resultItems = resultItems.filter(function(item) {
+        if (typeof(item.ACF.characteristics.materials) === 'object') item.ACF.characteristics.materials = Object.values(item.ACF.characteristics.materials)
+        return item.ACF.characteristics.materials.includes(materials)
+      })
     }
     if (movement) {
       resultItems = resultItems.filter(item => {
