@@ -53,6 +53,8 @@ async function init() {
   document.getElementById('current-catalog-number').innerHTML = acf.current_catalog_number
   document.getElementById('previous-catalog-number').innerHTML = acf.previous_catalog_number
   document.getElementById('date').innerHTML = acf.date
+  document.getElementById('eng-name').innerHTML = acf.name_english
+  document.getElementById('eng-desc').innerHTML = acf.description_english
   document.getElementById('hebrew-date').innerHTML = acf.hebrew_date
   document.getElementById('period').innerHTML = acf['תקופה']
   // TODO Add images
@@ -70,6 +72,7 @@ async function init() {
   document.getElementById('physical-description').innerHTML = acf.condition.physical_description
   document.getElementById('report').innerHTML = acf.condition.report? reportToLinks(acf.condition.report) : ''
   document.getElementById('attribution').innerHTML = acf.attribution
+  document.getElementById('eng-attribution').innerHTML = acf.attribution_english
   document.getElementById('uses').innerHTML = acf.uses
   document.getElementById('origin').innerHTML = acf.origin
   document.getElementById('status').innerHTML = acf.status
