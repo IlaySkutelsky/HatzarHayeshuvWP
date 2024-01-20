@@ -363,7 +363,10 @@ function downloadCSV() {
 
 const access = (path, object) => {
   return path.split('.').reduce(function(o, i) {
-    if (i === 'joinArray') return o.join(', ')
+    if (i === 'joinArray') {
+      if (typeof(o) === 'object') o = Object.values(o)
+      return o.join(', ')
+    }
     else return o[i]
   }, object)
 }
