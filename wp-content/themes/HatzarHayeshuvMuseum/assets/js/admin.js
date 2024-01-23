@@ -6,7 +6,11 @@ function recursiveChangeID(count, limit) {
     if (!itemsRelationshipFieldElm.dataset.listenedTo) {
         itemsRelationshipFieldElm.dataset.listenedTo = true
         itemsRelationshipFieldElm.addEventListener('click', _ => recursiveChangeID(0, 10))
-
+        (new MutationObserver(_ => recursiveChangeID(0, 10)))
+        .observe(itemsRelationshipFieldElm, {
+            childList: true,
+            subtree: true
+        })
     }
     if (itemsRelationshipFieldElm) {
         const loaderElm = itemsRelationshipFieldElm.querySelector('i.acf-loading')
