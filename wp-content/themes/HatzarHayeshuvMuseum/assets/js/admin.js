@@ -3,16 +3,16 @@ recursiveChangeID(0, 100)
 function recursiveChangeID(count, limit) {
     if (count >= limit) return
     const itemsRelationshipFieldElm = document.querySelector('.acf-field.acf-field-relationship[data-type="relationship"][data-name$="items"]')
-    if (!itemsRelationshipFieldElm.dataset.listenedTo) {
-        itemsRelationshipFieldElm.dataset.listenedTo = true
-        itemsRelationshipFieldElm.addEventListener('click', _ => recursiveChangeID(0, 10))
-        (new MutationObserver(_ => recursiveChangeID(0, 10)))
-        .observe(itemsRelationshipFieldElm, {
-            childList: true,
-            subtree: true
-        })
-    }
     if (itemsRelationshipFieldElm) {
+        if (!itemsRelationshipFieldElm.dataset.listenedTo) {
+            itemsRelationshipFieldElm.dataset.listenedTo = true;
+            itemsRelationshipFieldElm.addEventListener('click', _ => recursiveChangeID(0, 10));
+            (new MutationObserver(_ => recursiveChangeID(0, 10)))
+            .observe(itemsRelationshipFieldElm, {
+                childList: true,
+                subtree: true
+            })
+        }
         const loaderElm = itemsRelationshipFieldElm.querySelector('i.acf-loading')
         if (loaderElm) return setTimeout(recursiveChangeID, 800, ++count, limit)
         const itemAddRowElms = itemsRelationshipFieldElm.querySelectorAll('.acf-input .selection ul li span.acf-rel-item.acf-rel-item-add')
