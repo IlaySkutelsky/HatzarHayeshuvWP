@@ -50,7 +50,7 @@ async function init() {
   document.getElementById('title').innerHTML = post.post_title
   document.getElementById('desc').innerHTML = acf.description
 
-  document.getElementById('current-catalog-number').innerHTML = getCataolgNumberFromID(post.id)
+  document.getElementById('current-catalog-number').innerHTML = getCataolgNumberFromID(post.ID)
   document.getElementById('previous-catalog-number').innerHTML = acf.previous_catalog_number
   document.getElementById('date').innerHTML = acf.date
   document.getElementById('eng-name').innerHTML = acf.name_english
