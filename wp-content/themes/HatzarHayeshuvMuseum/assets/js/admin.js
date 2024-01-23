@@ -17,9 +17,9 @@ function recursiveChangeID(count, limit) {
         let itemRowElms = Array.from(itemAddRowElms).concat(Array.from(itemRemoveRowElms))
         itemRowElms.forEach(itemRowElm => {
             if (itemRowElm.dataset.changed) return
-            itemRowElm.dataset.changed = true
             const id = itemRowElm.dataset.id
-            itemRowElm.dataset.id = getCataolgNumberFromID(id)
+            if (!id.match(/^C/)) itemRowElm.dataset.id = getCataolgNumberFromID(id)
+            itemRowElm.dataset.changed = true
         })
     } else {
         return setTimeout(recursiveChangeID, 500, ++count, limit)
