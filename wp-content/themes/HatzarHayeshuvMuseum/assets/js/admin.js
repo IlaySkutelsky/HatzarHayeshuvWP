@@ -12,6 +12,8 @@ function recursiveChangeID(count) {
             const id = itemRowElm.dataset.id
             itemRowElm.dataset.id = getCataolgNumberFromID(id)
         })
+    } else {
+        return setTimeout(recursiveChangeID, 500, count++)
     }
 }
 
