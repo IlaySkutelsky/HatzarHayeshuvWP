@@ -346,6 +346,11 @@ function downloadXLSX() {
   //   'registrant-name': 'ACF.registrant_name',
   //  }
 
+  if (!XLSX) {
+    loaderVisibilty(true)
+    setTimeout(downloadXLSX, 300)
+    return
+  }
   let columns = {}
   let checkboxesElms = document.querySelectorAll('dialog#xlsx-modal .columns .col input')
   checkboxesElms.forEach(checkboxElm => {
@@ -371,6 +376,7 @@ function downloadXLSX() {
   const workbook = XLSX.utils.book_new();
   XLSX.utils.book_append_sheet(workbook, worksheet, "All items");
   XLSX.writeFile(workbook, "Mana-items.xlsx", { compression: true });
+  loaderVisibilty(false)
 }
 
 const access = (path, object) => {
