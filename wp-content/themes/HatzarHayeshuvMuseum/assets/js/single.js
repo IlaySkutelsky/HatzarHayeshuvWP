@@ -32,7 +32,7 @@ async function init() {
   }
 
   if (!document.getElementById('movements')) {
-    setTimeout(init, 300)
+    setTimeout(init, 50)
     return
   }
 
