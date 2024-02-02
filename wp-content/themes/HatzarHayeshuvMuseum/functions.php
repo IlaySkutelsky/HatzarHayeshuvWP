@@ -22,6 +22,13 @@ function add_javascript_post_data() {
 				$images = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'full' );
 				echo $images? $images[0] : null;
 			?>`;
+			window.WP_MOVEMENTS = JSON.parse(atob(`
+				<?php 
+					echo base64_encode(json_encode(get_posts(array(
+						'posts_per_page'    => -1,
+						'post_type'     => 'movement',
+					))));
+				?>`));
 			
 		</script>
 		<script src="<?php echo get_home_url()?>/wp-content/themes/HatzarHayeshuvMuseum/assets/js/single.js"></script>

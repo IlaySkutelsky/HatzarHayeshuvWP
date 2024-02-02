@@ -25,16 +25,10 @@ function getMovementByID(id) {
 }
 
 async function init() {
-
-  if (!window.WP_MOVEMENTS || !window.WP_ITEMS) {
-    let itemsDataURL = `/wp-json/wp/v2/item`
+  if (!window.WP_MOVEMENTS) {
     let movementsDataURL = `/wp-json/wp/v2/movement`
-    const [itemsResponse, movementsResponse] = await Promise.all([
-      getAllofType(itemsDataURL),
-      getAllofType(movementsDataURL),
-    ]);
+    const movementsResponse = await getAllofType(movementsDataURL)
     window.WP_MOVEMENTS = movementsResponse
-    window.WP_ITEMS = itemsResponse
   }
 
   if (!document.getElementById('movements')) {
@@ -46,7 +40,6 @@ async function init() {
   console.log(window.WP_POST);
   console.log(window.WP_POST_ACF);
   console.log(window.WP_MOVEMENTS);
-  console.log(window.WP_ITEMS);
 
   let post = window.WP_POST
   let acf = window.WP_POST_ACF
