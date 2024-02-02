@@ -221,27 +221,27 @@ main .items-grid .item:hover {
   border-radius: 5px;
 }
 
-dialog#csv-modal {
+dialog#xlsx-modal {
   margin-top: 50vh;
   transform: translateY(-50%);
   min-width: 20%;
 }
-dialog#csv-modal h2 {
+dialog#xlsx-modal h2 {
   margin-top: 0;
 }
-dialog#csv-modal .columns {
+dialog#xlsx-modal .columns {
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
 }
-dialog#csv-modal .columns .col{
+dialog#xlsx-modal .columns .col{
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   width: 100%;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
 }
-dialog#csv-modal .buttons {
+dialog#xlsx-modal .buttons {
   display: flex;
   justify-content: space-around;
 }

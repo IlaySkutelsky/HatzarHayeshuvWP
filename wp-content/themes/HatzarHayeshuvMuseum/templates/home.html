@@ -53,9 +53,9 @@
         <span class="text">הוספת פריט</span>
     </button>
 	<div class="buttons-menu">
-        <a href="" onclick="openCSVModal(event)">להורדת הפריטים בפורמט CSV</a>
+        <a href="" onclick="openXLSXModal(event)">להורדת הפריטים בפורמט XLSX</a>
 	</div>
-    <dialog id="csv-modal">
+    <dialog id="xlsx-modal">
         <h2>בחירת שדות</h2>
         <form method="dialog">
             <div class="columns">
@@ -206,7 +206,7 @@
             </div>
             <div class="buttons">
                 <button>ביטול</button>
-                <button onclick="downloadCSV()">הורדה</button>
+                <button onclick="downloadXLSX()">הורדה</button>
             </div>
         </form>
     </dialog>

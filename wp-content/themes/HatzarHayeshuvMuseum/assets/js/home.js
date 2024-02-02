@@ -295,13 +295,18 @@ function getCataolgNumberFromID(id) {
   return 'C' + String(10000+Number(id))
 }
 
-function openCSVModal(e) {
+function openXLSXModal(e) {
   e.preventDefault()
-  let modalElm = document.getElementById('csv-modal')
+  let modalElm = document.getElementById('xlsx-modal')
   modalElm.show()
+
+  let script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src = 'https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js';    
+  document.head.appendChild(script);
 }
 
-function downloadCSV() {
+function downloadXLSX() {
   // let columns = { 
   //   'title': 'title.rendered',
   //   'featured-image': 'fimg_url',
@@ -340,31 +345,32 @@ function downloadCSV() {
   //   'notes': 'ACF.notes',
   //   'registrant-name': 'ACF.registrant_name',
   //  }
+
   let columns = {}
-  let checkboxesElms = document.querySelectorAll('dialog#csv-modal .columns .col input')
+  let checkboxesElms = document.querySelectorAll('dialog#xlsx-modal .columns .col input')
   checkboxesElms.forEach(checkboxElm => {
     if (!checkboxElm.checked) return
     let value = checkboxElm.dataset.key
     let key = checkboxElm.id.replace('column-', '')
     columns[key] = value
   })
-  let data = ''
-  for (let i = 0; i<Object.keys(columns).length; i++) {
-    data += Object.keys(columns)[i] + ', '
-  }
-  data += '\n'
+  let data = [[...Object.keys(columns)]]
   for (let i = 0; i<initialItems.length; i++) {
     const item = initialItems[i];
+    const row = []
     for (let j = 0; j<Object.values(columns).length; j++) {
       let key = Object.values(columns)[j]
       let value = access(key, item) || ''
-      value = toPlainText(value).replaceAll('"', '""')
-      value = `"${value}"`
-      data += value + ', '
+      value = toPlainText(value)
+      row.push(value)
     }
-    data += '\n'
+    data.push(row)
   }
-  download_file("mana.csv", data)
+
+  let worksheet = XLSX.utils.aoa_to_sheet(data);
+  const workbook = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(workbook, worksheet, "All items");
+  XLSX.writeFile(workbook, "Mana-items.xlsx", { compression: true });
 }
 
 const access = (path, object) => {
