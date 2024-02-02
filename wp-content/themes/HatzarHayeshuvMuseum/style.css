@@ -296,6 +296,7 @@ dialog#xlsx-modal .buttons {
 .item-page .list p span:first-of-type {
   background-color: rgba(0, 0, 0, 0.2);
   height: fit-content;
+  padding-inline: 3px;
 }
 .item-page #desc {
   width: 80%;
