@@ -25,19 +25,22 @@ function getMovementByID(id) {
 }
 
 async function init() {
+
+  if (!window.WP_MOVEMENTS || !window.WP_ITEMS) {
+    let itemsDataURL = `/wp-json/wp/v2/item`
+    let movementsDataURL = `/wp-json/wp/v2/movement`
+    const [itemsResponse, movementsResponse] = await Promise.all([
+      getAllofType(itemsDataURL),
+      getAllofType(movementsDataURL),
+    ]);
+    window.WP_MOVEMENTS = movementsResponse
+    window.WP_ITEMS = itemsResponse
+  }
+
   if (!document.getElementById('movements')) {
     setTimeout(init, 300)
     return
   }
-
-  let itemsDataURL = `/wp-json/wp/v2/item`
-  let movementsDataURL = `/wp-json/wp/v2/movement`
-  const [itemsResponse, movementsResponse] = await Promise.all([
-    getAllofType(itemsDataURL),
-    getAllofType(movementsDataURL),
-  ]);
-  window.WP_MOVEMENTS = movementsResponse
-  window.WP_ITEMS = itemsResponse
 
   console.log(window.WP_POST_TYPE);
   console.log(window.WP_POST);
