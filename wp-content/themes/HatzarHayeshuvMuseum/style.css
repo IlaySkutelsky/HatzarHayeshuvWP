@@ -255,7 +255,6 @@ dialog#csv-modal .buttons {
   100% { border-width: 8px; }
 }
 
-
 .buttons-menu {
   position: fixed;
   display: flex;
@@ -269,6 +268,11 @@ dialog#csv-modal .buttons {
   border-radius: 5px;
 }
 
+.item-page img#featured-image {
+  max-width: 300px;
+  max-height: 300px;
+} 
+
 .item-page .list {
   width: 60%;
   margin-bottom: 3rem;
@@ -277,6 +281,16 @@ dialog#csv-modal .buttons {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px dotted black;
+}
+.item-page .list #images {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.item-page .list #images img{
+  max-height: 3rem;
+  max-width: 3rem;
+  cursor: pointer;
 }
 .item-page .list p span:first-of-type {
   background-color: rgba(0, 0, 0, 0.2);

@@ -57,7 +57,7 @@ async function init() {
   document.getElementById('eng-desc').innerHTML = acf.description_english
   document.getElementById('hebrew-date').innerHTML = acf.hebrew_date
   document.getElementById('period').innerHTML = acf['תקופה']
-  // TODO Add images
+  document.getElementById('images').innerHTML = getImagesHTML(acf.images)
   document.getElementById('history').innerHTML = acf.history
   document.getElementById('color').innerHTML = acf.characteristics.colors.join(' ,')
   document.getElementById('field').innerHTML = acf.characteristics.field
@@ -86,6 +86,15 @@ async function init() {
   document.getElementById('notes').innerHTML = acf.notes
   document.getElementById('registrant-name').innerHTML = acf.registrant_name
   document.getElementById('movements').innerHTML = acf.movements != ""? acf.movements.map(m => movementToText(getMovementByID(m.ID))).join('\n') : ''
+}
+
+function getImagesHTML(wpImages) {
+  let str = ''
+  for (let i=0; i<wpImages.length; i++) {
+    const image = wpImages[i]
+    str += `<img src=${image.url} onclick="expandImage(event)"/>`
+  }
+  return str
 }
 
 function reportToLinks(reports) {
