@@ -15,10 +15,13 @@ function add_javascript_post_data() {
 			window.WP_POST_TYPE = `<?php echo get_post_type() ?>`;
 			window.WP_POST = JSON.parse(atob(`<?php echo base64_encode(json_encode(get_post()));?>`));
 			window.WP_POST_ACF = JSON.parse(atob(`<?php 
-				$acf_obj = get_fields(get_post()->ID);
+				$acf_obj = get_fields(get_the_ID());
 				echo base64_encode(json_encode($acf_obj));
 			?>`));
-			window.WP_POST_IMAGE = `<?php echo wp_get_attachment_image_src( get_post_thumbnail_id(get_post()->ID ), 'full' )[0]; ?>`;
+			window.WP_POST_IMAGE = `<?php 
+				$images = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'full' );
+				echo $images? $images[0] : null;
+			?>`;
 			
 		</script>
 		<script src="<?php echo get_home_url()?>/wp-content/themes/HatzarHayeshuvMuseum/assets/js/single.js"></script>
