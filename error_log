@@ -7805,3 +7805,15 @@
 [02-Feb-2024 17:31:51 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
 [02-Feb-2024 17:31:51 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
 [02-Feb-2024 17:31:51 UTC] PHP Warning:  Undefined array key "featured_media" in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 113
+[02-Feb-2024 17:32:29 UTC] PHP Warning:  Attempt to read property "ID" on null in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 18
+[02-Feb-2024 17:32:29 UTC] PHP Warning:  Attempt to read property "ID" on null in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 21
+[02-Feb-2024 17:32:29 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 21
+[02-Feb-2024 17:32:43 UTC] PHP Warning:  Attempt to read property "ID" on null in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 18
+[02-Feb-2024 17:32:43 UTC] PHP Warning:  Attempt to read property "ID" on null in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 21
+[02-Feb-2024 17:32:43 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 21
+[02-Feb-2024 17:36:12 UTC] PHP Warning:  Attempt to read property "ID" on null in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 18
+[02-Feb-2024 17:36:12 UTC] PHP Warning:  Attempt to read property "ID" on null in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 21
+[02-Feb-2024 17:36:12 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 21
+[02-Feb-2024 17:36:28 UTC] PHP Warning:  Attempt to read property "ID" on null in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 18
+[02-Feb-2024 17:36:28 UTC] PHP Warning:  Attempt to read property "ID" on null in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 21
+[02-Feb-2024 17:36:28 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/manaoycm/public_html/wp-content/themes/HatzarHayeshuvMuseum/functions.php on line 21
