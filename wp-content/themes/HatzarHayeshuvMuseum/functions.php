@@ -21,6 +21,7 @@ function add_javascript_post_data() {
 			window.WP_POST_IMAGE = `<?php echo wp_get_attachment_image_src( get_post_thumbnail_id(get_post()->ID ), 'full' )[0]; ?>`;
 			
 		</script>
+		<script src="<?php echo get_home_url()?>/wp-content/themes/HatzarHayeshuvMuseum/assets/js/single.js"></script>
 	<?php
 }
 function add_custom_css() {

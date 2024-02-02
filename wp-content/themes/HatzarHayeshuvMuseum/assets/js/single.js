@@ -25,6 +25,10 @@ function getMovementByID(id) {
 }
 
 async function init() {
+  if (!document.getElementById('movements')) {
+    setTimeout(init, 300)
+    return
+  }
 
   let itemsDataURL = `/wp-json/wp/v2/item`
   let movementsDataURL = `/wp-json/wp/v2/movement`
