@@ -285,11 +285,12 @@ dialog#csv-modal .buttons {
 .item-page .list #images {
   display: flex;
   flex-direction: row;
-  gap: 5px;
+  gap: 1rem;
+  margin-block: 5px;
 }
 .item-page .list #images img{
-  max-height: 3rem;
-  max-width: 3rem;
+  max-height: 7rem;
+  max-width: 7rem;
   cursor: pointer;
 }
 .item-page .list p span:first-of-type {
