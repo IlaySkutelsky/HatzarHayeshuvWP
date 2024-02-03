@@ -331,16 +331,30 @@ function add_id_to_acf_relation() {
 			content: " - " attr(data-id);
 		}
 	</style>';
-	global $wp;
-	$home_url = home_url( $wp->request );
-	$current_url = home_url($_SERVER['REQUEST_URI']);
-	if ($current_url == ($home_url . '/wp-admin/post-new.php?post_type=item') ) {
-		?>
+
+	?>
 		<script>
-			window.MAX_CATALOG_NUMBER = <?php echo getMaxItemCatalogNumber(); ?>
+			window.MAX_CATALOG_NUMBER = <?php echo getMaxItemCatalogNumber(); ?>;
+			window.itemIDsToCatalogNumbersMap = JSON.parse(`<?php echo json_encode(getItemIDsToCatalogNumbersMap()); ?>`);
 		</script>
-		<?php
+	<?php
+}
+
+function getItemIDsToCatalogNumbersMap() {
+	$all_items = get_posts(array(
+			'posts_per_page'    => -1,
+			'post_type'     => 'item',
+		));
+	// Exclude current post
+	$all_items = array_filter($all_items, function($item) {
+		return $item->ID !== get_the_ID();
+	}, ARRAY_FILTER_USE_BOTH);
+
+	$map = array();
+	foreach ($all_items as &$item) {
+		$map[$item->ID] = itemToCatalogNumber($item);
 	}
+	return $map;
 }
 
 function my_admin_enqueue_scripts() {
@@ -383,6 +397,10 @@ function catalogNumberToNumber($catalogNumber) {
 	return (int)end(explode("C", $catalogNumber));
 }
 
+function itemToCatalogNumber($item) {
+	return get_field('current_catalog_number', $item->ID);
+}
+
 function getMaxItemCatalogNumber() {
 	$all_items = get_posts(array(
 			'posts_per_page'    => -1,
@@ -392,10 +410,6 @@ function getMaxItemCatalogNumber() {
 	$all_items = array_filter($all_items, function($item) {
 		return $item->ID !== get_the_ID();
 	}, ARRAY_FILTER_USE_BOTH);
-
-	function itemToCatalogNumber($item) {
-		return get_field('current_catalog_number', $item->ID);
-	}
 
 	$all_catalog_numbers = array_map('itemToCatalogNumber', $all_items);
 

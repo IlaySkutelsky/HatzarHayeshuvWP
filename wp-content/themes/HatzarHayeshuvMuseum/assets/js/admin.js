@@ -22,7 +22,7 @@ function recursiveChangeID(count, limit) {
         itemRowElms.forEach(itemRowElm => {
             if (itemRowElm.dataset.changed) return
             const id = itemRowElm.dataset.id
-            if (!id.match(/^C/)) itemRowElm.dataset.id = getCataolgNumberFromID(id)
+            itemRowElm.dataset.id = getCatalogNumberFromID(id)
             itemRowElm.dataset.changed = true
         })
     } else {
@@ -30,8 +30,9 @@ function recursiveChangeID(count, limit) {
     }
 }
 
-function getCataolgNumberFromID(id) {
-    return 'C' + String(10000+Number(id))
+function getCatalogNumberFromID(id) {
+    if (!window.itemIDsToCatalogNumbersMap || !window.itemIDsToCatalogNumbersMap[id]) return ''
+    return window.itemIDsToCatalogNumbersMap[id]
 }
 
 function recursiveChangeCatalogNumber(counter) {
