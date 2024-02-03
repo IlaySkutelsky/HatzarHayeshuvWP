@@ -334,8 +334,6 @@ function add_id_to_acf_relation() {
 
 	// ?>
 	// 	<script>
-	// 		window.MAX_CATALOG_NUMBER = <?php echo getMaxItemCatalogNumber(); ?>;
-	// 		window.itemIDsToCatalogNumbersMap = JSON.parse(`<?php echo json_encode(getItemIDsToCatalogNumbersMap()); ?>`);
 	// 	</script>
 	// <?php
 }
