@@ -31,16 +31,15 @@ function recursiveChangeID(count, limit) {
 }
 
 function getCatalogNumberFromID(id) {
-    return 'C' + String(10000+Number(id))
-    // if (!window.itemIDsToCatalogNumbersMap || !window.itemIDsToCatalogNumbersMap[id]) return ''
-    // return window.itemIDsToCatalogNumbersMap[id]
+    if (!window.itemIDsToCatalogNumbersMap || !window.itemIDsToCatalogNumbersMap[id]) return ''
+    return window.itemIDsToCatalogNumbersMap[id]
 }
 
-// function recursiveChangeCatalogNumber(counter) {
-//     if (counter > 100) return
-//     const catalogNumberInputElm = document.querySelector('.acf-field[data-name="current_catalog_number"] input')
-//     if (!catalogNumberInputElm) return setTimeout(recursiveChangeCatalogNumber, 100, counter)
-//     if (!catalogNumberInputElm.value) catalogNumberInputElm.value = 'C' + (Number(window.MAX_CATALOG_NUMBER) + 1)
-// }
+function recursiveChangeCatalogNumber(counter) {
+    if (counter > 100) return
+    const catalogNumberInputElm = document.querySelector('.acf-field[data-name="current_catalog_number"] input')
+    if (!catalogNumberInputElm) return setTimeout(recursiveChangeCatalogNumber, 100, counter)
+    if (!catalogNumberInputElm.value) catalogNumberInputElm.value = 'C' + (Number(window.MAX_CATALOG_NUMBER) + 1)
+}
 
-// recursiveChangeCatalogNumber(0)
+recursiveChangeCatalogNumber(0)
