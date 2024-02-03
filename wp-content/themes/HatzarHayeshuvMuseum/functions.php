@@ -253,7 +253,6 @@ function insert_new_movement( $post_id ) {
     $values = get_fields( $post_id );
     
 	if (!$values['new_movement'] || !$values['new_movement']['has_new_movement']) return;
-    consolelog('got here');
 
 	$createPage = array(
 		"post_title" => $values['new_movement']['new_movement_name'],
@@ -327,11 +326,21 @@ add_filter( 'acf/update_value', 'create_my_post', 10, 3);
 
 add_action('admin_head', 'add_id_to_acf_relation');
 function add_id_to_acf_relation() {
-  echo '<style>
-	.acf-relationship .list .acf-rel-item::after {
-		content: " - " attr(data-id);
+	echo '<style>
+		.acf-relationship .list .acf-rel-item::after {
+			content: " - " attr(data-id);
+		}
+	</style>';
+	global $wp;
+	$home_url = home_url( $wp->request );
+	$current_url = home_url($_SERVER['REQUEST_URI']);
+	if ($current_url == ($home_url . '/wp-admin/post-new.php?post_type=item') ) {
+		?>
+		<script>
+			window.MAX_CATALOG_NUMBER = <?php echo getMaxItemCatalogNumber(); ?>
+		</script>
+		<?php
 	}
-  </style>';
 }
 
 function my_admin_enqueue_scripts() {
@@ -343,7 +352,54 @@ add_action('acf/input/admin_enqueue_scripts', 'my_admin_enqueue_scripts');
 function consolelog($data) {
     $output = json_encode($data);
 
-    echo "<script>console.log('Debug Objects:');console.log(JSON.parse(`" . $output . "`.replace(/[\u0000-\u001F\u007F-\u009F]/g, '')));</script>";
+    echo "<script>console.log(JSON.parse(`" . $output . "`));</script>";
 }
 
 define( 'DISALLOW_FILE_EDIT', true );
+
+// add validate value filter for all acf fields with the field name `registration_pin`
+// you can use `acf/validate_value/key=` to target a specific acf field by key if you have multiple fields with the same name `registration_pin` in different field groups
+add_filter('acf/validate_value/name=current_catalog_number', 'acf_validate_current_catalog_number', 10, 4);
+
+// function used by the above `add_filter`
+function acf_validate_current_catalog_number($valid, $value, $field, $input_name) {
+
+	$value = strtoupper($value);
+	$has_matches = preg_match("/^C\d{5,}$/", $value);
+    if(!$has_matches) return "ערך לא מתאים";
+
+	$number = catalogNumberToNumber($value);
+    if($number < 10000) return "ערך מספרי קטן מ-10000 - " . $number;
+
+	$max_number = getMaxItemCatalogNumber();
+
+	if ($number <= $max_number) return "ערך נמוך מהמזהה הגבוהה ביותר במערכת - C" . $max_number;
+
+    // return field as valid, if none of the above conditions are true
+    return $valid;
+}
+
+function catalogNumberToNumber($catalogNumber) {
+	return (int)end(explode("C", $catalogNumber));
+}
+
+function getMaxItemCatalogNumber() {
+	$all_items = get_posts(array(
+			'posts_per_page'    => -1,
+			'post_type'     => 'item',
+		));
+	// Exclude current post
+	$all_items = array_filter($all_items, function($item) {
+		return $item->ID !== get_the_ID();
+	}, ARRAY_FILTER_USE_BOTH);
+
+	function itemToCatalogNumber($item) {
+		return get_field('current_catalog_number', $item->ID);
+	}
+
+	$all_catalog_numbers = array_map('itemToCatalogNumber', $all_items);
+
+	$all_numbers = array_map('catalogNumberToNumber', $all_catalog_numbers);
+
+	return max($all_numbers);
+}
