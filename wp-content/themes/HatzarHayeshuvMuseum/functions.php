@@ -332,30 +332,30 @@ function add_id_to_acf_relation() {
 		}
 	</style>';
 
-	?>
-		<script>
-			window.MAX_CATALOG_NUMBER = <?php echo getMaxItemCatalogNumber(); ?>;
-			window.itemIDsToCatalogNumbersMap = JSON.parse(`<?php echo json_encode(getItemIDsToCatalogNumbersMap()); ?>`);
-		</script>
-	<?php
+	// ?>
+	// 	<script>
+	// 		window.MAX_CATALOG_NUMBER = <?php echo getMaxItemCatalogNumber(); ?>;
+	// 		window.itemIDsToCatalogNumbersMap = JSON.parse(`<?php echo json_encode(getItemIDsToCatalogNumbersMap()); ?>`);
+	// 	</script>
+	// <?php
 }
 
-function getItemIDsToCatalogNumbersMap() {
-	$all_items = get_posts(array(
-			'posts_per_page'    => -1,
-			'post_type'     => 'item',
-		));
-	// Exclude current post
-	$all_items = array_filter($all_items, function($item) {
-		return $item->ID !== get_the_ID();
-	}, ARRAY_FILTER_USE_BOTH);
+// function getItemIDsToCatalogNumbersMap() {
+// 	$all_items = get_posts(array(
+// 			'posts_per_page'    => -1,
+// 			'post_type'     => 'item',
+// 		));
+// 	// Exclude current post
+// 	$all_items = array_filter($all_items, function($item) {
+// 		return $item->ID !== get_the_ID();
+// 	}, ARRAY_FILTER_USE_BOTH);
 
-	$map = array();
-	foreach ($all_items as &$item) {
-		$map[$item->ID] = itemToCatalogNumber($item);
-	}
-	return $map;
-}
+// 	$map = array();
+// 	foreach ($all_items as &$item) {
+// 		$map[$item->ID] = itemToCatalogNumber($item);
+// 	}
+// 	return $map;
+// }
 
 function my_admin_enqueue_scripts() {
     wp_enqueue_script( 'my-admin-js', get_template_directory_uri() . '/assets/js/admin.js', array(), '1.0.0', true );
@@ -370,7 +370,7 @@ function consolelog($data) {
 }
 
 define( 'DISALLOW_FILE_EDIT', true );
-
+/*
 // add validate value filter for all acf fields with the field name `registration_pin`
 // you can use `acf/validate_value/key=` to target a specific acf field by key if you have multiple fields with the same name `registration_pin` in different field groups
 add_filter('acf/validate_value/name=current_catalog_number', 'acf_validate_current_catalog_number', 10, 4);
@@ -417,3 +417,4 @@ function getMaxItemCatalogNumber() {
 
 	return max($all_numbers);
 }
+*/
