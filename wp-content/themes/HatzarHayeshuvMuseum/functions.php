@@ -334,7 +334,7 @@ function add_id_to_acf_relation() {
 
 	?>
 		<script>
-			window.MAX_CATALOG_NUMBER = <?php echo getMaxItemCatalogNumber(); ?>;
+			window.NEXT_CATALOG_NUMBER = <?php echo getNextItemCatalogNumber(); ?>;
 			window.itemIDsToCatalogNumbersMap = JSON.parse(`<?php echo json_encode(getItemIDsToCatalogNumbersMap()); ?>`);
 		</script>
 	<?php
@@ -378,13 +378,8 @@ add_filter('acf/validate_value/name=current_catalog_number', 'acf_validate_curre
 function acf_validate_current_catalog_number($valid, $value, $field, $input_name) {
 
 	$value = strtoupper($value);
-	$has_matches = preg_match("/^C\d{5,}$/", $value);
+	$has_matches = preg_match("/^C\d*$/", $value);
     if(!$has_matches) return "ערך לא מתאים";
-
-	$number = catalogNumberToNumber($value);
-    if($number < 10000) return "ערך מספרי קטן מ-10000 - " . $number;
-
-	$max_number = getMaxItemCatalogNumber();
 
 	if (isCatalogNumberExistsAlready($value)) return "ערך כבר קיים במערכת";
 
@@ -416,7 +411,7 @@ function isCatalogNumberExistsAlready($value) {
 	return false;
 }
 
-function getMaxItemCatalogNumber() {
+function getNextItemCatalogNumber() {
 	$all_items = get_posts(array(
 			'posts_per_page'    => -1,
 			'post_type'     => 'item',
@@ -430,5 +425,10 @@ function getMaxItemCatalogNumber() {
 
 	$all_numbers = array_map('catalogNumberToNumber', $all_catalog_numbers);
 
-	return max($all_numbers);
+	$next_number = 10000;
+	while (in_array($next_number, $all_numbers)) {
+		$next_number++;
+	}
+
+	return $next_number;
 }

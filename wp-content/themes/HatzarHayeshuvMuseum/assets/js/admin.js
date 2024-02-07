@@ -39,7 +39,7 @@ function recursiveChangeCatalogNumber(counter) {
     if (counter > 100) return
     const catalogNumberInputElm = document.querySelector('.acf-field[data-name="current_catalog_number"] input')
     if (!catalogNumberInputElm) return setTimeout(recursiveChangeCatalogNumber, 100, counter)
-    if (!catalogNumberInputElm.value) catalogNumberInputElm.value = 'C' + (Number(window.MAX_CATALOG_NUMBER) + 1)
+    if (!catalogNumberInputElm.value) catalogNumberInputElm.value = 'C' + window.NEXT_CATALOG_NUMBER;
 }
 
 recursiveChangeCatalogNumber(0)
