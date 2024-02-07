@@ -35,7 +35,6 @@ async function init() {
   ]);
   let items = await itemsResponse.json()
   initialItems = items.slice()
-  initialItems.forEach(item => item.ACF.current_catalog_number = getCataolgNumberFromID(item.id))
   let movements = await movementsResponse.json()
   for (let item of initialItems) {
     if (item && item.ACF && item.ACF.movements && item.ACF.movements.length) {
@@ -289,10 +288,6 @@ function resetSearch() {
   SearchState.box = ''
 
   buildUI()
-}
-
-function getCataolgNumberFromID(id) {
-  return 'C' + String(10000+Number(id))
 }
 
 function openXLSXModal(e) {
