@@ -425,7 +425,7 @@ function getMaxItemCatalogNumber() {
 	$all_items = array_filter($all_items, function($item) {
 		return $item->ID !== get_the_ID();
 	}, ARRAY_FILTER_USE_BOTH);
-
+	
 	$all_catalog_numbers = array_map('itemToCatalogNumber', $all_items);
 
 	$all_numbers = array_map('catalogNumberToNumber', $all_catalog_numbers);
